@@ -54,7 +54,7 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="widget">
                 <h4 className="text-capitalize mb-4">Contact Us</h4>
-                <p>contact us low rates data scraping </p>
+                <p>Contact us low rates data scraping </p>
 
                 <form action="#" className="sub-form">
                   <input
