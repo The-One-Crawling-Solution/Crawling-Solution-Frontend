@@ -1,27 +1,27 @@
 const teamMembers = [
   {
-    name: "John Doe",
+    name: "Pradeep Thakor",
     title: "CEO & Founder",
     image: "https://via.placeholder.com/150",
-    bio: "John has over 15 years of experience in data scraping and web development. He leads the company with a focus on innovation and customer satisfaction.",
+    bio: "Pradeep has over 15 years of experience in data scraping and web development. He leads the company with a strong focus on innovation and customer satisfaction, driving strategic growth and fostering a culture of excellence.",
   },
   {
-    name: "Jane Smith",
-    title: "Chief Technology Officer",
+    name: "Alpesh Kapadiya",
+    title: "Marketing Head",
     image: "https://via.placeholder.com/150",
-    bio: "Jane is the technical mind behind our advanced scraping technologies. She specializes in data engineering, artificial intelligence, and cloud computing.",
+    bio: "Alpesh spearheads the company's marketing efforts, leveraging his deep understanding of digital marketing and brand strategy. His innovative approach helps elevate the company's presence in the market and attract key clients.",
   },
   {
-    name: "Mike Johnson",
-    title: "Lead Developer",
+    name: "Parth Jain",
+    title: "Developer Head",
     image: "https://via.placeholder.com/150",
-    bio: "Mike is an expert in JavaScript, Python, and web scraping frameworks. He ensures that all projects are delivered on time and meet high-quality standards.",
+    bio: "Parth is the leader of the development team and an expert in JavaScript, Python, and web scraping frameworks. He ensures all projects are delivered on time while maintaining high standards of code quality and performance.",
   },
   {
-    name: "Emily Davis",
-    title: "Project Manager",
+    name: "Sales Head",
+    title: "Sales Head",
     image: "https://via.placeholder.com/150",
-    bio: "Emily manages client relationships and ensures that all projects run smoothly from inception to completion. She has over a decade of experience in project management.",
+    bio: "As the head of sales, he is responsible for managing client relationships, overseeing sales strategies, and ensuring that projects run smoothly from start to finish. His decade-long experience in project management makes him a key player in client success.",
   },
 ];
 
