@@ -2,7 +2,7 @@
 import React from "react";
 import Aboutcomponent from "../Components/Aboutcomponent";
 import Services from "./Services";
-import Slider from "../Components/common/Slider";
+// import Slider from "../Components/common/Slider";
 
 const Home = () => {
   return (
