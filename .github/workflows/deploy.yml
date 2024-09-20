@@ -20,17 +20,13 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: |
-           npm ci
+        run:  npm ci
 
       - name: Build the app
-        run: |
-           npm run build
+        run:  npm run build
 
       - name: Run Build
-        run: |
-          sudo cp -r ./build/* /var/www/html
+        run:  sudo cp -r ./build/* /var/www/html
 
       - name: Restart Nginx
-        run: |
-          sudo systemctl restart nginx
+        run:  sudo systemctl restart nginx
