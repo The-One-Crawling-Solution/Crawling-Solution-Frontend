@@ -1,18 +1,15 @@
 name: Deploy to EC2
-
 on:
   push:
     branches:
       - main
-
 jobs:
   deploy:
     runs-on: self-hosted
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-       
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -20,13 +17,34 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run:  npm ci
+        run: npm ci
 
       - name: Build the app
-        run:  npm run build
+        run: npm run build
 
-      - name: Run Build
-        run:  sudo cp -r ./build/* /var/www/html
+      - name: Deploy to new directory
+        run: |
+          sudo mkdir -p /var/www/html/new-app
+          sudo cp -r ./build/* /var/www/html/new-app
 
-      - name: Restart Nginx
-        run:  sudo systemctl restart nginx
+      - name: Update Nginx configuration
+        run: |
+          sudo tee /etc/nginx/sites-available/new-app.conf > /dev/null <<EOT
+          server {
+              listen 80;
+              server_name theonecrawlingsolution.com;
+              root /var/www/html/new-app;
+              index index.html;
+              location / {
+                  try_files $uri $uri/ /index.html;
+              }
+          }
+          EOT
+          sudo ln -s /etc/nginx/sites-available/new-app.conf /etc/nginx/sites-enabled/
+          sudo nginx -t && sudo systemctl reload nginx
+
+      - name: Setup PM2 process
+        run: |
+          cd /var/www/html/new-app
+          pm2 start npm --name "new-app" -- start
+          pm2 save
