@@ -140,7 +140,17 @@ const Header = () => {
                       </Link>
                     </li>
 
-                    <li
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link"
+                        to="/about"
+                        onClick={closeMenuAndDropdowns}
+                      >
+                        About
+                      </Link>
+                    </li>
+
+                    {/* <li
                       className={`nav-item dropdown ${
                         activeDropdown === "about" ? "show" : ""
                       }`}
@@ -179,6 +189,16 @@ const Header = () => {
                           </Link>
                         </li>
                       </ul>
+                    </li> */}
+
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link"
+                        to="/portfolio"
+                        onClick={closeMenuAndDropdowns}
+                      >
+                        Portfolio
+                      </Link>
                     </li>
 
                     <li
@@ -294,9 +314,9 @@ const Header = () => {
                         <Link
                           className="dropdown-item"
                           to="/engineering"
-                          aria-label="Engineering Scraping"
+                          aria-label="OTT Scraping"
                         >
-                          Engineering Scraping
+                          OTT Scraping
                         </Link>
                         <Link
                           className="dropdown-item"
@@ -306,16 +326,6 @@ const Header = () => {
                           Taxi Booking Scraping
                         </Link>{" "}
                       </ul>
-                    </li>
-
-                    <li className="nav-item">
-                      <Link
-                        className="nav-link"
-                        to="/portfolio"
-                        onClick={closeMenuAndDropdowns}
-                      >
-                        Portfolio
-                      </Link>
                     </li>
 
                     <li
@@ -338,6 +348,15 @@ const Header = () => {
                           activeDropdown === "blog" ? "show" : ""
                         }`}
                       >
+                        <li>
+                          <Link
+                            className="dropdown-item"
+                            to="/blog"
+                            onClick={closeMenuAndDropdowns}
+                          >
+                            Blog
+                          </Link>
+                        </li>
                         <li>
                           <Link
                             className="dropdown-item"

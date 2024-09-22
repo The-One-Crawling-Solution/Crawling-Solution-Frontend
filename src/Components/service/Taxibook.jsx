@@ -43,23 +43,70 @@ const Taxibook = () => {
           ],
         },
         {
-          title: "We Don't Just Deliver Data",
+          title: "How We Deliver Car Booking Data at Lightning Speed",
           image: cabImage2,
           list: [
             {
-              title: "Target the Right Passengers",
+              title: "Discovery & Customization",
               description:
-                "Craft personalized promotions and discounts that hit bullseyes, not empty seats. Watch those bookings roll in like a steady stream of traffic.",
+                "We start by understanding your specific data needs. Are you looking for car rental prices, availability, customer reviews, fleet details, or booking trends? We tailor our scraping approach to focus on the data that aligns perfectly with your car booking business goals.",
             },
             {
-              title: "Craft Irresistible Campaigns",
+              title: "Target Source Mapping",
               description:
-                "Know what they crave, where they travel, and when they ride. Your marketing will be as tempting as a neon city lights sign.",
+                "We identify key car booking websites, rental platforms, dealership sites, and comparison tools to create a comprehensive data source map. This targeted strategy ensures you receive high-quality, actionable insights from the most relevant sources for your needs.",
             },
             {
-              title: "Optimize Your App",
+              title: "Advanced Data Extraction",
               description:
-                "Streamline the booking process, fix those buggy navigation apps, and watch user satisfaction soar like a five-star rating. Make your app the smoothest, most convenient ride in town.",
+                "Using our advanced scraping tools, we extract real-time data from various car booking sources. From rental rates and car specifications to customer feedback and availability, our tools gather the information you need to stay competitive in the car booking market.",
+            },
+            {
+              title: "Data Refinement",
+              description:
+                "Raw data is transformed into actionable insights through our meticulous cleaning and structuring process. We remove irrelevant details, duplicates, and format the data in your preferred structure (CSV, Excel, JSON, APIs) for seamless integration into your booking systems or analytics tools.",
+            },
+            {
+              title: "Quality Control",
+              description:
+                "Before delivering the final dataset, our team performs thorough quality checks to ensure data accuracy, completeness, and relevance. This guarantees that the insights you receive are timely, reliable, and ready to support your booking strategies.",
+            },
+            {
+              title: "Rapid Delivery",
+              description:
+                "Our automated, streamlined scraping process allows us to deliver car booking data reports quickly—whether you need them daily, weekly, or in real-time. We pride ourselves on delivering data before deadlines, ensuring you always have the latest information to make informed business decisions.",
+            },
+            {
+              title: "Post-Delivery Support",
+              description:
+                "The car booking industry is dynamic, and so are your data needs. We provide ongoing support, including regular updates, maintenance, and fine-tuning of our scraping processes, ensuring you stay updated with the latest market trends.",
+            },
+          ],
+        },
+        {
+          title:
+            "Why Choose The One Crawling Solution for Car Booking Data Scraping?",
+          image: cabImage2,
+          list: [
+            {
+              title: "Data That Drives Bookings",
+              description:
+                "We don’t just collect raw data; we deliver insights that help you optimize your pricing strategies, monitor fleet availability, and enhance customer experience.",
+            },
+            {
+              title: "Custom-Tailored Services",
+              description:
+                "Your car booking business is unique, and so are your data needs. Our scraping services are fully customizable, focusing on the exact information that supports your growth.",
+            },
+            {
+              title: "Stay Ahead of Market Trends",
+              description:
+                "With real-time, high-quality data, you can track rental trends, monitor competitor pricing, and adjust your strategies proactively to capture market demand.",
+            },
+            {
+              title: "100% Compliance",
+              description:
+                "We adhere strictly to all legal and ethical guidelines for data scraping, ensuring our process respects privacy laws, website terms of service, and data protection regulations.",
             },
           ],
           paragraphs: [

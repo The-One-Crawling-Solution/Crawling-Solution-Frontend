@@ -55,6 +55,6 @@ We believe that a “one-size-fits-all” solution doesn’t apply to web scrapi
 If you’re ready to leverage the power of web and app scraping for your business, get in touch with us today!
 
 - **Website:** [www.theonecrawlingsolution.com](https://www.theonecrawlingsolution.com)
-- **Email:** [mailto:theonecrawlingsolutions@gmail.com]theonecrawlingsolutions@gmail.com
+- **Email:** <theonecrawlingsolutions@gmail.com>
 
 Let **The One Crawling Solution** be your trusted partner in data extraction and analysis!

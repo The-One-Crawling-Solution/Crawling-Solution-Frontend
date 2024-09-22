@@ -1781,7 +1781,7 @@ h3.quote::before {
   display: none;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
-  text-align: center;
+  /* text-align: center; */
   margin-top: -3px;
 }
 

@@ -166,7 +166,7 @@ const Services = () => {
               <div className="service-item mb-5">
                 <i className="fas fa-cogs"></i>
                 <h4 className="mb-3">
-                  <Link to="/engineering">Engineering Scraping</Link>
+                  <Link to="/engineering">OTT Scraping</Link>
                 </h4>
                 <p>
                   A digital agency isn't here to replace your internal team,

@@ -6,60 +6,79 @@ import CommonServicePage from "./CommonServicePage";
 
 const Education = () => {
   const pageContent = {
-    title: "Education Scraping",
-    subtitle:
-      "Beyond the Textbook: Uncover Educational Insights with Website Scraping",
+    title: "Education Data Scraping",
+    subtitle: "How We Deliver Education Data at Lightning Speed",
     mainImage: EducationImage1,
     content: {
       hero: [
-        "Master the curriculum, optimize your programs, and become a beacon of academic excellence.",
+        "In the rapidly evolving education sector, having access to up-to-date, relevant data is essential. Our streamlined data scraping process ensures you receive accurate, structured educational data faster than your competition.",
       ],
       sections: [
         {
-          title:
-            "Here's how we empower you to revolutionize the educational experience:",
+          title: "Discovery & Customization",
           image: EducationImage2,
           list: [
             {
-              title: "Student Spotlight",
+              title: "Tailored Data Collection",
               description:
-                "Understand student demographics like age, location, and learning styles. This knowledge allows you to tailor your teaching methods and course offerings, ensuring every student receives the support they need to succeed.",
+                "We begin by understanding your specific data needs. Whether it's online course trends, university rankings, academic research, or student feedback, we customize our scraping approach to align perfectly with your educational goals.",
             },
             {
-              title: "Curriculum Compass",
+              title: "Target Source Mapping",
               description:
-                "Analyze competitor courses, popular learning platforms, and emerging pedagogical trends. Stay ahead by incorporating the latest teaching strategies and innovative resources into your curriculum.",
+                "We identify top educational websites, e-learning platforms, academic journals, and review sites to create a detailed data source map. This targeted strategy ensures high-quality, actionable insights that influence your institution's strategies.",
             },
             {
-              title: "Market Microscope",
+              title: "Advanced Data Extraction",
               description:
-                "Identify underserved educational needs, predict enrollment trends, and pinpoint areas for program expansion. With this market intelligence, you can strategically develop new programs that cater to the specific needs of your student population.",
+                "Using cutting-edge tools, we extract real-time data from various educational sources. From course offerings to student reviews and admission requirements, we provide the information you need to stay ahead in the education industry.",
             },
             {
-              title: "Industry Insights",
+              title: "Data Refinement",
               description:
-                "Track recent educational policies, accreditation standards, and funding opportunities. Stay informed and ensure your institution adheres to the latest regulations, maximizing your ability to provide exceptional education.",
+                "We clean and filter raw data, removing duplicates and irrelevant noise. The data is structured into formats like CSV, Excel, JSON, or APIs for seamless integration into your systems.",
+            },
+            {
+              title: "Quality Control",
+              description:
+                "Our team performs rigorous quality checks before delivery, ensuring accuracy, relevance, and completeness. You receive reliable insights for informed decision-making.",
+            },
+            {
+              title: "Rapid Delivery",
+              description:
+                "Our automated process ensures timely data reports—whether daily, weekly, or monthly—so you're always equipped with the information needed to drive growth.",
+            },
+            {
+              title: "Post-Delivery Support",
+              description:
+                "We provide ongoing support to address your evolving data needs, including updates and adjustments to the scraping process, ensuring you stay ahead of educational trends.",
             },
           ],
         },
         {
-          title: "Leverage Data for Smarter Education:",
+          title:
+            "Why Choose The One Crawling Solution for Education Data Scraping?",
           image: EducationImage3,
           list: [
             {
-              title: "Optimize Your Programs",
+              title: "Data That Drives Decisions",
               description:
-                "Make data-driven decisions regarding course content, instructional methods, and technology integration. Watch student engagement skyrocket and witness learning outcomes reach new heights.",
+                "We deliver insights that help you make strategic, data-driven decisions to enhance educational offerings and student engagement.",
             },
             {
-              title: "Refine Your Resources",
+              title: "Custom-Tailored Services",
               description:
-                "Identify promising educational materials and technology tools. Analyze student responses to different teaching approaches and refine your curriculum for maximum impact. Data becomes your guide, leading you toward innovative learning strategies.",
+                "Our scraping services are fully customizable, focusing on the specific information that fuels your institution's growth.",
             },
             {
-              title: "Empower Your Students",
+              title: "Stay Ahead of Educational Trends",
               description:
-                "Understand their learning needs, personalize learning pathways, and improve communication for better student success. Every interaction becomes an opportunity to unlock their full potential and foster a thriving learning environment.",
+                "Real-time, high-quality data allows you to monitor shifts in the educational landscape, track student preferences, and adapt proactively.",
+            },
+            {
+              title: "100% Compliance",
+              description:
+                "We adhere to all legal and ethical guidelines, ensuring compliance with privacy laws and website terms of service.",
             },
           ],
           paragraphs: [
@@ -71,7 +90,8 @@ const Education = () => {
         },
       ],
     },
-    ctaText: "Let the data be your guide to a brighter academic future.",
+    ctaText:
+      "Unlock educational insights with The One Crawling Solution. Contact us today!",
   };
 
   return <CommonServicePage {...pageContent} />;

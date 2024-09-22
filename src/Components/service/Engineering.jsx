@@ -4,17 +4,17 @@ import CommonServicePage from "./CommonServicePage";
 
 const Engineering = () => {
   const pageContent = {
-    title: "Engineering Services",
+    title: "OTT Services",
     subtitle: "Innovative Solutions for Complex Challenges",
     mainImage: "path_to_main_image.jpg", // Replace with actual image path
     content: {
       hero: [
-        "Engineering excellence starts here. Transforming ideas into reality with precision and expertise.",
-        "Our engineering services cover a broad spectrum, from concept design to implementation, ensuring quality and innovation at every step.",
+        "OTT excellence starts here. Transforming ideas into reality with precision and expertise.",
+        "Our OTT services cover a broad spectrum, from concept design to implementation, ensuring quality and innovation at every step.",
       ],
       sections: [
         {
-          title: "Our Engineering Solutions Include:",
+          title: "Our OTT Solutions Include:",
           image: "path_to_section_image1.jpg", // Replace with actual image path
           list: [
             {
@@ -43,15 +43,15 @@ const Engineering = () => {
           title: "Why Choose Us?",
           image: "path_to_section_image2.jpg", // Replace with actual image path
           paragraphs: [
-            "We provide cutting-edge solutions that address the most challenging engineering problems.",
+            "We provide cutting-edge solutions that address the most challenging OTT problems.",
             "Our team of experts combines deep industry knowledge with advanced technologies to deliver exceptional results.",
-            "Partner with us to experience engineering excellence that drives success and innovation.",
+            "Partner with us to experience OTT excellence that drives success and innovation.",
           ],
         },
       ],
     },
     ctaText:
-      "Get in touch with us today to explore how our engineering services can drive your success.",
+      "Get in touch with us today to explore how our OTT services can drive your success.",
   };
 
   return <CommonServicePage {...pageContent} />;

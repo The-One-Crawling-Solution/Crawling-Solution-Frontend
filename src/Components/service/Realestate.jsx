@@ -65,6 +65,45 @@ const Realestate = () => {
             },
           ],
         },
+        {
+          title: "How We Scrape Real Estate Data and Deliver It to You",
+          image: RealImage2,
+          paragraphs: [
+            "At The One Crawling Solution, we’ve honed our process for scraping real estate data into a seamless and powerful experience:",
+          ],
+          list: [
+            {
+              title: "Target Identification",
+              description:
+                "First, we identify and analyze key real estate websites, listing platforms, and property marketplaces. This step ensures that we target sources rich in valuable data, from property specifications and pricing to market trends.",
+            },
+            {
+              title: "Advanced Web Scraping",
+              description:
+                "Using our state-of-the-art scraping tools, we extract data with pinpoint precision. Our bots mimic human browsing behavior, navigating through listings, price histories, property details, and images without triggering website defenses.",
+            },
+            {
+              title: "Data Cleaning and Refinement",
+              description:
+                "Raw data is only part of the story. We clean, filter, and refine the information, removing duplicates and inconsistencies. This step transforms the data into a coherent, structured format, ready to power your decision-making.",
+            },
+            {
+              title: "Custom Data Formats",
+              description:
+                "We deliver the scraped data in formats that suit you—whether it’s an Excel spreadsheet, CSV, JSON, or integration into your existing systems.",
+            },
+            {
+              title: "Timely Delivery",
+              description:
+                "We prioritize speed and accuracy, delivering the polished data to you on schedule, whether you need it on a daily, weekly, or monthly basis.",
+            },
+            {
+              title: "Secure and Private",
+              description:
+                "Your data is handled with the utmost confidentiality and security. We ensure that all data is transmitted and stored securely, giving you peace of mind.",
+            },
+          ],
+        },
       ],
     },
   };

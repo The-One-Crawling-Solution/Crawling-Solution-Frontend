@@ -64,6 +64,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
 
+    <!-- slider  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+
     <!-- Open Graph Meta Tags for Social Media -->
     <meta property="og:title" content="The One Crawling Solution" />
     <meta
@@ -103,6 +106,13 @@
         }
       }
     </script>
+    <style>
+      #chatbase-bubble-button,
+      #chatbase-bubble-button * {
+        background-color: rgb(247, 87, 87) !important;
+        border-radius: 50% !important;
+      }
+    </style>
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -131,5 +141,19 @@
 
     <!-- Custom Scripts -->
     <script src="assets/js/script.js" defer></script>
+
+    <!-- Chatbase Integration -->
+    <script>
+      window.embeddedChatbotConfig = {
+        chatbotId: "fiChTHwzywZeToylsYiaG",
+        domain: "www.chatbase.co",
+      };
+    </script>
+    <script
+      src="https://www.chatbase.co/embed.min.js"
+      chatbotId="fiChTHwzywZeToylsYiaG"
+      domain="www.chatbase.co"
+      defer
+    ></script>
   </body>
 </html>

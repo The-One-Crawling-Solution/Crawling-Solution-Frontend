@@ -15,50 +15,70 @@ const Jobs = () => {
       ],
       sections: [
         {
-          title:
-            "Here's how job site scraping empowers you to build a dream team:",
+          title: "How We Deliver Job Site Data at Lightning Speed",
           image: JobImage2,
           list: [
             {
-              title: "Candidate Compass",
+              title: "Discovery & Customization",
               description:
-                "Identify the top talent based on skills, experience, and location, regardless of their active job search status. This intel allows you to proactively reach out to ideal candidates, significantly increasing your chances of landing the perfect hire.",
+                "We start by understanding your specific data needs. Are you looking for job postings, salary trends, company reviews, or candidate qualifications? We tailor our scraping approach to focus on the data that aligns perfectly with your recruitment or job market analysis goals.",
             },
             {
-              title: "Competitive Edge",
+              title: "Target Source Mapping",
               description:
-                "Analyze competitor job postings, salary ranges, and recruitment strategies. Gain valuable insights into the current job market trends and refine your recruitment offer to attract the best talent available. Stay ahead of the curve and become the employer of choice.",
+                "We identify key job sites, career portals, company websites, and recruitment platforms to create a comprehensive data source map. This ensures you receive high-quality, actionable insights from the most relevant sources for your needs.",
             },
             {
-              title: "Market Pulse",
+              title: "Advanced Data Extraction",
               description:
-                "Identify emerging skills and in-demand job titles before the competition does. Tailor your recruitment efforts to the ever-evolving needs of the workforce, ensuring you attract top talent with the most sought-after skillsets.",
+                "Using our advanced scraping tools, we extract real-time data from various job sites. From job listings and company profiles to salary benchmarks and job market trends, our tools gather the information you need to stay ahead in the job market.",
             },
             {
-              title: "Recruitment Regulations",
+              title: "Data Refinement",
               description:
-                "Track evolving labor laws and recruitment regulations. Stay informed and ensure your recruitment practices adhere to the latest standards, avoiding unnecessary legal roadblocks.",
+                "Raw data is transformed into actionable insights through our meticulous cleaning and structuring process. We remove duplicates, irrelevant details, and format the data in your preferred structure (CSV, Excel, JSON, APIs) for seamless integration into your recruitment systems or analytics tools.",
+            },
+            {
+              title: "Quality Control",
+              description:
+                "Before delivering the final dataset, our team conducts thorough quality checks to ensure data accuracy, completeness, and relevance. This guarantees that the insights you receive are not only timely but also reliable and ready to support your hiring strategies.",
+            },
+            {
+              title: "Rapid Delivery",
+              description:
+                "Our automated, streamlined scraping process allows us to deliver job site data reports quickly—whether you need them daily, weekly, or in real-time. We pride ourselves on delivering data before deadlines, ensuring you always have the latest information to make informed hiring decisions.",
+            },
+            {
+              title: "Post-Delivery Support",
+              description:
+                "The job market is dynamic, and so are your data needs. We provide ongoing support, including regular updates, maintenance, and fine-tuning of our scraping processes, ensuring you keep up with evolving job market trends.",
             },
           ],
         },
         {
-          title: "Fuel Your Recruitment Engine with Data-Driven Insights:",
+          title:
+            "Why Choose The One Crawling Solution for Job Site Data Scraping?",
           image: JobImage3,
           list: [
             {
-              title: "Craft Compelling Job Postings",
+              title: "Data That Drives Recruitment",
               description:
-                "Make data-driven decisions about job descriptions, benefits packages, and target keywords. Witness a surge in qualified applicants as your job postings resonate deeply with the ideal talent pool.",
+                "We don’t just collect raw data; we deliver insights that help you optimize your recruitment strategies, track job market trends, and make informed hiring decisions.",
             },
             {
-              title: "Refine Your Targeting",
+              title: "Custom-Tailored Services",
               description:
-                "Identify the most effective job boards and online communities to reach your ideal candidates. No more wasted resources – your recruitment efforts land directly in front of the most relevant talent.",
+                "Your recruitment objectives are unique, and so are your data needs. Our scraping services are fully customizable, focusing on the exact information that supports your goals.",
             },
             {
-              title: "Build a Talent Pipeline",
+              title: "Stay Ahead of Market Trends",
               description:
-                "Proactively identify and nurture relationships with potential candidates. Data becomes your guide, allowing you to build a robust talent pipeline for future hiring needs.",
+                "With real-time, high-quality data, you can monitor job market trends, salary fluctuations, and candidate availability, enabling you to adjust your strategies proactively.",
+            },
+            {
+              title: "100% Compliance",
+              description:
+                "We adhere strictly to all legal and ethical guidelines for data scraping, ensuring our process respects privacy laws, website terms of service, and data protection regulations.",
             },
           ],
           paragraphs: [

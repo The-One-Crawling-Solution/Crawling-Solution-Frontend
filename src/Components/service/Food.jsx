@@ -41,24 +41,69 @@ const Food = () => {
           ],
         },
         {
-          title:
-            "We meticulously scrub and polish this raw data, serving it up on a silver platter of success:",
+          title: "How We Deliver Food Data at Lightning Speed",
           image: foodImage2,
           list: [
             {
-              title: "Target the right foodies",
+              title: "Discovery & Customization",
               description:
-                "Deliver personalized offers, and hit bullseyes with every marketing campaign. Watch those orders roll in like a sushi train.",
+                "We begin by understanding your unique data needs. Are you looking to track restaurant menus, ingredient pricing, food delivery trends, or customer reviews? We customize our scraping approach to target the information that matters most to your business, ensuring your goals are met efficiently.",
             },
             {
-              title: "Craft drool-worthy campaigns",
+              title: "Target Source Mapping",
               description:
-                "Know what people crave, where they crave it, when they crave it. Your marketing will be irresistible, like a perfectly salted french fry.",
+                "We identify and map out the most relevant food websites, restaurant platforms, online marketplaces, and review sites. This targeted source mapping guarantees you receive high-quality, actionable insights that directly impact your business strategies.",
             },
             {
-              title: "Optimize your app",
+              title: "Advanced Data Extraction",
               description:
-                "Identify pain points, streamline the experience, and watch ratings soar like a soufflé. Make your app the smoothest ride in town.",
+                "Using state-of-the-art scraping tools, we extract real-time data from multiple food sources. Whether it's menu updates, ingredient availability, pricing fluctuations, or food delivery trends, our tools gather the essential information to keep you ahead of the competition.",
+            },
+            {
+              title: "Data Refinement",
+              description:
+                "Raw data becomes valuable insights through our meticulous cleaning and structuring process. We filter out irrelevant details, remove duplicates, and organize the information into your preferred format (CSV, Excel, JSON, APIs) for seamless integration into your analytics tools or databases.",
+            },
+            {
+              title: "Quality Control",
+              description:
+                "Before delivering the final dataset, our team performs rigorous quality checks to ensure accuracy, relevance, and completeness. This step guarantees that the insights you receive are not only timely but also reliable and ready for immediate use.",
+            },
+            {
+              title: "Rapid Delivery",
+              description:
+                "Our automated, streamlined scraping process enables us to deliver data reports swiftly—whether you need them daily, weekly, or monthly. We pride ourselves on delivering before deadlines, so you always have the information you need to make informed decisions in the fast-paced food industry.",
+            },
+            {
+              title: "Post-Delivery Support",
+              description:
+                "The food industry is ever-evolving, and so are your data requirements. We provide ongoing support, including regular updates, maintenance, and adjustments to our scraping processes, ensuring you stay on top of market dynamics.",
+            },
+          ],
+        },
+        {
+          title: "Why Choose The One Crawling Solution for Food Data Scraping?",
+          image: foodImage2,
+          list: [
+            {
+              title: "Data That Drives Decisions",
+              description:
+                "We don’t just scrape data; we provide insights that help you make strategic, data-driven decisions in the food sector.",
+            },
+            {
+              title: "Custom-Tailored Services",
+              description:
+                "Your food business is unique, and so are your data needs. Our scraping services are fully customizable, focusing on the exact information that fuels your growth.",
+            },
+            {
+              title: "Stay Ahead of Market Trends",
+              description:
+                "With real-time, high-quality data, you can track market shifts, competitor activities, and changing consumer preferences, enabling you to adjust strategies proactively.",
+            },
+            {
+              title: "100% Compliance",
+              description:
+                "We strictly adhere to all legal and ethical guidelines for data scraping, ensuring our process respects data privacy laws, industry regulations, and website terms of service.",
             },
           ],
           paragraphs: [

@@ -2,7 +2,7 @@
 import React from "react";
 import Aboutcomponent from "../Components/Aboutcomponent";
 import Services from "./Services";
-// import Slider from "../Components/common/Slider";
+import Slider from "../Components/common/Slider";
 
 const Home = () => {
   return (
@@ -18,7 +18,7 @@ const Home = () => {
         <script src="/path/to/your/external.js"></script>
 
         {/* <!-- Slider Start --> */}
-        <section className="slider">
+        {/* <section className="slider">
           <div className="container">
             <div className="row">
               <div className="col-lg-9 col-md-10">
@@ -43,9 +43,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        {/* <Slider /> */}
+        <Slider />
         <br></br>
         {/* <!-- Section Intro Start --> */}
 

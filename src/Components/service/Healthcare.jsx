@@ -6,7 +6,7 @@ import CommonServicePage from "./CommonServicePage";
 
 const Healthcare = () => {
   const pageContent = {
-    title: "Healthcare Scraping",
+    title: "Healthcare Data Scraping",
     subtitle:
       "Data-Driven Diagnosis: Conquer Healthcare Insights with Scraping",
     mainImage: HealthImage,
@@ -42,23 +42,70 @@ const Healthcare = () => {
           ],
         },
         {
-          title: "Leverage Data for Your Decisions:",
+          title: "How We Deliver Healthcare Data at Lightning Speed",
           image: HealthImage2,
           list: [
             {
-              title: "Optimize Your Practice",
+              title: "Discovery & Customization",
               description:
-                "Make data-driven decisions on staffing, equipment, and treatment offerings. Watch your efficiency and patient satisfaction soar.",
+                "We start by collaborating with you to understand your specific data needs. Are you looking for drug pricing, hospital ratings, insurance coverage details, or patient reviews? We tailor our scraping approach to focus on the information that matters most to your business.",
             },
             {
-              title: "Refine Your Research",
+              title: "Target Source Mapping",
               description:
-                "Identify promising clinical trials, analyze drug efficacy, and collaborate with fellow researchers. Innovation is your cure, data your microscope.",
+                "We identify the top healthcare websites, insurance databases, pharmaceutical platforms, and medical research sites to create a high-quality data source map. This targeted strategy guarantees you receive actionable, industry-relevant insights.",
             },
             {
-              title: "Engage Your Patients Like Never Before",
+              title: "Advanced Data Extraction",
               description:
-                "Understand their needs, personalize treatment plans, and improve communication for better outcomes. Every click becomes a loyal patient.",
+                "Using our cutting-edge scraping tools, we gather real-time data from multiple sources. From drug availability and hospital services to clinical trial information and market trends, we extract the information you need, ensuring you always stay ahead of changes in the healthcare landscape.",
+            },
+            {
+              title: "Data Refinement",
+              description:
+                "Raw data is transformed into valuable insights through our meticulous cleaning and filtering process. We structure the information, removing duplicates and irrelevant noise, and then format it to your preferred structure (CSV, Excel, JSON, APIs) for seamless integration into your analytics or decision-making tools.",
+            },
+            {
+              title: "Quality Control",
+              description:
+                "Before delivery, our team conducts comprehensive quality checks to ensure data accuracy, completeness, and relevance. This guarantees that the insights you receive are not just timely but also reliable and actionable.",
+            },
+            {
+              title: "Rapid Delivery",
+              description:
+                "Our automated, streamlined data scraping process allows us to deliver reports swiftly—whether you need them daily, weekly, or monthly. We pride ourselves on beating deadlines, ensuring you always have the data you need to make informed decisions.",
+            },
+            {
+              title: "Post-Delivery Support",
+              description:
+                "Healthcare is a dynamic field, and so are your data needs. We provide ongoing support, including updates, maintenance, and adjustments to the scraping process, ensuring you remain at the forefront of industry changes.",
+            },
+          ],
+        },
+        {
+          title:
+            "Why Choose The One Crawling Solution for Healthcare Data Scraping?",
+          image: HealthImage2,
+          list: [
+            {
+              title: "Data That Drives Decisions",
+              description:
+                "We don’t just provide raw data; we deliver insights that empower you to make strategic, data-driven decisions in the healthcare sector.",
+            },
+            {
+              title: "Custom-Tailored Services",
+              description:
+                "Every healthcare business has unique data requirements. Our services are fully customizable, focusing on the exact information that fuels your growth.",
+            },
+            {
+              title: "Stay Ahead of the Market",
+              description:
+                "With real-time, high-quality data at your fingertips, you can anticipate market shifts, track competitors, and adjust your strategies proactively.",
+            },
+            {
+              title: "100% Compliance:",
+              description:
+                "We adhere to all legal and ethical guidelines for data scraping, ensuring our process respects data privacy laws, patient confidentiality, and website terms of service.",
             },
           ],
           paragraphs: [

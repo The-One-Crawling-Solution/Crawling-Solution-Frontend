@@ -99,8 +99,8 @@ const seoConfig = {
       "Explore our web scraping services for the job and recruitment industries.",
   },
   "/Engineering": {
-    title: "Engineering Solutions - The One Crawling Solution",
-    description: "Web scraping services designed for the engineering sector.",
+    title: "OTT Solutions - The One Crawling Solution",
+    description: "Web scraping services designed for the OTT sector.",
   },
   "/Taxibook": {
     title: "Taxi Booking Solutions - The One Crawling Solution",
