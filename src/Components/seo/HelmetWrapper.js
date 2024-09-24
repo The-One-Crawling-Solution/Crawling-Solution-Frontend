@@ -8,8 +8,8 @@ const HelmetWrapper = () => {
   const currentPath = location.pathname;
 
   const seoData = seoConfig[currentPath] || {
-    title: "My Website",
-    description: "Default description for My Website.",
+    title: "The One Crawling Solution",
+    description: "The One Crawling Solution",
   };
 
   return (

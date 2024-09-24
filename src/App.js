@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import HelmetWrapper from "./Components/seo/HelmetWrapper";
 import Header from "./Components/common/Header";
 import Footer from "./Components/common/Footer";
+import FullScreenLoader from "./Components/common/FullScreenLoader";
 
 // Lazy-loaded Pages
 const Home = lazy(() => import("./Pages/Home"));
@@ -42,7 +43,7 @@ function App() {
       {/* For react-seo  */}
       <HelmetWrapper />
       <Header />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<FullScreenLoader />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
