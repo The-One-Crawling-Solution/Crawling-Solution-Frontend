@@ -15,13 +15,13 @@ const Footer = () => {
 
                 <ul className="list-unstyled footer-menu lh-35">
                   <li>
-                    <a href="/term-conditions">Terms & Conditions</a>
+                    <Link href="/term-conditions">Terms & Conditions</Link>
                   </li>
                   <li>
-                    <a href="/privacy-policy">Privacy Policy</a>
+                    <Link href="/privacy-policy">Privacy Policy</Link>
                   </li>
                   <li>
-                    <a href="/contact">Support</a>
+                    <Link href="/contact">Support</Link>
                   </li>
                   {/* <li><a href="#">FAQ</a></li> */}
                   <li>
@@ -43,7 +43,7 @@ const Footer = () => {
                     <Link to="/services">Services</Link>
                   </li>
                   <li>
-                    <a href="/team">Team</a>
+                    <Link href="/team">Team</Link>
                   </li>
                   <li>
                     <Link to="/contact">Contact</Link>
@@ -62,9 +62,9 @@ const Footer = () => {
                     className="form-control mb-3"
                     placeholder="Contact Us ..."
                   />
-                  <a href="/contact" className="btn btn-main btn-small">
+                  <Link href="/contact" className="btn btn-main btn-small">
                     Connect
-                  </a>
+                  </Link>
                 </form>
               </div>
             </div>
