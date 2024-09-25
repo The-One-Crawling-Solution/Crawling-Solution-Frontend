@@ -1,5 +1,6 @@
 import React from "react";
 import BlogGridData from "../data/BlodGridData";
+import { Link } from "react-router-dom";
 
 const BlogGrid = () => {
   return (
@@ -13,9 +14,9 @@ const BlogGrid = () => {
               <div className="card-body">
                 <h5 className="card-title">{blog.title}</h5>
                 <p className="card-text">{blog.description}</p>
-                <a href={blog.link} className="btn btn-main">
+                <Link to={blog.link} className="btn btn-main">
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
           </div>

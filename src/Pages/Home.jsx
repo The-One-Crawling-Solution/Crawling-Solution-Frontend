@@ -3,6 +3,7 @@ import React from "react";
 import Aboutcomponent from "../Components/Aboutcomponent";
 import Services from "./Services";
 import Slider from "../Components/common/Slider";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -152,12 +153,12 @@ const Home = () => {
                       </a>
                     </h3>
 
-                    <a
-                      href="blog-single"
+                    <Link
+                      to="blog-single"
                       className="btn btn-small btn-solid-border btn-round-full text-white"
                     >
                       Learn More
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -189,12 +190,12 @@ const Home = () => {
                       </a>
                     </h3>
 
-                    <a
-                      href="blog-single"
+                    <Link
+                      to="blog-single"
                       className="btn btn-small btn-solid-border btn-round-full text-white"
                     >
                       Learn More
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -226,12 +227,12 @@ const Home = () => {
                       </a>
                     </h3>
 
-                    <a
-                      href="blog-single"
+                    <Link
+                      to="blog-single"
                       className="btn btn-small btn-solid-border btn-round-full text-white"
                     >
                       Learn More
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
