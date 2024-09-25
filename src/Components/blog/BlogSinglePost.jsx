@@ -16,7 +16,7 @@ const BlogSinglePost = () => {
             </p>
 
             <img
-              src="https://via.placeholder.com/500"
+              src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/about/pexels-cottonbro-studio-4709391.jpg"
               className="img-fluid mb-4"
               alt="Data Scraping"
               style={{

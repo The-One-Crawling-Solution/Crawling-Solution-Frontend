@@ -15,8 +15,9 @@ const Jobs = () => {
       ],
       sections: [
         {
-          title: "How We Deliver Job Site Data at Lightning Speed",
+          title: "Our Data Collection Process",
           image: JobImage2,
+
           list: [
             {
               title: "Discovery & Customization",
@@ -33,6 +34,12 @@ const Jobs = () => {
               description:
                 "Using our advanced scraping tools, we extract real-time data from various job sites. From job listings and company profiles to salary benchmarks and job market trends, our tools gather the information you need to stay ahead in the job market.",
             },
+          ],
+        },
+        {
+          title: "Ensuring Quality and Timely Delivery",
+          image: JobImage1,
+          list: [
             {
               title: "Data Refinement",
               description:

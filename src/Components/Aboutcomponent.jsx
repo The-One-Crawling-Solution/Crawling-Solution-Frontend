@@ -56,7 +56,7 @@ const Aboutcomponent = () => {
                   want.
                 </p>
                 <Link
-                  to="webscraping"
+                  to="/webscraping"
                   className="btn btn-small btn-solid-border btn-round-full text-black"
                 >
                   Learn More
@@ -76,7 +76,7 @@ const Aboutcomponent = () => {
                   experts at The One Crawling Solutions.
                 </p>
                 <Link
-                  to="appscraping"
+                  to="/appscraping"
                   className="btn btn-small btn-solid-border btn-round-full text-black"
                 >
                   Learn More
@@ -96,7 +96,7 @@ const Aboutcomponent = () => {
                   APIs so you can breathe in peace.
                 </p>
                 <Link
-                  to="webscarpingapi"
+                  to="/webscarpingapi"
                   className="btn btn-small btn-solid-border btn-round-full text-black"
                 >
                   Learn More

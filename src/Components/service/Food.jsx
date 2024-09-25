@@ -41,7 +41,7 @@ const Food = () => {
           ],
         },
         {
-          title: "How We Deliver Food Data at Lightning Speed",
+          title: "Our Food Data Collection Process",
           image: foodImage2,
           list: [
             {
@@ -59,6 +59,12 @@ const Food = () => {
               description:
                 "Using state-of-the-art scraping tools, we extract real-time data from multiple food sources. Whether it's menu updates, ingredient availability, pricing fluctuations, or food delivery trends, our tools gather the essential information to keep you ahead of the competition.",
             },
+          ],
+        },
+        {
+          title: "Ensuring Data Quality and Speed of Delivery",
+          image: foodImage2,
+          list: [
             {
               title: "Data Refinement",
               description:

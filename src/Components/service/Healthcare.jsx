@@ -42,7 +42,7 @@ const Healthcare = () => {
           ],
         },
         {
-          title: "How We Deliver Healthcare Data at Lightning Speed",
+          title: "Our Healthcare Data Collection Process",
           image: HealthImage2,
           list: [
             {
@@ -60,6 +60,12 @@ const Healthcare = () => {
               description:
                 "Using our cutting-edge scraping tools, we gather real-time data from multiple sources. From drug availability and hospital services to clinical trial information and market trends, we extract the information you need, ensuring you always stay ahead of changes in the healthcare landscape.",
             },
+          ],
+        },
+        {
+          title: "Data Quality and Rapid Delivery",
+          image: HealthImage2,
+          list: [
             {
               title: "Data Refinement",
               description:

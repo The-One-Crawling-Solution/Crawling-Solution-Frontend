@@ -3,7 +3,8 @@ const BlogData = [
   {
     id: 1,
     title: "Unlocking the Power of Web Scraping APIs",
-    image: "https://via.placeholder.com/600",
+    image:
+      "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/blog/4.jpg",
     date: "September 10, 2024",
     excerpt:
       "Discover how web scraping APIs can streamline your data extraction process and empower your business decisions.",
@@ -17,7 +18,8 @@ const BlogData = [
   {
     id: 2,
     title: "Data-Driven Decisions: How Web Scraping Fuels Your Business",
-    image: "https://via.placeholder.com/600",
+    image:
+      "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/blog/2.jpg",
     date: "August 20, 2024",
     excerpt:
       "Learn how web scraping can provide your business with the critical data needed to outpace your competitors.",

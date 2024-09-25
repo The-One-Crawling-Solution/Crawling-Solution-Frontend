@@ -1,9 +1,14 @@
 # Step 1: Build React App
 FROM node:alpine3.18 as build
+# Create "app" Working Directory 
 WORKDIR /app 
+# Copy package.json into  the "app" directory
 COPY package.json .
+# Install package
 RUN npm install
+# Copy everything into the "app" directory
 COPY . .
+
 RUN npm run build
 
 # Step 2: Server With Nginx

@@ -16,7 +16,7 @@ const GroceryScraping = () => {
       ],
       sections: [
         {
-          title: "How We Deliver Grocery Data at Lightning Speed",
+          title: "Our Grocery Data Collection Process",
           image: GroceryImage1,
           list: [
             {
@@ -34,6 +34,12 @@ const GroceryScraping = () => {
               description:
                 "Using our cutting-edge scraping tools, we extract real-time data from multiple grocery sources. From product details and stock levels to discount offers and customer feedback, our tools gather the information you need to stay ahead in the competitive grocery market.",
             },
+          ],
+        },
+        {
+          title: "Ensuring Data Quality and Timely Delivery",
+          image: GroceryImage1,
+          list: [
             {
               title: "Data Refinement",
               description:

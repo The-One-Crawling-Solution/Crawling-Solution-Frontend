@@ -15,7 +15,7 @@ const Education = () => {
       ],
       sections: [
         {
-          title: "Discovery & Customization",
+          title: "Discovery & Customization in Education Data Collection",
           image: EducationImage2,
           list: [
             {
@@ -33,6 +33,12 @@ const Education = () => {
               description:
                 "Using cutting-edge tools, we extract real-time data from various educational sources. From course offerings to student reviews and admission requirements, we provide the information you need to stay ahead in the education industry.",
             },
+          ],
+        },
+        {
+          title: "Data Quality and Support",
+          image: EducationImage2,
+          list: [
             {
               title: "Data Refinement",
               description:

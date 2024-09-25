@@ -153,7 +153,7 @@ const Home = () => {
                     </h3>
 
                     <a
-                      href="blog-single.html"
+                      href="blog-single"
                       className="btn btn-small btn-solid-border btn-round-full text-white"
                     >
                       Learn More
@@ -190,7 +190,7 @@ const Home = () => {
                     </h3>
 
                     <a
-                      href="blog-single.html"
+                      href="blog-single"
                       className="btn btn-small btn-solid-border btn-round-full text-white"
                     >
                       Learn More
@@ -227,7 +227,7 @@ const Home = () => {
                     </h3>
 
                     <a
-                      href="blog-single.html"
+                      href="blog-single"
                       className="btn btn-small btn-solid-border btn-round-full text-white"
                     >
                       Learn More

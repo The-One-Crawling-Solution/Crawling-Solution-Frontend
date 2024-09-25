@@ -27,7 +27,7 @@ const Appscraping = () => {
             </div>
             <div className="col-lg-6">
               <img
-                src="https://via.placeholder.com/500"
+                src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/AppScraping.jpeg"
                 alt="App Scraping"
                 className="img-fluid"
                 style={{
@@ -48,7 +48,7 @@ const Appscraping = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <img
-                src="https://via.placeholder.com/400"
+                src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/WhatsApp Image 2024-09-24 at 10.32.16 AM.jpeg"
                 alt="Data Insights"
                 className="img-fluid"
                 style={{
@@ -121,7 +121,7 @@ const Appscraping = () => {
             </div>
             <div className="col-lg-6">
               <img
-                src="https://via.placeholder.com/400"
+                src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/WhatsApp Image 2024-09-24 at 10.32.09 AM.jpeg"
                 alt="App Scraping Benefits"
                 className="img-fluid"
                 style={{
@@ -142,7 +142,7 @@ const Appscraping = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <img
-                src="https://via.placeholder.com/400"
+                src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/blog/3.jpg"
                 alt="Expertise Image"
                 className="img-fluid"
                 style={{
@@ -212,7 +212,7 @@ const Appscraping = () => {
             </div>
             <div className="col-lg-6">
               <img
-                src="https://via.placeholder.com/400"
+                src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/about/business-data-information-device-screen.jpg"
                 style={{
                   width: "100%",
                   height: "auto",

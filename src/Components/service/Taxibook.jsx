@@ -2,6 +2,7 @@ import React from "react";
 import cabImage from "../../images/about/cabbook.jpg";
 import cabImage1 from "../../images/about/cabbook1.jpg";
 import cabImage2 from "../../images/about/cabbook2.jpg";
+import cabImage3 from "../../images/about/travel1.jpg";
 import CommonServicePage from "./CommonServicePage";
 
 const Taxibook = () => {
@@ -43,7 +44,7 @@ const Taxibook = () => {
           ],
         },
         {
-          title: "How We Deliver Car Booking Data at Lightning Speed",
+          title: "Our Car Booking Data Collection Process",
           image: cabImage2,
           list: [
             {
@@ -61,6 +62,12 @@ const Taxibook = () => {
               description:
                 "Using our advanced scraping tools, we extract real-time data from various car booking sources. From rental rates and car specifications to customer feedback and availability, our tools gather the information you need to stay competitive in the car booking market.",
             },
+          ],
+        },
+        {
+          title: "Ensuring Data Quality and Rapid Delivery",
+          image: cabImage3,
+          list: [
             {
               title: "Data Refinement",
               description:

@@ -87,6 +87,12 @@ const Ecommerce = () => {
               description:
                 "Utilizing our state-of-the-art scraping tools, we extract valuable data – from product specifications to customer reviews. We gather this information in real-time, so you’re always a step ahead of market changes.",
             },
+          ],
+        },
+        {
+          title: "Data Quality and Speed of Delivery",
+          image: EcomImage2,
+          list: [
             {
               title: "Data Refinement",
               description:
