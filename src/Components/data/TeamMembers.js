@@ -11,7 +11,7 @@ const teamMembers = [
     title: "Marketing Head",
     image:
       "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/team/AshleshKapadiya.jpeg",
-    bio: "Alpesh spearheads the company's marketing efforts, leveraging his deep understanding of digital marketing and brand strategy. His innovative approach helps elevate the company's presence in the market and attract key clients.",
+    bio: "Ashlesh spearheads the company's marketing efforts, leveraging his deep understanding of digital marketing and brand strategy. His innovative approach helps elevate the company's presence in the market and attract key clients.",
   },
   {
     name: "Parth Jain",

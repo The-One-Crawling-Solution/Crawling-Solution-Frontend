@@ -1,17 +1,23 @@
-import React, { Suspense, lazy } from "react";
-import { Routes, Route } from "react-router-dom";
-import HelmetWrapper from "./Components/seo/HelmetWrapper";
+// src/App.js
+
+import React, { Suspense, lazy, useEffect, useRef } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./Components/common/Header";
 import Footer from "./Components/common/Footer";
 import FullScreenLoader from "./Components/common/FullScreenLoader";
+import navConfig from "./Components/data/NavBarData";
+import ReactGA from "react-ga4";
 
 // Lazy-loaded Pages
 const Home = lazy(() => import("./Pages/Home"));
 const About = lazy(() => import("./Pages/About"));
 const Services = lazy(() => import("./Pages/Services"));
-const Jobs = lazy(() => import("./Components/service/Jobs"));
-const Engineering = lazy(() => import("./Components/service/Engineering"));
-const Taxibook = lazy(() => import("./Components/service/Taxibook"));
+const Portfolio = lazy(() => import("./Pages/Portfolio"));
+const Contact = lazy(() => import("./Pages/Contact"));
+const Blog = lazy(() => import("./Pages/Blog"));
+const Faqs = lazy(() => import("./Pages/Faqs"));
+const BlogSinglePost = lazy(() => import("./Components/blog/BlogSinglePost"));
+const BlogGrid = lazy(() => import("./Components/blog/BlogGrid"));
 const RealEstate = lazy(() => import("./Components/service/Realestate"));
 const Ecommerce = lazy(() => import("./Components/service/Ecommerce"));
 const Healthcare = lazy(() => import("./Components/service/Healthcare"));
@@ -21,61 +27,157 @@ const Education = lazy(() => import("./Components/service/Education"));
 const Travel = lazy(() => import("./Components/service/Travel"));
 const Sport = lazy(() => import("./Components/service/Sport"));
 const Grocery = lazy(() => import("./Components/service/Grocery"));
-const Portfolio = lazy(() => import("./Pages/Portfolio"));
-const Contact = lazy(() => import("./Pages/Contact"));
-const Socialmedia = lazy(() => import("./Components/service/Socialmedia"));
-const Faqs = lazy(() => import("./Pages/Faqs"));
-const WebscrapingAPI = lazy(() =>
-  import("./Components/scraping/WebscrapingAPI")
-);
-const Webscraping = lazy(() => import("./Components/scraping/Webscraping"));
-const Appscraping = lazy(() => import("./Components/scraping/Appscraping"));
-const BlogSinglePost = lazy(() => import("./Components/blog/BlogSinglePost"));
-const BlogGrid = lazy(() => import("./Components/blog/BlogGrid"));
-const Blog = lazy(() => import("./Pages/Blog"));
+const SocialMedia = lazy(() => import("./Components/service/Socialmedia"));
+const Jobs = lazy(() => import("./Components/service/Jobs"));
+const Engineering = lazy(() => import("./Components/service/Engineering"));
+const Taxibook = lazy(() => import("./Components/service/Taxibook"));
 const TermConditions = lazy(() => import("./Components/common/TermConditions"));
 const PrivacyPolicy = lazy(() => import("./Components/common/PrivacyPolicy"));
 const Team = lazy(() => import("./Components/common/Team"));
+const NotFound = lazy(() => import("./Pages/NotFound"));
+
+// Mapping route paths to their corresponding components
+const pageComponentMapping = {
+  "/": Home,
+  "/about": About,
+  "/services": Services,
+  "/portfolio": Portfolio,
+  "/contact": Contact,
+  "/realestate": RealEstate,
+  "/ecommerce": Ecommerce,
+  "/healthcare": Healthcare,
+  "/food": Food,
+  "/entertainment": Entertainment,
+  "/education": Education,
+  "/travel": Travel,
+  "/sport": Sport,
+  "/grocery": Grocery,
+  "/socialmedia": SocialMedia,
+  "/jobs": Jobs,
+  "/engineering": Engineering,
+  "/taxibook": Taxibook,
+  "/blog": Blog,
+  "/blog-single": BlogSinglePost,
+  "/blog-grid": BlogGrid,
+  "/faqs": Faqs,
+  "/term-conditions": TermConditions,
+  "/privacy-policy": PrivacyPolicy,
+  "/team": Team,
+};
 
 function App() {
+  const location = useLocation();
+  const startTimeRef = useRef(Date.now());
+
+  console.log("env check", process.env.REACT_APP_ENVIRONMENT);
+
+  // Initialize GA4
+  useEffect(() => {
+    ReactGA.initialize("G-TWLQ8238W6"); // Replace with your GA4 Measurement ID
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, []);
+
+  // Track page views and time spent
+  useEffect(() => {
+    const previousPath = location.pathname;
+    const previousStartTime = startTimeRef.current;
+    const currentTime = Date.now();
+
+    const timeSpentSeconds = Math.round(
+      (currentTime - previousStartTime) / 1000
+    );
+
+    if (previousPath) {
+      ReactGA.event({
+        category: "Engagement",
+        action: "Time Spent",
+        label: previousPath,
+        value: timeSpentSeconds,
+      });
+    }
+
+    startTimeRef.current = currentTime;
+
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
+
+  // Global Click Tracking
+  useEffect(() => {
+    const handleClick = (event) => {
+      const target = event.target;
+
+      // Traverse up the DOM tree to find elements with 'data-ga-event' attribute
+      let element = target;
+      while (element && element !== document.body) {
+        if (element.getAttribute("data-ga-event")) {
+          const eventData = element.getAttribute("data-ga-event");
+          const [category, action, label] = eventData.split("|"); // Format: category|action|label
+
+          if (category && action && label) {
+            ReactGA.event({
+              category: category.trim(),
+              action: action.trim(),
+              label: label.trim(),
+            });
+          }
+          break;
+        }
+        element = element.parentElement;
+      }
+    };
+
+    document.addEventListener("click", handleClick);
+
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, []);
+
+  // Helper function to flatten all paths from navConfig
+  const getNavPaths = (config) => {
+    let paths = [];
+    config.forEach(({ path, dropdown }) => {
+      if (dropdown) {
+        dropdown.forEach((item) => paths.push(item.path));
+      } else {
+        paths.push(path);
+      }
+    });
+    return paths;
+  };
+
+  const navPaths = getNavPaths(navConfig);
+
   return (
     <div className="App">
-      {/* For react-seo  */}
-      <HelmetWrapper />
       <Header />
       <Suspense fallback={<FullScreenLoader />}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/webscraping" element={<Webscraping />} />
-          <Route path="/appscraping" element={<Appscraping />} />
-          <Route path="/webscarpingapi" element={<WebscrapingAPI />} />
-          <Route path="/realestate" element={<RealEstate />} />
-          <Route path="/faqs" element={<Faqs />} />
-          {/* <--*  Services  *--> */}
-          <Route path="/ecommerce" element={<Ecommerce />} />
-          <Route path="/healthcare" element={<Healthcare />} />
-          <Route path="/food" element={<Food />} />
-          <Route path="/entertainment" element={<Entertainment />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/travel" element={<Travel />} />
-          <Route path="/sport" element={<Sport />} />
-          <Route path="/grocery" element={<Grocery />} />
-          <Route path="/socialmedia" element={<Socialmedia />} />
-          <Route path="/jobs" element={<Jobs />} />
-          <Route path="/engineering" element={<Engineering />} />
-          <Route path="/taxibook" element={<Taxibook />} />
-          {/* Blog post  */}
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog-single" element={<BlogSinglePost />} />
-          <Route path="/blog-grid" element={<BlogGrid />} />
-          {/* /term-conditions */}
-          <Route path="/term-conditions" element={<TermConditions />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/team" element={<Team />} />
+          {/* Generate Routes from navConfig */}
+          {navConfig.map(({ path, label, dropdown }) => {
+            if (dropdown) {
+              return dropdown.map(({ path: subPath, label: subLabel }) => {
+                const Component = pageComponentMapping[subPath];
+                return (
+                  <Route key={subPath} path={subPath} element={<Component />} />
+                );
+              });
+            }
+
+            const Component = pageComponentMapping[path];
+            return <Route key={path} path={path} element={<Component />} />;
+          })}
+
+          {/* Generate Routes not present in navConfig */}
+          {Object.entries(pageComponentMapping).map(([path, Component]) => {
+            if (!navPaths.includes(path)) {
+              return <Route key={path} path={path} element={<Component />} />;
+            }
+            return null;
+          })}
+
+          {/* Fallback Route for 404 */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
       <Footer />
