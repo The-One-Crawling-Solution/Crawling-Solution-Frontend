@@ -34,6 +34,11 @@ const Taxibook = lazy(() => import("./Components/service/Taxibook"));
 const TermConditions = lazy(() => import("./Components/common/TermConditions"));
 const PrivacyPolicy = lazy(() => import("./Components/common/PrivacyPolicy"));
 const Team = lazy(() => import("./Components/common/Team"));
+const WebScraping = lazy(() => import("./Components/scraping/Webscraping"));
+const AppScraping = lazy(() => import("./Components/scraping/Appscraping"));
+const ApiDataScarping = lazy(() =>
+  import("./Components/scraping/WebscrapingAPI")
+);
 const NotFound = lazy(() => import("./Pages/NotFound"));
 
 // Mapping route paths to their corresponding components
@@ -56,6 +61,9 @@ const pageComponentMapping = {
   "/jobs": Jobs,
   "/engineering": Engineering,
   "/taxibook": Taxibook,
+  "/webscraping": WebScraping,
+  "/appscraping": AppScraping,
+  "/webscarpingapi": ApiDataScarping,
   "/blog": Blog,
   "/blog-single": BlogSinglePost,
   "/blog-grid": BlogGrid,
