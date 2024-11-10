@@ -1,6 +1,6 @@
 import React from "react";
 
-import Aboutcomponent from "../Components/Aboutcomponent";
+import Aboutcomponent from "./Aboutcomponent";
 
 const About = () => {
   return (

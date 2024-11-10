@@ -40,6 +40,8 @@ const ApiDataScarping = lazy(() =>
   import("./Components/scraping/WebscrapingAPI")
 );
 const NotFound = lazy(() => import("./Pages/NotFound"));
+const AdminLogin = lazy(() => import("./admin/Login"));
+const AddBlogData = lazy(() => import("./admin/AddBlogData"));
 
 // Mapping route paths to their corresponding components
 const pageComponentMapping = {
@@ -65,12 +67,14 @@ const pageComponentMapping = {
   "/appscraping": AppScraping,
   "/webscarpingapi": ApiDataScarping,
   "/blog": Blog,
-  "/blog-single": BlogSinglePost,
-  "/blog-grid": BlogGrid,
+  "/blogs": BlogGrid,
+  "/blogs/:id": BlogSinglePost,
   "/faqs": Faqs,
   "/term-conditions": TermConditions,
   "/privacy-policy": PrivacyPolicy,
   "/team": Team,
+  "/login": AdminLogin,
+  "/addblog": AddBlogData,
 };
 
 function App() {

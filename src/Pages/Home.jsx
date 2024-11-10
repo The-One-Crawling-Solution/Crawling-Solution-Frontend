@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import Aboutcomponent from "../Components/Aboutcomponent";
+import Aboutcomponent from "./Aboutcomponent";
 import Services from "./Services";
 import Slider from "../Components/common/Slider";
 import { Link } from "react-router-dom";

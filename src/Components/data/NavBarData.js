@@ -23,12 +23,16 @@ const navConfig = [
   },
   {
     label: "Blog",
-    dropdown: [
-      { label: "Blog", path: "/blog" },
-      { label: "Blog Grid", path: "/blog-grid" },
-      { label: "Blog Single", path: "/blog-single" },
-    ],
+    path: "/blogs",
   },
+  // {
+  //   label: "Blog",
+  //   dropdown: [
+  //     { label: "Blog", path: "/blog" },
+  //     { label: "Blog Grid", path: "/blogs" },
+  //     { label: "Blog Single", path: "/blog-single" },
+  //   ],
+  // },
   { label: "Contact", path: "/contact" },
 ];
 
