@@ -23,7 +23,7 @@ const Login = () => {
   };
 
   return (
-    <div className="container login-container">
+    <div className="container login-container my-5">
       <div className="row justify-content-center">
         <div className="col-xs-12 col-md-6 col-lg-4">
           <div className="login-box">
@@ -56,7 +56,7 @@ const Login = () => {
               </div>
               <button
                 type="submit"
-                className="btn btn-primary w-100 mt-4"
+                className="btn btn-main w-100 mt-4"
                 disabled={loading}
               >
                 {loading ? (

@@ -66,8 +66,8 @@ const BlogSinglePost = () => {
               </React.Fragment>
             ))}
 
-            <h3>Conclusion</h3>
-            <p>{blog?.conclusion || "Conclusion not available."}</p>
+            {/* <h3>Conclusion</h3>
+            <p>{blog?.conclusion || "Conclusion not available."}</p> */}
           </article>
         </div>
 

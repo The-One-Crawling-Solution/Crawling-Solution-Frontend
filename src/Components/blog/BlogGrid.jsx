@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import LoadingSpinner from "../common/FullScreenLoader";
 
 const BlogGrid = () => {
-  const { blogs, loading, error } = useFetchBlogs();
+  const { blogs, loading, error, loadMore, hasMore } = useFetchBlogs();
 
-  if (loading) return <LoadingSpinner />;
+  if (loading && blogs.length === 0) return <LoadingSpinner />;
   if (error) return <p className="text-center text-danger">{error}</p>;
 
   return (
@@ -28,7 +28,9 @@ const BlogGrid = () => {
                   <p className="card-text">
                     {/* Display the first section's content as a description */}
                     {blog.sections.length > 0
-                      ? blog.sections[0].content
+                      ? blog.sections[0].content.length > 100
+                        ? blog.sections[0].content.slice(0, 100) + "..."
+                        : blog.sections[0].content
                       : "No description available."}
                   </p>
                   <Link to={`/blogs/${blog._id}`} className="btn btn-main">
@@ -39,6 +41,19 @@ const BlogGrid = () => {
             </div>
           ))}
       </div>
+
+      {/* Load More Button */}
+      {hasMore && (
+        <div className="text-center mt-4">
+          <button
+            className="btn btn-main"
+            onClick={loadMore}
+            disabled={loading} // Disable while loading
+          >
+            {loading ? "Loading..." : "Load More"}
+          </button>
+        </div>
+      )}
     </section>
   );
 };

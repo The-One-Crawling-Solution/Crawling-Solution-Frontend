@@ -1,8 +1,11 @@
 // services/blogService.js
 import { API_BASE_URL, getFetchOptions } from "../utils/api";
 
-export const fetchAllBlogs = async () => {
-  const response = await fetch(`${API_BASE_URL}/getBlogs`, getFetchOptions());
+export const fetchAllBlogs = async (page = 1) => {
+  const response = await fetch(
+    `${API_BASE_URL}/getBlogs?page=${page}&limit=10`,
+    getFetchOptions()
+  );
   if (!response.ok) throw new Error("Failed to fetch blogs");
   return await response.json();
 };

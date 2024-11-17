@@ -1,12 +1,11 @@
 export const API_BASE_URL = "https://api.theonecrawlingsolution.com/api";
 
-export const apiHeaders = {
-  "Content-Type": "application/json",
-  Accept: "application/json",
-};
-
-export const getFetchOptions = (method = "GET", body = null) => ({
+export const getFetchOptions = (method = "GET", body = null, token = null) => ({
   method,
-  headers: apiHeaders,
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+    ...(token && { Authorization: `Bearer ${token}` }),
+  },
   ...(body && { body: JSON.stringify(body) }),
 });

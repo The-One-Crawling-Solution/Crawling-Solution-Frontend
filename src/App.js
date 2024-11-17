@@ -7,6 +7,7 @@ import Footer from "./Components/common/Footer";
 import FullScreenLoader from "./Components/common/FullScreenLoader";
 import navConfig from "./Components/data/NavBarData";
 import ReactGA from "react-ga4";
+import ProtectedRoute from "./Components/common/ProtectedRoute";
 
 // Lazy-loaded Pages
 const Home = lazy(() => import("./Pages/Home"));
@@ -74,7 +75,7 @@ const pageComponentMapping = {
   "/privacy-policy": PrivacyPolicy,
   "/team": Team,
   "/login": AdminLogin,
-  "/addblog": AddBlogData,
+  // "/addblog": AddBlogData,
 };
 
 function App() {
@@ -187,6 +188,16 @@ function App() {
             }
             return null;
           })}
+
+          {/* Protected Route */}
+          <Route
+            path="/addblog"
+            element={
+              <ProtectedRoute>
+                <AddBlogData />
+              </ProtectedRoute>
+            }
+          />
 
           {/* Fallback Route for 404 */}
           <Route path="*" element={<NotFound />} />
