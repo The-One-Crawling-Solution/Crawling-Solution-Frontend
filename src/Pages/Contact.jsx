@@ -110,7 +110,7 @@ const Contact = () => {
                 </li>
                 <li className="list-inline-item">
                   <a href="http://www.themefisher.com">
-                    <i className="fab fa-twitter"></i>
+                    <i class="fa-brands fa-x-twitter mr-2"></i>
                   </a>
                 </li>
                 <li className="list-inline-item">

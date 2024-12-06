@@ -138,7 +138,7 @@ const Footer = () => {
                         aria-label="twitter"
                         alt="theonecrawlingsolution"
                       >
-                        <i className="fab fa-twitter mr-2"></i>Twitter
+                        <i class="fa-brands fa-x-twitter mr-2"></i>Twitter
                       </a>
                     </li>
                     <li className="list-inline-item">
