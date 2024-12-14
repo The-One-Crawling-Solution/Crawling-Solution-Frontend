@@ -4,6 +4,7 @@ import Aboutcomponent from "../Components/Aboutcomponent";
 import Services from "./Services";
 import Slider from "../Components/common/Slider";
 import { Link } from "react-router-dom";
+import CustomerReview from "../Components/common/CustomerReview";
 
 const Home = () => {
   return (
@@ -110,6 +111,7 @@ const Home = () => {
         {/* <hr /> */}
         <Aboutcomponent />
         <Services />
+        <CustomerReview />
 
         {/* <!-- Section Testimonial End --> */}
         <section className="section latest-blog bg-2">

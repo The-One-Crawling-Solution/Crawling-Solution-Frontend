@@ -115,7 +115,7 @@ const Aboutcomponent = () => {
               <div className="counter-item text-center mb-5 mb-lg-0">
                 <i className="fas fa-check color-one text-md"></i>{" "}
                 <h3 className="mt-2 mb-0 text-white">
-                  <span className="counter-stat font-weight-bold">10</span> +
+                  <span className="counter-stat font-weight-bold">50</span> +
                 </h3>
                 <p className="text-white-50">Project Done</p>
               </div>
