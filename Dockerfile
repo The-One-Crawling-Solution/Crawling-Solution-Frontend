@@ -24,10 +24,20 @@ RUN npm run build
 FROM nginx:1.23-alpine
 # nginx default work directory
 WORKDIR /usr/share/nginx/html
-# Remove every thing from upper directory
-RUN rm -rf *
-# Copy build Directory and add in to app Directory
+
+
+# # Remove every thing from upper directory
+# RUN rm -rf *
+# # Copy build Directory and add in to app Directory
+# COPY --from=build /app/build .
+
+# Remove default NGINX config and content
+RUN rm -rf /etc/nginx/conf.d/default.conf *
+# Copy custom nginx.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Copy the React build directory
 COPY --from=build /app/build .
+
 # Nginx server every thing on 80 port
 EXPOSE 80
 # "daemon off;" beacuse we server a single image
