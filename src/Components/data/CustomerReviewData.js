@@ -1,44 +1,30 @@
 const customerReviewsData = [
   {
-    img: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    img: "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/Blog/1734455961173_viralsadhu.jpeg",
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit saepe quo natus aut accusantium alias blanditiis.",
-    name: "Denis Richie",
+      "The One Crawling Solution helped us streamline our data collection process with their excellent web scraping services. Their team was professional and delivered accurate and reliable data, saving us countless hours of manual work. Highly recommend their services for any data scraping needs!",
+    name: "Viral Sadhu",
     rating: 5,
   },
   {
-    img: "https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+    img: "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/Blog/1734455979755_M.jpeg",
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit saepe quo natus aut accusantium alias blanditiis.",
-    name: "Lisa Sthalekar",
+      "We needed a customized solution for API data scraping, and The One Crawling Solution exceeded our expectations. Their expertise in handling complex APIs and delivering clean, structured data was impressive. Their service was efficient, and the support team was always responsive. Great job!",
+    name: "Mehul",
     rating: 4,
   },
   {
-    img: "https://images.pexels.com/photos/1036622/pexels-photo-1036622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    img: "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/Blog/1734455995158_Smitpatel.jpeg",
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit saepe quo natus aut accusantium alias blanditiis.",
-    name: "Elizabith Richie",
-    rating: 3,
-  },
-  {
-    img: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit saepe quo natus aut accusantium alias blanditiis.",
-    name: "Daniel Xavier",
+      "Working with The One Crawling Solution was a great experience. They developed a web scraping application tailored to our business requirements, which has been a game changer for us. The attention to detail and quick turnaround time were remarkable. Highly recommended!",
+    name: "Smit Patel",
     rating: 5,
   },
   {
-    img: "https://images.pexels.com/photos/1832959/pexels-photo-1832959.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    img: "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/Blog/1734456011114_Aalapjadeja.jpeg",
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit saepe quo natus aut accusantium alias blanditiis.",
-    name: "Emma Watson",
-    rating: 4,
-  },
-  {
-    img: "https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit saepe quo natus aut accusantium alias blanditiis.",
-    name: "Mohammad Imran",
+      "The One Crawling Solution provided us with top-notch data scraping services. Their ability to handle large-scale data extraction tasks efficiently has been crucial for our projects. The team was knowledgeable, professional, and always delivered on time. Thank you for your excellent service!",
+    name: "Aalap jadeja",
     rating: 5,
   },
 ];

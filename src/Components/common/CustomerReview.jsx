@@ -73,21 +73,21 @@ const CustomerReviewsCarousel = () => {
         }
 
         .customer-reviews-carousel .img-card img {
-          height: 200px;
+          height: 400px;
           width: 100%;
-          object-fit: cover;
+          object-fit: contain;
           border-radius: 10px;
         }
 
         @media (min-width: 768px) {
           .customer-reviews-carousel .img-card img {
-            height: 330px; 
+            height: 300px; 
           }
         }
 
         .customer-reviews-carousel .testimonial {
           margin-top: 20px;
-          font-size: 0.9rem;
+          font-size: 1.2rem;
           color: #666;
         }
 
