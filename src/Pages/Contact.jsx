@@ -90,7 +90,7 @@ const Contact = () => {
               <ul className="list-unstyled">
                 <li className="mb-3">
                   <i className="fas fa-map-marker-alt mr-2"></i>
-                  ##, Some Location, City, Country
+                  Ahemdabad,India
                 </li>
                 <li className="mb-3">
                   <i className="fas fa-envelope mr-2"></i>
@@ -103,7 +103,7 @@ const Contact = () => {
               </ul>
               <h5 className="mt-4">Follow Us</h5>
               <ul className="social-icons list-inline mt-3">
-                <li className="list-inline-item">
+                {/* <li className="list-inline-item">
                   <a href="http://www.themefisher.com">
                     <i className="fab fa-facebook-f"></i>
                   </a>
@@ -112,9 +112,9 @@ const Contact = () => {
                   <a href="http://www.themefisher.com">
                     <i className="fab fa-twitter"></i>
                   </a>
-                </li>
+                </li> */}
                 <li className="list-inline-item">
-                  <a href="http://www.themefisher.com">
+                  <a href="https://www.linkedin.com/company/the-one-crawling-solutions/">
                     <i className="fab fa-linkedin-in"></i>
                   </a>
                 </li>

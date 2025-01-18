@@ -123,10 +123,11 @@ const Footer = () => {
                 {/* Social Icons */}
                 <div className="mb-3">
                   <ul className="list-inline footer-socials">
-                    <li className="list-inline-item">
+                    {/* <li className="list-inline-item">
                       <a
                         href="https://www.facebook.com/themefisher"
                         aria-label="facebook"
+                        target="_blank"
                         alt="theonecrawlingsolution"
                       >
                         <i className="fab fa-facebook mr-2"></i>Facebook
@@ -134,17 +135,19 @@ const Footer = () => {
                     </li>
                     <li className="list-inline-item">
                       <a
-                        href="https://twitter.com/themefisher"
+                        href="https://www.linkedin.com/company/the-one-crawling-solutions/"
                         aria-label="twitter"
+                        target="_blank"
                         alt="theonecrawlingsolution"
                       >
                         <i className="fab fa-twitter mr-2"></i>Twitter
                       </a>
-                    </li>
+                    </li> */}
                     <li className="list-inline-item">
                       <a
-                        href="https://www.pinterest.com/themefisher/"
+                        href="https://www.linkedin.com/company/the-one-crawling-solutions/"
                         aria-label="github"
+                        target="_blank"
                         alt="theonecrawlingsolution"
                       >
                         <i className="fab fa-linkedin mr-2"></i>LinkedIn
