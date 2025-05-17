@@ -3,11 +3,11 @@ const navConfig = [
   { label: "About", path: "/about" },
   { label: "Portfolio", path: "/portfolio" },
   {
-    label: "Services",
+    label: "Industry",
     dropdown: [
       { label: "Services", path: "/services" },
-      { label: "Real Estate Data Scraping", path: "/realestate" },
-      { label: "E-Commerce and Retail Scraping", path: "/ecommerce" },
+      { label: "Real Estate Scraping", path: "/realestate" },
+      { label: "E-Commerce  Scraping", path: "/ecommerce" },
       { label: "Healthcare Scraping", path: "/healthcare" },
       { label: "Food Scraping", path: "/food" },
       { label: "Entertainment Scraping", path: "/entertainment" },

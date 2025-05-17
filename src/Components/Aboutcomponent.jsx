@@ -40,14 +40,17 @@ const Aboutcomponent = () => {
         </div>
       </section>
 
-      <section className="about-info section pt-0">
+      <section className="section pt-0">
         <div className="container">
           <div className="row">
+            {/* CARD 1 */}
             <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="about-info-item mb-4 mb-lg-0">
+              <Link to="/webscraping" className="scrape-card card-1">
+                <div className="card-icon">
+                  <i className="fas fa-database"></i>
+                </div>
                 <h3 className="mb-3">
-                  <span className="text-color mr-2 text-md">01.</span> Web
-                  Scraping Services:
+                  <span className="card-number">01.</span> Web Scraping Services
                 </h3>
                 <p>
                   We know you have too many operations to handle. So we free you
@@ -55,19 +58,17 @@ const Aboutcomponent = () => {
                   data. Just get the data delivered and assess it as much as you
                   want.
                 </p>
-                <Link
-                  to="/webscraping"
-                  className="btn btn-small btn-solid-border btn-round-full text-black"
-                >
-                  Learn More
-                </Link>
-              </div>
+              </Link>
             </div>
+
+            {/* CARD 2 */}
             <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="about-info-item mb-4 mb-lg-0">
+              <Link to="/appscraping" className="scrape-card card-2">
+                <div className="card-icon">
+                  <i className="fas fa-mobile-alt"></i>
+                </div>
                 <h3 className="mb-3">
-                  <span className="text-color mr-2 text-md">02.</span> App
-                  Scraping Services:
+                  <span className="card-number">02.</span> App Scraping Services
                 </h3>
                 <p>
                   Mobile apps are like a benchmark nowadays. Every brand is
@@ -75,19 +76,18 @@ const Aboutcomponent = () => {
                   sure that happens so? Get the right kind of data with rightful
                   experts at The One Crawling Solutions.
                 </p>
-                <Link
-                  to="/appscraping"
-                  className="btn btn-small btn-solid-border btn-round-full text-black"
-                >
-                  Learn More
-                </Link>
-              </div>
+              </Link>
             </div>
+
+            {/* CARD 3 */}
             <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="about-info-item mb-4 mb-lg-0">
+              <Link to="/webscarpingapi" className="scrape-card card-3">
+                <div className="card-icon">
+                  <i className="fas fa-code"></i>
+                </div>
                 <h3 className="mb-3">
-                  <span className="text-color mr-2 text-md">03.</span> Creating
-                  Web Scraping APIs:
+                  <span className="card-number">03.</span> Creating Web Scraping
+                  APIs
                 </h3>
                 <p>
                   One size fits all may be for some other industry. Your brand
@@ -95,13 +95,7 @@ const Aboutcomponent = () => {
                   the data you need. We will provide you customized web scraping
                   APIs so you can breathe in peace.
                 </p>
-                <Link
-                  to="/webscarpingapi"
-                  className="btn btn-small btn-solid-border btn-round-full text-black"
-                >
-                  Learn More
-                </Link>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

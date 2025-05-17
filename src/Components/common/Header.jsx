@@ -42,7 +42,7 @@ const Header = () => {
     <header className="navigation">
       {/* Navbar */}
       <div id="navbar">
-        <div className="container">
+        <div className="px-5">
           <div className="row">
             <div className="col-lg-12">
               <nav className="navbar navbar-expand-lg px-0 py-4">
