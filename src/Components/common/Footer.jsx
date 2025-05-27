@@ -9,6 +9,52 @@ const Footer = () => {
       <footer className="footer section">
         <div className="container">
           <div className="row">
+            <div className="col-lg-4  col-sm-6">
+              <div className="widget">
+                <div className="logo mb-4 ">
+                  <h4 className="text-capitalize mb-4">Info.</h4>
+                  <div className="d-flex justify-content-center align-items-center ">
+                    <Link className="navbar-brand" to="/" aria-label="Home">
+                      <img
+                        src={mylogo}
+                        alt="The One Crawling Solution Logo"
+                        style={{
+                          height: "60px",
+                          borderRadius: "10px",
+                          marginBottom: "10px",
+                        }}
+                      />
+                    </Link>
+                    <h4 className="text-color">The One Crawling Solution</h4>
+                  </div>
+                </div>
+
+                {/* <div className="contact-info">
+                  <h6 className="mb-2">
+                    <i className="fas fa-envelope mr-2"></i>
+                    <a
+                      href="mailto:theonecrawlingsolutions@gmail.com"
+                      style={{
+                        color: "#333",
+                        textDecoration: "none",
+                      }}
+                    >
+                      theonecrawlingsolutions@gmail.com
+                    </a>
+                  </h6>
+                  <h6>
+                    <i className="fas fa-phone mr-2"></i>
+                    <a
+                      href="tel:+919664508201"
+                      className="text-color "
+                      style={{ color: "#333", textDecoration: "none" }}
+                    >
+                      +91 9664508201
+                    </a>
+                  </h6>
+                </div> */}
+              </div>
+            </div>
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="widget">
                 <h4 className="text-capitalize mb-4">Company</h4>
@@ -68,53 +114,6 @@ const Footer = () => {
                 </form>
               </div>
             </div>
-
-            <div className="col-lg-4  col-sm-6">
-              <div className="widget">
-                <div className="logo mb-4 ">
-                  <h4 className="text-capitalize mb-4">Info.</h4>
-                  <div className="d-flex justify-content-center align-items-center ">
-                    <Link className="navbar-brand" to="/" aria-label="Home">
-                      <img
-                        src={mylogo}
-                        alt="The One Crawling Solution Logo"
-                        style={{
-                          height: "60px",
-                          borderRadius: "10px",
-                          marginBottom: "10px",
-                        }}
-                      />
-                    </Link>
-                    <h4 className="text-color">The One Crawling Solution</h4>
-                  </div>
-                </div>
-
-                <div className="contact-info">
-                  <h6 className="mb-2">
-                    <i className="fas fa-envelope mr-2"></i>
-                    <a
-                      href="mailto:theonecrawlingsolutions@gmail.com"
-                      style={{
-                        color: "#333",
-                        textDecoration: "none",
-                      }}
-                    >
-                      theonecrawlingsolutions@gmail.com
-                    </a>
-                  </h6>
-                  <h6>
-                    <i className="fas fa-phone mr-2"></i>
-                    <a
-                      href="tel:+919664508201"
-                      className="text-color "
-                      style={{ color: "#333", textDecoration: "none" }}
-                    >
-                      +91 9664508201
-                    </a>
-                  </h6>
-                </div>
-              </div>
-            </div>
           </div>
 
           <div className="footer-btm pt-4">
@@ -123,31 +122,24 @@ const Footer = () => {
                 {/* Social Icons */}
                 <div className="mb-3">
                   <ul className="list-inline footer-socials">
-                    {/* <li className="list-inline-item">
-                      <a
-                        href="https://www.facebook.com/themefisher"
-                        aria-label="facebook"
-                        target="_blank"
-                        alt="theonecrawlingsolution"
-                      >
-                        <i className="fab fa-facebook mr-2"></i>Facebook
+                    <li className="list-inline-item">
+                      <a href="mailto:theonecrawlingsolutions@gmail.com">
+                        <i className="fas fa-envelope mr-2"></i>
+                        theonecrawlingsolutions@gmail.com
+                      </a>
+                    </li>
+                    <li className="list-inline-item">
+                      <a href="tel:+919664508201">
+                        <i className="fas fa-phone mr-2"></i>
+                        +91 9664508201
                       </a>
                     </li>
                     <li className="list-inline-item">
                       <a
                         href="https://www.linkedin.com/company/the-one-crawling-solutions/"
-                        aria-label="twitter"
-                        target="_blank"
-                        alt="theonecrawlingsolution"
-                      >
-                        <i className="fab fa-twitter mr-2"></i>Twitter
-                      </a>
-                    </li> */}
-                    <li className="list-inline-item">
-                      <a
-                        href="https://www.linkedin.com/company/the-one-crawling-solutions/"
                         aria-label="github"
                         target="_blank"
+                        rel="noreferrer"
                         alt="theonecrawlingsolution"
                       >
                         <i className="fab fa-linkedin mr-2"></i>LinkedIn
@@ -159,17 +151,13 @@ const Footer = () => {
                 {/* Copyright Text */}
                 <div className="mt-1">
                   <div className="copyright">
-                    &copy; Copyright Reserved to{" "}
-                    <span className="text-color">
-                      theonecrawlingsolutions.com
-                    </span>{" "}
-                    by{" "}
+                    &copy; Copyright Reserved to by{" "}
                     <a
-                      href="https://themefisher.com/"
+                      href="https://theonecrawlingsolution.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      theonecrawlingsolutions
+                      The One Crawling Solutions
                     </a>
                   </div>
                 </div>

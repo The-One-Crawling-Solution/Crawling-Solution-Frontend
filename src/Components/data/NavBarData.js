@@ -1,7 +1,7 @@
 const navConfig = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
-  { label: "Portfolio", path: "/portfolio" },
+  // { label: "Portfolio", path: "/portfolio" },
   {
     label: "Industry",
     dropdown: [
@@ -23,11 +23,12 @@ const navConfig = [
   },
   {
     label: "Blog",
-    dropdown: [
-      { label: "Blog", path: "/blog" },
-      { label: "Blog Grid", path: "/blog-grid" },
-      { label: "Blog Single", path: "/blog-single" },
-    ],
+    path: "/blog-grid",
+    // dropdown: [
+    //   { label: "Blog", path: "/blog" },
+    //   { label: "Blog Grid", path: "/blog-grid" },
+    //   { label: "Blog Single", path: "/blog-single" },
+    // ],
   },
   { label: "Contact", path: "/contact" },
 ];
