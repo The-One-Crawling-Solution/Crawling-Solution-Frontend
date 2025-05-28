@@ -67,10 +67,10 @@ const Home = () => {
               </div>
             </div>
 
-            <div class="row justify-content-center">
-              <div class="col-lg-4 col-md-6 col-12">
-                <div class="intro-item mb-5 mb-lg-0">
-                  <i class="fas fa-piggy-bank color-one"></i>
+            <div className="row justify-content-center">
+              <div className="col-lg-4 col-md-6 col-12">
+                <div className="intro-item mb-5 mb-lg-0">
+                  <i className="fas fa-piggy-bank color-one"></i>
                   <h4 className="mt-4 mb-3">
                     Increased efficiency and cost savings
                   </h4>
@@ -80,9 +80,9 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="intro-item mb-5 mb-lg-0">
-                  <i class="fas fa-lightbulb color-one"></i>
+              <div className="col-lg-4 col-md-6">
+                <div className="intro-item mb-5 mb-lg-0">
+                  <i className="fas fa-lightbulb color-one"></i>
                   <h4 className="mt-4 mb-3">
                     Market research and competitive intelligence
                   </h4>
@@ -92,9 +92,9 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-12">
-                <div class="intro-item">
-                  <i class="fas fa-database color-one"></i>
+              <div className="col-lg-4 col-md-12">
+                <div className="intro-item">
+                  <i className="fas fa-database color-one"></i>
                   <h4 className="mt-4 mb-3">
                     Data-driven decision-making and unignorable data
                     opportunities
@@ -134,6 +134,8 @@ const Home = () => {
                     src="assets/images/blog/1.jpg"
                     alt="blog 1"
                     className="img-fluid rounded"
+                    loading="lazy"
+                    decoding="async"
                   />
 
                   <div className="card-body mt-2">
@@ -171,6 +173,8 @@ const Home = () => {
                     src="assets/images/blog/2.jpg"
                     alt=""
                     className="img-fluid rounded"
+                    loading="lazy"
+                    decoding="async"
                   />
 
                   <div className="card-body mt-2">
@@ -208,6 +212,8 @@ const Home = () => {
                     src="assets/images/blog/3.jpg"
                     alt=""
                     className="img-fluid rounded"
+                    loading="lazy"
+                    decoding="async"
                   />
 
                   <div className="card-body mt-2">

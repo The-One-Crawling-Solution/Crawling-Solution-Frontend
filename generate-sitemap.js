@@ -22,14 +22,14 @@ const generator = SitemapGenerator("https://theonecrawlingsolution.com", {
 });
 
 // Register event listeners
-generator.on("done", () => {
-  console.log("Sitemap generated!");
-});
+// generator.on("done", () => {
+//   console.log("Sitemap generated!");
+// });
 
-// Handle error cases
-generator.on("error", (error) => {
-  console.error("Error generating sitemap:", error);
-});
+// // Handle error cases
+// generator.on("error", (error) => {
+//   console.error("Error generating sitemap:", error);
+// });
 
 // Start the sitemap generation process
 generator.start();

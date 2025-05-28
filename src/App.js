@@ -1,6 +1,5 @@
 // src/App.js
-
-import React, { Suspense, lazy, useEffect, useRef } from "react";
+import React, { Suspense, lazy, useEffect, useRef, useMemo } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./Components/common/Header";
 import Footer from "./Components/common/Footer";
@@ -76,52 +75,43 @@ const pageComponentMapping = {
 function App() {
   const location = useLocation();
   const startTimeRef = useRef(Date.now());
+  const previousPathRef = useRef(location.pathname);
 
-  console.log("env check", process.env.REACT_APP_ENVIRONMENT);
-
-  // Initialize GA4
+  // Initialize GA once & send pageview on location change
   useEffect(() => {
-    ReactGA.initialize("G-TWLQ8238W6"); // Replace with your GA4 Measurement ID
-    ReactGA.send({ hitType: "pageview", page: location.pathname });
-  }, []);
-
-  // Track page views and time spent
-  useEffect(() => {
-    const previousPath = location.pathname;
-    const previousStartTime = startTimeRef.current;
-    const currentTime = Date.now();
-
-    const timeSpentSeconds = Math.round(
-      (currentTime - previousStartTime) / 1000
-    );
-
-    if (previousPath) {
-      ReactGA.event({
-        category: "Engagement",
-        action: "Time Spent",
-        label: previousPath,
-        value: timeSpentSeconds,
-      });
+    if (!window.GA_INITIALIZED) {
+      ReactGA.initialize("G-TWLQ8238W6");
+      window.GA_INITIALIZED = true;
     }
 
-    startTimeRef.current = currentTime;
+    // Calculate time spent on previous page
+    const currentTime = Date.now();
+    const timeSpentSeconds = Math.round(
+      (currentTime - startTimeRef.current) / 1000
+    );
+
+    ReactGA.event({
+      category: "Engagement",
+      action: "Time Spent",
+      label: previousPathRef.current,
+      value: timeSpentSeconds,
+    });
 
     ReactGA.send({ hitType: "pageview", page: location.pathname });
-  }, [location]);
+
+    previousPathRef.current = location.pathname;
+    startTimeRef.current = currentTime;
+  }, [location.pathname]);
 
   // Global Click Tracking
   useEffect(() => {
     const handleClick = (event) => {
-      const target = event.target;
-
-      // Traverse up the DOM tree to find elements with 'data-ga-event' attribute
-      let element = target;
+      let element = event.target;
       while (element && element !== document.body) {
-        if (element.getAttribute("data-ga-event")) {
-          const eventData = element.getAttribute("data-ga-event");
-          const [category, action, label] = eventData.split("|"); // Format: category|action|label
-
-          if (category && action && label) {
+        const eventData = element.getAttribute("data-ga-event");
+        if (eventData) {
+          const [category, action, label] = eventData.split("|");
+          if ([category, action, label].every(Boolean)) {
             ReactGA.event({
               category: category.trim(),
               action: action.trim(),
@@ -141,20 +131,18 @@ function App() {
     };
   }, []);
 
-  // Helper function to flatten all paths from navConfig
-  const getNavPaths = (config) => {
+  // Memoize nav paths
+  const navPaths = useMemo(() => {
     let paths = [];
-    config.forEach(({ path, dropdown }) => {
+    navConfig.forEach(({ path, dropdown }) => {
       if (dropdown) {
-        dropdown.forEach((item) => paths.push(item.path));
+        dropdown.forEach(({ path }) => paths.push(path));
       } else {
         paths.push(path);
       }
     });
     return paths;
-  };
-
-  const navPaths = getNavPaths(navConfig);
+  }, []);
 
   return (
     <div className="App">
@@ -162,9 +150,9 @@ function App() {
       <Suspense fallback={<FullScreenLoader />}>
         <Routes>
           {/* Generate Routes from navConfig */}
-          {navConfig.map(({ path, label, dropdown }) => {
+          {navConfig.map(({ path, dropdown }) => {
             if (dropdown) {
-              return dropdown.map(({ path: subPath, label: subLabel }) => {
+              return dropdown.map(({ path: subPath }) => {
                 const Component = pageComponentMapping[subPath];
                 return (
                   <Route key={subPath} path={subPath} element={<Component />} />

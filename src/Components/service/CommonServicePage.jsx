@@ -24,13 +24,14 @@ const CommonServicePage = ({
             <div className="col-lg-6">
               <img
                 src={mainImage}
-                alt={title}
+                alt={title || "Image"}
                 className="img-fluid mt-4 mt-lg-0"
+                loading="lazy"
+                decoding="async"
                 style={{
                   width: "100%",
                   maxHeight: "400px",
                   borderRadius: "10px",
-
                   objectFit: "cover",
                 }}
               />
@@ -66,6 +67,8 @@ const CommonServicePage = ({
                   src={section.image}
                   alt={`${title} - ${section.title}`}
                   className="img-fluid mb-4 mb-lg-0"
+                  loading="lazy"
+                  decoding="async"
                   style={{
                     width: "100%",
                     maxHeight: "400px",

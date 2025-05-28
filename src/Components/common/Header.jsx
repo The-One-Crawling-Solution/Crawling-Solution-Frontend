@@ -57,6 +57,8 @@ const Header = () => {
                     src="/assets/images/logo/6.svg"
                     alt="The One Crawling Solution Logo"
                     className="img-fluid"
+                    loading="lazy"
+                    decoding="async"
                     style={{
                       width: "60px",
                       height: "auto",

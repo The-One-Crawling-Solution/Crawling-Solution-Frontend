@@ -32,6 +32,8 @@ const Webscraping = () => {
                 src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/WebScraping.jpeg"
                 alt="Data Collection Solutions"
                 className="img-fluid"
+                loading="lazy"
+                decoding="async"
                 style={{
                   width: "100%",
                   height: "500px",
@@ -53,6 +55,8 @@ const Webscraping = () => {
                 src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/WhatsApp Image 2024-09-24 at 10.32.16 AM.jpeg"
                 alt="Data Driven Insights"
                 className="img-fluid"
+                loading="lazy"
+                decoding="async"
                 style={{
                   width: "100%",
                   height: "auto",
@@ -127,6 +131,8 @@ const Webscraping = () => {
                 src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/WhatsApp Image 2024-09-24 at 10.32.09 AM.jpeg"
                 alt="Web Scraping Benefits"
                 className="img-fluid"
+                loading="lazy"
+                decoding="async"
                 style={{
                   width: "100%",
                   height: "auto",
@@ -148,6 +154,8 @@ const Webscraping = () => {
                 src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/blog/3.jpg"
                 alt="Expertise Image"
                 className="img-fluid"
+                loading="lazy"
+                decoding="async"
                 style={{
                   width: "100%",
                   height: "auto",
@@ -226,7 +234,9 @@ const Webscraping = () => {
                   borderRadius: "5px",
                 }}
                 alt="Transformation Image"
-                className="img-fluid "
+                className="img-fluid"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>

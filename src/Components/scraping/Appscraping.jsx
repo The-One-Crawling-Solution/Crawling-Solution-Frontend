@@ -30,6 +30,8 @@ const Appscraping = () => {
                 src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/AppScraping.jpeg"
                 alt="App Scraping"
                 className="img-fluid"
+                loading="lazy"
+                decoding="async"
                 style={{
                   width: "100%",
                   height: "500px",
@@ -51,6 +53,8 @@ const Appscraping = () => {
                 src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/WhatsApp Image 2024-09-24 at 10.32.16 AM.jpeg"
                 alt="Data Insights"
                 className="img-fluid"
+                loading="lazy"
+                decoding="async"
                 style={{
                   width: "100%",
                   height: "auto",
@@ -124,6 +128,8 @@ const Appscraping = () => {
                 src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/WhatsApp Image 2024-09-24 at 10.32.09 AM.jpeg"
                 alt="App Scraping Benefits"
                 className="img-fluid"
+                loading="lazy"
+                decoding="async"
                 style={{
                   width: "100%",
                   height: "auto",
@@ -145,6 +151,8 @@ const Appscraping = () => {
                 src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/blog/3.jpg"
                 alt="Expertise Image"
                 className="img-fluid"
+                loading="lazy"
+                decoding="async"
                 style={{
                   width: "100%",
                   height: "auto",
@@ -221,6 +229,8 @@ const Appscraping = () => {
                 }}
                 alt="App Data Transformation"
                 className="img-fluid"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>

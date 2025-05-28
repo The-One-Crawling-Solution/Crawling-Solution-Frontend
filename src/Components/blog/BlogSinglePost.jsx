@@ -19,6 +19,8 @@ const BlogSinglePost = () => {
               src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/about/pexels-cottonbro-studio-4709391.jpg"
               className="img-fluid mb-4"
               alt="Data Scraping"
+              loading="lazy"
+              decoding="async"
               style={{
                 width: "100%",
                 height: "500px",

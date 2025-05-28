@@ -8,8 +8,10 @@ const BlogPost = ({ title, image, date, excerpt, content }) => {
         <p className="post-date">{date}</p>
         <img
           src={image}
-          alt={title}
+          alt={title || "Blog Post"}
           className="img-fluid my-3"
+          loading="lazy"
+          decoding="async"
           style={{
             width: "100%",
             height: "500px",

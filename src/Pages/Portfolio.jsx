@@ -112,7 +112,6 @@ const PortfolioDownload = () => {
             <button
               onClick={downloadPortfolio}
               className="btn btn-main portfolio-btn mt-4"
-              tar
             >
               Download Company Portfolio{" "}
               <i className="fas fa-file-download ml-2"></i>

@@ -31,6 +31,8 @@ const WebscrapingAPI = () => {
                 src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/ApiData.jpeg"
                 alt="Web Scraping API"
                 className="img-fluid"
+                loading="lazy"
+                decoding="async"
                 style={{
                   width: "100%",
                   height: "500px",
@@ -52,6 +54,8 @@ const WebscrapingAPI = () => {
                 src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/WhatsApp Image 2024-09-24 at 10.32.16 AM.jpeg"
                 alt="API Benefits"
                 className="img-fluid"
+                loading="lazy"
+                decoding="async"
                 style={{
                   width: "100%",
                   height: "auto",
@@ -127,6 +131,8 @@ const WebscrapingAPI = () => {
                 src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/WhatsApp Image 2024-09-24 at 10.32.09 AM.jpeg"
                 alt="API Solutions"
                 className="img-fluid"
+                loading="lazy"
+                decoding="async"
                 style={{
                   width: "100%",
                   height: "auto",
@@ -148,6 +154,8 @@ const WebscrapingAPI = () => {
                 src="https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/blog/3.jpg"
                 alt="Expertise Image"
                 className="img-fluid"
+                loading="lazy"
+                decoding="async"
                 style={{
                   width: "100%",
                   height: "auto",
@@ -223,6 +231,8 @@ const WebscrapingAPI = () => {
                   objectFit: "cover",
                   borderRadius: "5px",
                 }}
+                loading="lazy"
+                decoding="async"
                 alt="API Data Transformation"
                 className="img-fluid"
               />

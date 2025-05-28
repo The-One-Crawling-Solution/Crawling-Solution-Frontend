@@ -14,21 +14,21 @@ const Aboutcomponent = () => {
 
   return (
     <>
-      <section class="section about position-relative">
-        <div class="bg-about"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 offset-lg-6 offset-md-0">
-              <div class="about-item">
-                <span class="h6 text-color">What we are</span>
-                <h2 class="mt-3 mb-4 position-relative content-title">
+      <section className="section about position-relative">
+        <div className="bg-about"></div>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 offset-lg-6 offset-md-0">
+              <div className="about-item">
+                <span className="h6 text-color">What we are</span>
+                <h2 className="mt-3 mb-4 position-relative content-title">
                   We are dynamic team of creative people
                 </h2>
-                <div class="about-content">
-                  <h4 class="mb-3 position-relative">
+                <div className="about-content">
+                  <h4 className="mb-3 position-relative">
                     We Don’t Just Do Data. We do DATA.
                   </h4>
-                  <p class="mb-5">
+                  <p className="mb-5">
                     We help you unleash the power of precise website and mobile
                     data. Our cutting-edge scraping services deliver
                     custom-built scrapers, designed to match your unique
@@ -213,7 +213,6 @@ const Aboutcomponent = () => {
               <button
                 onClick={downloadPortfolio}
                 className="btn btn-main portfolio-btn mt-4"
-                tar
               >
                 Download Company Portfolio{" "}
                 <i className="fas fa-file-download ml-2"></i>

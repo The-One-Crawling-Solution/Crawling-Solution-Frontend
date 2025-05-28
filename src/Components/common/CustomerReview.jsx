@@ -71,8 +71,10 @@ const ReviewSlider = () => {
               <div className="profile-image-wrapper">
                 <img
                   src={review.image}
-                  alt={review.name}
+                  alt={review.name || "User"}
                   className="profile-image"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="review-content">

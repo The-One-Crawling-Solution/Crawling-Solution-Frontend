@@ -12,7 +12,9 @@ const Team = () => {
               <img
                 src={member.image}
                 className="card-img-top rounded-circle mx-auto mt-3"
-                alt={member.name}
+                alt={member.name || "Member name"}
+                loading="lazy"
+                decoding="async"
                 style={{ width: "150px", height: "150px", objectFit: "cover" }}
               />
               <div className="card-body">

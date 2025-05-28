@@ -25,8 +25,7 @@ const Contact = () => {
       setFormData({ name: "", email: "", message: "" });
       alert("Your message was sent successfully.");
     } catch (error) {
-      console.error("Error sending message:", error);
-      alert("Failed to send message. Please try again later.");
+      alert(`${error}`);
     }
   };
 

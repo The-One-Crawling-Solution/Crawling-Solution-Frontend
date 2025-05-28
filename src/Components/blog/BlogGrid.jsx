@@ -10,7 +10,13 @@ const BlogGrid = () => {
         {BlogGridData.map((blog) => (
           <div className="col-md-6 col-lg-4 mb-4" key={blog.id}>
             <div className="card h-100">
-              <img src={blog.image} className="card-img-top" alt={blog.title} />
+              <img
+                src={blog.image}
+                className="card-img-top"
+                alt={blog.title || "Blog Images"}
+                loading="lazy"
+                decoding="async"
+              />
               <div className="card-body">
                 <h5 className="card-title">{blog.title}</h5>
                 <p className="card-text">{blog.description}</p>

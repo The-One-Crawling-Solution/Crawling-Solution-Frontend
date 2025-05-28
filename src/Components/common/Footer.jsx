@@ -18,6 +18,8 @@ const Footer = () => {
                       <img
                         src={mylogo}
                         alt="The One Crawling Solution Logo"
+                        loading="lazy"
+                        decoding="async"
                         style={{
                           height: "60px",
                           borderRadius: "10px",
