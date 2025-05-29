@@ -8,8 +8,7 @@ const reviewsData = [
     id: 1,
     name: "Viral Sadhu",
     position: "Project Manager",
-    image:
-      "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/Blog/1734455961173_viralsadhu.jpeg",
+    image: "assets/Blog/1734455961173_viralsadhu.jpeg",
     testimonial:
       "The One Crawling Solution helped us streamline our data collection process with their excellent web scraping services. Their team was professional and delivered accurate and reliable data.",
     // company: "Tech Innovations Ltd",
@@ -18,8 +17,7 @@ const reviewsData = [
     id: 2,
     name: "Mehul",
     position: "Technical Lead",
-    image:
-      "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/Blog/1734455979755_M.jpeg",
+    image: "assets/Blog/1734455979755_M.jpeg",
     testimonial:
       "We needed a customized solution for API data scraping, and The One Crawling Solution exceeded our expectations. Their expertise in handling complex APIs was impressive.",
     // company: "Data Systems Inc",
@@ -28,8 +26,7 @@ const reviewsData = [
     id: 3,
     name: "Smit Patel",
     position: "Operations Director",
-    image:
-      "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/Blog/1734455995158_Smitpatel.jpeg",
+    image: "assets/Blog/1734455995158_Smitpatel.jpeg",
     testimonial:
       "Working with The One Crawling Solution was a great experience. They developed a web scraping application tailored to our business requirements.",
     // company: "Digital Solutions Co",
@@ -38,8 +35,7 @@ const reviewsData = [
     id: 4,
     name: "Aalap Jadeja",
     position: "Technical Director",
-    image:
-      "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/Blog/1734456011114_Aalapjadeja.jpeg",
+    image: "assets/Blog/1734456011114_Aalapjadeja.jpeg",
     testimonial:
       "The One Crawling Solution provided us with top-notch data scraping services. Their ability to handle large-scale data extraction tasks efficiently has been crucial for our projects.",
     // company: "Web Solutions Ltd",

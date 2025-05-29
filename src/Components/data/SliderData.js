@@ -1,7 +1,6 @@
 export const slides = [
   {
-    image:
-      "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/WebScraping.jpeg",
+    image: "assets/images/slider/WebScraping.jpeg",
     title: "Web Scraping",
     name: "WEB DATA EXTRACTION",
     path: "/webscraping",
@@ -9,8 +8,7 @@ export const slides = [
       "Transform unstructured web content into actionable insights. Our web scraping solutions capture data from websites, enabling informed decision-making.",
   },
   {
-    image:
-      "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/AppScraping.jpeg",
+    image: "assets/images/slider/AppScraping.jpeg",
     title: "Mobile App Scraping",
     name: "MOBILE INSIGHTS",
     path: "/appscraping",
@@ -18,8 +16,7 @@ export const slides = [
       "Unlock valuable data from mobile applications. Our advanced tools extract user reviews, app rankings, and usage statistics to drive your mobile strategy.",
   },
   {
-    image:
-      "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/ApiData.jpeg",
+    image: "assets/images/slider/ApiData.jpeg",
     title: "API Data Harvesting",
     name: "API INTEGRATION",
     path: "/webscarpingapi",
@@ -27,8 +24,7 @@ export const slides = [
       "Seamlessly integrate data from various APIs into your systems. Our API harvesting tools ensure you have real-time access to critical information.",
   },
   {
-    image:
-      "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/Ecommerce.jpg",
+    image: "assets/images/slider/Ecommerce.jpg",
     title: "E-commerce Intelligence",
     name: "MARKET ANALYSIS",
     path: "/ecommerce-data-scrapin",
@@ -36,8 +32,7 @@ export const slides = [
       "Stay ahead in the competitive e-commerce landscape. Our scraping tools collect pricing data, product information, and customer reviews for comprehensive market analysis.",
   },
   {
-    image:
-      "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/SocialMedia.jpg",
+    image: "assets/images/slider/SocialMedia.jpg",
     title: "Social Media Mining",
     name: "SOCIAL INSIGHTS",
     path: "/social-media-scraping",
@@ -46,7 +41,7 @@ export const slides = [
   },
   // {
   //   image:
-  //     "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/OTT.jpg",
+  //     "assets/images/slider/OTT.jpg",
   //   title: "OTT Data Extraction",
   //   name: "CONTENT ANALYTICS",
   //   path: "/engineering",

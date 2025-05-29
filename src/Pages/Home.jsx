@@ -9,7 +9,7 @@ import CustomerReview from "../Components/common/CustomerReview";
 const Home = () => {
   return (
     <>
-      <div className="main-wrapper ">
+      <div className="main-wrapper">
         {/* Link to a CSS file in public folder */}
         <link rel="stylesheet" type="text/css" to="/assets/css/style.css" />
 
@@ -17,7 +17,6 @@ const Home = () => {
         <link rel="stylesheet" to="/assets/bootstrap/css/bootstrap.min.css" />
 
         {/* Import external JavaScript file */}
-        <script src="/path/to/your/external.js"></script>
 
         {/* <!-- Slider Start --> */}
         {/* <section className="slider">
