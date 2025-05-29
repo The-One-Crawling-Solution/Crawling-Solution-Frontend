@@ -42,82 +42,76 @@ const Header = () => {
     <header className="navigation">
       {/* Navbar */}
       <div id="navbar">
-        <div className="px-5">
-          <div className="row">
-            <div className="col-lg-12">
-              <nav className="navbar navbar-expand-lg px-0 py-3">
-                <GA4Link
-                  to="/"
-                  eventLabel="Home"
-                  className="navbar-brand d-flex align-items-center"
-                  aria-label="Home"
-                  onClick={closeMenuAndDropdowns}
-                >
-                  <img
-                    src="/assets/images/logo/6.svg"
-                    alt="The One Crawling Solution Logo"
-                    className="img-fluid"
-                    loading="lazy"
-                    decoding="async"
-                    style={{
-                      width: "60px",
-                      height: "auto",
-                      marginRight: "10px",
-                      borderRadius: "10px",
-                    }}
-                  />
-                  <span className="d-none d-md-inline text-white">
-                    The One Crawling Solution
-                  </span>{" "}
-                  <span className="d-md-none text-white">TOCS</span>
-                </GA4Link>
+        <div className="row px-5 col-lg-12">
+          <nav className="navbar navbar-expand-lg px-0 py-3">
+            <GA4Link
+              to="/"
+              eventLabel="Home"
+              className="navbar-brand d-flex align-items-center"
+              aria-label="Home"
+              onClick={closeMenuAndDropdowns}
+            >
+              <img
+                src="/assets/images/logo/6.svg"
+                alt="The One Crawling Solution Logo"
+                className="img-fluid"
+                loading="lazy"
+                decoding="async"
+                style={{
+                  width: "60px",
+                  height: "auto",
+                  marginRight: "10px",
+                  borderRadius: "10px",
+                }}
+              />
+              <span className="d-none d-md-inline text-white">
+                The One Crawling Solution
+              </span>{" "}
+              <span className="d-md-none text-white">TOCS</span>
+            </GA4Link>
 
-                <button
-                  className={`navbar-toggler ${isOpen ? "" : "collapsed"}`}
-                  type="button"
-                  onClick={toggleMenu}
-                  aria-expanded={isOpen}
-                  aria-label="Toggle navigation"
-                >
-                  <span
-                    className={`fa ${isOpen ? "fa-times" : "fa-bars"}`}
-                  ></span>{" "}
-                  {/* Change icon based on isOpen */}
-                </button>
+            <button
+              className={`navbar-toggler ${isOpen ? "" : "collapsed"}`}
+              type="button"
+              onClick={toggleMenu}
+              aria-expanded={isOpen}
+              aria-label="Toggle navigation"
+            >
+              <span className={`fa ${isOpen ? "fa-times" : "fa-bars"}`}></span>{" "}
+              {/* Change icon based on isOpen */}
+            </button>
 
-                <div
-                  className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}
-                  id="navbarsExample09"
-                >
-                  <ul className="navbar-nav ml-auto">
-                    {navConfig.map((item) =>
-                      item.dropdown ? (
-                        <Dropdown
-                          key={item.label}
-                          label={item.label}
-                          items={item.dropdown}
-                          activeDropdown={activeDropdown}
-                          toggleDropdown={toggleDropdown}
-                          closeMenu={closeMenuAndDropdowns}
-                        />
-                      ) : (
-                        <li className="nav-item" key={item.label}>
-                          <GA4Link
-                            to={item.path}
-                            eventLabel={item.label}
-                            className="nav-link"
-                            onClick={closeMenuAndDropdowns}
-                          >
-                            {item.label}
-                          </GA4Link>
-                        </li>
-                      )
-                    )}
-                  </ul>
-                </div>
-              </nav>
+            <div
+              className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}
+              id="navbarsExample09"
+            >
+              <ul className="navbar-nav ml-auto">
+                {navConfig.map((item) =>
+                  item.dropdown ? (
+                    <Dropdown
+                      key={item.label}
+                      label={item.label}
+                      items={item.dropdown}
+                      activeDropdown={activeDropdown}
+                      toggleDropdown={toggleDropdown}
+                      closeMenu={closeMenuAndDropdowns}
+                    />
+                  ) : (
+                    <li className="nav-item" key={item.label}>
+                      <GA4Link
+                        to={item.path}
+                        eventLabel={item.label}
+                        className="nav-link"
+                        onClick={closeMenuAndDropdowns}
+                      >
+                        {item.label}
+                      </GA4Link>
+                    </li>
+                  )
+                )}
+              </ul>
             </div>
-          </div>
+          </nav>
         </div>
       </div>
     </header>

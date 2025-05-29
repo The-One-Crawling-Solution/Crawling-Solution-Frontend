@@ -25,7 +25,7 @@ const Entertainment = lazy(() => import("./Components/service/Entertainment"));
 const Education = lazy(() => import("./Components/service/Education"));
 const Travel = lazy(() => import("./Components/service/Travel"));
 const Sport = lazy(() => import("./Components/service/Sport"));
-const Grocery = lazy(() => import("./Components/service/Grocery"));
+// const Grocery = lazy(() => import("./Components/service/Grocery"));
 const SocialMedia = lazy(() => import("./Components/service/Socialmedia"));
 const Jobs = lazy(() => import("./Components/service/Jobs"));
 const Engineering = lazy(() => import("./Components/service/Engineering"));
@@ -43,23 +43,21 @@ const NotFound = lazy(() => import("./Pages/NotFound"));
 // Mapping route paths to their corresponding components
 const pageComponentMapping = {
   "/": Home,
-  "/about": About,
-  "/services": Services,
+  "/about-us": About,
+  "/all-services": Services,
   "/portfolio": Portfolio,
   "/contact": Contact,
-  "/realestate": RealEstate,
-  "/ecommerce": Ecommerce,
-  "/healthcare": Healthcare,
-  "/food": Food,
-  "/entertainment": Entertainment,
-  "/education": Education,
-  "/travel": Travel,
-  "/sport": Sport,
-  "/grocery": Grocery,
-  "/socialmedia": SocialMedia,
-  "/jobs": Jobs,
-  "/engineering": Engineering,
-  "/taxibook": Taxibook,
+  "/real-estate-data-scraping": RealEstate,
+  "/ecommerce-data-scraping": Ecommerce,
+  "/healthcare-data-scraping": Healthcare,
+  "/web-scraping-for-food-and-grocery-delivery-data": Food,
+  "/scrape-ott-streaming-and-entertainment-media-platform-data": Entertainment,
+  "/education-app-data-scraping": Education,
+  "/travel-websites-and-apps-scraping": Travel,
+  "/sports-data-scraping": Sport,
+  "/social-media-scraping": SocialMedia,
+  "/recruitment-data-scraping": Jobs,
+  "/taxi-booking-data-scraping": Taxibook,
   "/webscraping": WebScraping,
   "/appscraping": AppScraping,
   "/webscarpingapi": ApiDataScarping,
@@ -70,6 +68,8 @@ const pageComponentMapping = {
   "/term-conditions": TermConditions,
   "/privacy-policy": PrivacyPolicy,
   "/team": Team,
+  // "/grocery-data-scraping": Grocery,
+  // "/engineering": Engineering,
 };
 
 function App() {

@@ -31,7 +31,7 @@ export const slides = [
       "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/Ecommerce.jpg",
     title: "E-commerce Intelligence",
     name: "MARKET ANALYSIS",
-    path: "/ecommerce",
+    path: "/ecommerce-data-scrapin",
     description:
       "Stay ahead in the competitive e-commerce landscape. Our scraping tools collect pricing data, product information, and customer reviews for comprehensive market analysis.",
   },
@@ -40,17 +40,17 @@ export const slides = [
       "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/SocialMedia.jpg",
     title: "Social Media Mining",
     name: "SOCIAL INSIGHTS",
-    path: "/socialmedia",
+    path: "/social-media-scraping",
     description:
       "Harness the power of social data. Our social media scraping tools gather trends, sentiments, and user engagement metrics to inform your social strategy.",
   },
-  {
-    image:
-      "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/OTT.jpg",
-    title: "OTT Data Extraction",
-    name: "CONTENT ANALYTICS",
-    path: "/engineering",
-    description:
-      "Gain deep insights from OTT platforms. Our OTT scraping tools collect viewer preferences, trending content, and audience engagement metrics, empowering you to optimize your streaming strategy.",
-  },
+  // {
+  //   image:
+  //     "https://theonecrawlingsolutionimages.s3.eu-north-1.amazonaws.com/images/slider/OTT.jpg",
+  //   title: "OTT Data Extraction",
+  //   name: "CONTENT ANALYTICS",
+  //   path: "/engineering",
+  //   description:
+  //     "Gain deep insights from OTT platforms. Our OTT scraping tools collect viewer preferences, trending content, and audience engagement metrics, empowering you to optimize your streaming strategy.",
+  // },
 ];

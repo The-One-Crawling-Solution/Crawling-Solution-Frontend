@@ -6,7 +6,7 @@ import foodImage2 from "../../images/about/pexels-ella-olsson-1640777.jpg";
 
 const Food = () => {
   const pageContent = {
-    title: "Food Delivery Scraping",
+    title: "Food & Grocery Delivery Scraping",
     subtitle: "Starving for insights into the food delivery war zone?",
     mainImage: foodImage,
     content: {

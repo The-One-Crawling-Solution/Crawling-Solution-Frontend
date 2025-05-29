@@ -6,7 +6,7 @@ import EntertainmentImage3 from "../../images/about/entertainment3.jpg";
 
 const Entertainment = () => {
   const pageContent = {
-    title: "Entertainment Scraping",
+    title: "Entertainment & OTT Platform Scraping",
     subtitle: "The Data Buster: Storm Entertainment Industry with App Scraping",
     mainImage: EntertainmentImage1,
     content: {

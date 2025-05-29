@@ -85,10 +85,10 @@ const Footer = () => {
                 <ul className="list-unstyled footer-menu lh-35">
                   {/* <li><a href="#">About</a></li> */}
                   <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/about-us">About</Link>
                   </li>
                   <li>
-                    <Link to="/services">Services</Link>
+                    <Link to="/all-services">Services</Link>
                   </li>
                   <li>
                     <Link to="/team">Team</Link>
