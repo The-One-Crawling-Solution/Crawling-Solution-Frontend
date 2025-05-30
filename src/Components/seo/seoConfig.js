@@ -16,9 +16,9 @@ const seoConfig = {
       "Explore the wide range of services offered by The One Crawling Solution.",
   },
   "/contact": {
-    title: "Contact Us - The One Crawling Solution",
+    title: "The One Crawling Solution Contact Details",
     description:
-      "Get in touch with The One Crawling Solution for inquiries, support, or collaborations.",
+      "For queries, demos or support contact us at (+91 9664508201 or theonecrawlingsolutions@gmail.com. Response within 24 working hours.",
   },
   "/portfolio": {
     title: "Portfolio - The One Crawling Solution",
@@ -42,71 +42,75 @@ const seoConfig = {
       "Utilize our powerful web scraping API to gather data from websites efficiently.",
   },
   "/real-estate-data-scraping": {
-    title: "Real Estate Solutions - The One Crawling Solution",
+    title: "Web Scraping Real Estate Data | Real Estate Web Scraping",
     description:
-      "We offer web scraping services tailored to the real estate industry.",
+      "The One Crawling Solution provides real estate data scraping services in India, USA, and Europe. We extract on-demand property data, listings, pricing, & availability for investment decisions",
   },
   "/ecommerce-data-scraping": {
-    title: "E-commerce Solutions - The One Crawling Solution",
+    title:
+      "E-Commerce Data Scraping Service | Extract Popular E-Commerce Website Data",
     description:
-      "Optimize your e-commerce business with our specialized web scraping services.",
+      "Extract real-time data from online platforms effortlessly with secure, scalable and reliable eCommerce data scraping services tailored to your business needs.",
   },
   "/healthcare-data-scraping": {
-    title: "Healthcare Solutions - The One Crawling Solution",
+    title:
+      "Best Healthcare Data Extraction Services | Healthcare Data Scraping & Analysis",
     description:
-      "Discover how The One Crawling Solution can assist the healthcare industry with data scraping.",
+      "Extract drug prices, availability, and pharmacy data with our secure healthcare data extraction services. Analyze healthcare pricing and market trends.",
   },
   "/web-scraping-for-food-and-grocery-delivery-data": {
-    title: "Food Industry Solutions - The One Crawling Solution",
+    title: "Food Delivery Data Scraping | Grocery Delivery Data Scraping",
     description:
-      "We provide web scraping services for businesses in the food industry.",
+      "Extract food & grocery delivery data from different platforms like Swiggy, Zomato, blink it, big basket, etc. We provide accurate pricing with secure data.",
   },
   "/scrape-ott-streaming-and-entertainment-media-platform-data": {
-    title: "Entertainment Industry Solutions - The One Crawling Solution",
+    title: "OTT Media Data Scraping Services | Extract Streaming Media Data",
     description:
-      "Web scraping solutions for entertainment and media industries.",
+      "The One Crawling Solution offers the best OTT media data scraping services. Extract pricing, content from platforms like Netflix, Hotstar, Hulu, IMDb, etc.",
   },
   "/education-app-data-scraping": {
-    title: "Education Solutions - The One Crawling Solution",
-    description: "We offer data scraping services for the education sector.",
+    title: "Get School / University Website Data and Educational App Data",
+    description:
+      "The One Crawling Solution provides the best education app data scraping services. Scrape or extract accurate education app data for apps like Udemy, Coursera, Google Classroom, etc",
   },
   "/travel-websites-and-apps-scraping": {
-    title: "Travel Industry Solutions - The One Crawling Solution",
+    title:
+      "Travel Data Scraping Services | Extract Flight & Hotel Data Insights",
     description:
-      "Enhance your travel business with our expert web scraping services.",
+      "Our travel data scraping services help you track trends, set better prices, and improve customer experience. We gives real-time travel data from flights, hotels, and booking sites.",
   },
   "/sports-data-scraping": {
-    title: "Sports Industry Solutions - The One Crawling Solution",
+    title: "Best Web Scraping for Sports Analytics | The One Crawling Solution",
     description:
-      "We offer tailored web scraping services for the sports industry.",
+      "Get the best and real time betting predictions with sports data scraping service and improve accuracy & decision making in sports betting with live data.",
   },
   // "/Grocery": {
   //   title: "Grocery Solutions - The One Crawling Solution",
   //   description: "Web scraping solutions for the grocery and retail sectors.",
   // },
   "/social-media-scraping": {
-    title: "Social Media Solutions - The One Crawling Solution",
+    title: "Best Social Media Scraping Service | The One Crawling Solution",
     description:
-      "Enhance your social media strategies with our data scraping solutions.",
+      "Get quick & accurate social media data from our social media scraping service. Extract valuable insights, improve engagement, drive growth, and optimize strategies with real time data.",
   },
   "/recruitment-data-scraping": {
-    title: "Job Industry Solutions - The One Crawling Solution",
+    title: "Job Posting Data Scraping Services | Scraping Job Sites",
     description:
-      "Explore our web scraping services for the job and recruitment industries.",
+      "Use job posting data scraping services to collect job listings and information to support hiring and workforce planning.",
   },
   // "/Engineering": {
   //   title: "OTT Solutions - The One Crawling Solution",
   //   description: "Web scraping services designed for the OTT sector.",
   // },
   "/taxi-booking-data-scraping": {
-    title: "Taxi Booking Solutions - The One Crawling Solution",
+    title: "Car Rental Data Scraping Services | Extract Prices & Availability",
     description:
-      "We offer web scraping services tailored for the taxi booking industry.",
+      "Use our car rental scraping services to collect real-time car rental data, including prices, availability, car details, and customer reviews globally.",
   },
   "/blog": {
-    title: "Blog - The One Crawling Solution",
+    title: "Latest Blog on Data & Web Scraping Industry",
     description:
-      "Read insightful articles and case studies from The One Crawling Solution.",
+      "Explore informative and engaging blogs on cutting-edge Data & Web Scraping Industry . Stay updated with expert insights and industry news.",
   },
   // "/blog-single": {
   //   title: "Blog Post - The One Crawling Solution",

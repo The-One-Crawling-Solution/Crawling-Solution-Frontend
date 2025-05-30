@@ -6,7 +6,6 @@ import seoConfig from "./seoConfig";
 const HelmetWrapper = () => {
   const location = useLocation();
   const currentPath = location.pathname;
-  console.log("🚀 ~ HelmetWrapper ~ currentPath:", currentPath);
 
   const seoData = seoConfig[currentPath] || {
     title: "The One Crawling Solution",

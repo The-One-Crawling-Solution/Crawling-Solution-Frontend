@@ -7,7 +7,7 @@ import ReactGA from "react-ga4";
 const Dropdown = ({
   label,
   items,
-  activeDropdown,
+  activeDropdown = null,
   toggleDropdown,
   closeMenu,
 }) => {
@@ -63,10 +63,6 @@ Dropdown.propTypes = {
   activeDropdown: PropTypes.string,
   toggleDropdown: PropTypes.func.isRequired,
   closeMenu: PropTypes.func.isRequired,
-};
-
-Dropdown.defaultProps = {
-  activeDropdown: null,
 };
 
 export default Dropdown;

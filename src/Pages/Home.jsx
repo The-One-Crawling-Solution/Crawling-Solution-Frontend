@@ -11,10 +11,10 @@ const Home = () => {
     <>
       <div className="main-wrapper">
         {/* Link to a CSS file in public folder */}
-        <link rel="stylesheet" type="text/css" to="/assets/css/style.css" />
+        {/* <link rel="stylesheet" type="text/css" to="/assets/css/style.css" /> */}
 
         {/* Import Bootstrap CSS from public folder */}
-        <link rel="stylesheet" to="/assets/bootstrap/css/bootstrap.min.css" />
+        {/* <link rel="stylesheet" to="/assets/bootstrap/css/bootstrap.min.css" /> */}
 
         {/* Import external JavaScript file */}
 
@@ -289,12 +289,6 @@ const Home = () => {
 
         {/* <!-- footer Start --> */}
       </div>
-
-      {/* <!-- Google Map --> */}
-      <script src="plugins/google-map/map.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>
-
-      <script src="js/script.js"></script>
     </>
   );
 };

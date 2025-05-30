@@ -14,7 +14,7 @@ import PropTypes from "prop-types";
  * - onClick: function - Additional onClick handler.
  * - ...props: any other props to pass to Link.
  */
-const GA4Link = ({ to, eventLabel, children, onClick, ...props }) => {
+const GA4Link = ({ to, eventLabel, children, onClick = null, ...props }) => {
   const handleClick = (e) => {
     // Send the GA4 event
     ReactGA.event({
@@ -41,10 +41,6 @@ GA4Link.propTypes = {
   eventLabel: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   onClick: PropTypes.func,
-};
-
-GA4Link.defaultProps = {
-  onClick: null,
 };
 
 export default GA4Link;
