@@ -47,6 +47,7 @@ const Header = () => {
           position: "fixed",
           top: 0,
           zIndex: 50,
+          width: "100%",
         }}
       >
         <div className="row px-5 col-lg-12">
