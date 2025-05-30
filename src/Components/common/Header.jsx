@@ -41,7 +41,14 @@ const Header = () => {
   return (
     <header className="navigation">
       {/* Navbar */}
-      <div id="navbar">
+      <div
+        id="navbar"
+        style={{
+          position: "fixed",
+          top: 0,
+          zIndex: 50,
+        }}
+      >
         <div className="row px-5 col-lg-12">
           <nav className="navbar navbar-expand-lg px-0 py-3">
             <GA4Link

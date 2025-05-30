@@ -147,35 +147,41 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Suspense fallback={<FullScreenLoader />}>
-        <Routes>
-          {/* Generate Routes from navConfig */}
-          {navConfig.map(({ path, dropdown }) => {
-            if (dropdown) {
-              return dropdown.map(({ path: subPath }) => {
-                const Component = pageComponentMapping[subPath];
-                return (
-                  <Route key={subPath} path={subPath} element={<Component />} />
-                );
-              });
-            }
+      <div style={{ paddingTop: "102px" }}>
+        <Suspense fallback={<FullScreenLoader />}>
+          <Routes>
+            {/* Generate Routes from navConfig */}
+            {navConfig.map(({ path, dropdown }) => {
+              if (dropdown) {
+                return dropdown.map(({ path: subPath }) => {
+                  const Component = pageComponentMapping[subPath];
+                  return (
+                    <Route
+                      key={subPath}
+                      path={subPath}
+                      element={<Component />}
+                    />
+                  );
+                });
+              }
 
-            const Component = pageComponentMapping[path];
-            return <Route key={path} path={path} element={<Component />} />;
-          })}
-
-          {/* Generate Routes not present in navConfig */}
-          {Object.entries(pageComponentMapping).map(([path, Component]) => {
-            if (!navPaths.includes(path)) {
+              const Component = pageComponentMapping[path];
               return <Route key={path} path={path} element={<Component />} />;
-            }
-            return null;
-          })}
+            })}
 
-          {/* Fallback Route for 404 */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Suspense>
+            {/* Generate Routes not present in navConfig */}
+            {Object.entries(pageComponentMapping).map(([path, Component]) => {
+              if (!navPaths.includes(path)) {
+                return <Route key={path} path={path} element={<Component />} />;
+              }
+              return null;
+            })}
+
+            {/* Fallback Route for 404 */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </div>
       <Footer />
     </div>
   );
