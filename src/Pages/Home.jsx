@@ -135,6 +135,12 @@ const Home = () => {
                     className="img-fluid rounded"
                     loading="lazy"
                     decoding="async"
+                    style={{
+                      width: "100%",
+                      height: "200px",
+                      objectFit: "cover",
+                      borderRadius: "5px",
+                    }}
                   />
 
                   <div className="card-body mt-2">
@@ -170,10 +176,16 @@ const Home = () => {
                 <div className="card border-0 bg-transparent">
                   <img
                     src="assets/images/blog/2.jpg"
-                    alt=""
+                    alt="blog 2"
                     className="img-fluid rounded"
                     loading="lazy"
                     decoding="async"
+                    style={{
+                      width: "100%",
+                      height: "200px",
+                      objectFit: "cover",
+                      borderRadius: "5px",
+                    }}
                   />
 
                   <div className="card-body mt-2">
@@ -209,10 +221,16 @@ const Home = () => {
                 <div className="card border-0 bg-transparent">
                   <img
                     src="assets/images/blog/3.jpg"
-                    alt=""
+                    alt="blog 3"
                     className="img-fluid rounded"
                     loading="lazy"
                     decoding="async"
+                    style={{
+                      width: "100%",
+                      height: "200px",
+                      objectFit: "cover",
+                      borderRadius: "5px",
+                    }}
                   />
 
                   <div className="card-body mt-2">
