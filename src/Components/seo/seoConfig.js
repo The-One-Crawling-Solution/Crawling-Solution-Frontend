@@ -25,21 +25,20 @@ const seoConfig = {
     description:
       "View our portfolio showcasing successful projects and client collaborations.",
   },
-
-  "/webscraping": {
-    title: "Web Scraping Services - The One Crawling Solution",
+  "/website-data-scraping-service": {
+    title: "Web Scraping Services | Data Scraping Company",
     description:
-      "Discover our top-tier web scraping solutions tailored to meet your needs.",
+      "Get fast, reliable data from thousands of sites with our Web Scraping Services. Partner with a trusted Data Scraping Company for accurate, timely results.",
   },
-  "/appscraping": {
-    title: "App Scraping Services - The One Crawling Solution",
+  "/mobile-app-data-scraping-services": {
+    title: "Mobile App Scraping Services | Scrape iOS and Android Apps Data",
     description:
-      "Learn more about our app scraping services for extracting valuable data.",
+      "Scrape iOS and Android Apps Data for insights into user behavior with our Mobile App Scraping Services across the USA, Europe, India, and more regions.",
   },
-  "/webscarpingapi": {
-    title: "Web Scraping API - The One Crawling Solution",
+  "/web-scarping-api-services": {
+    title: "Web Scraping API Services - Custom API Scraping Solutions",
     description:
-      "Utilize our powerful web scraping API to gather data from websites efficiently.",
+      "Use our Web Scraping API Services to quickly collect data. We offer Custom API Scraping Solutions for the USA, Europe, India, and other countries.",
   },
   "/real-estate-data-scraping": {
     title: "Web Scraping Real Estate Data | Real Estate Web Scraping",

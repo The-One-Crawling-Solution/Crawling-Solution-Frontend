@@ -112,9 +112,66 @@ const Contact = () => {
                     <i className="fab fa-twitter"></i>
                   </a>
                 </li> */}
-                <li className="list-inline-item">
+                {/* <li className="list-inline-item">
                   <a href="https://www.linkedin.com/company/the-one-crawling-solutions/">
                     <i className="fab fa-linkedin-in"></i>
+                  </a>
+                </li> */}
+                <li className="list-inline-item">
+                  <a
+                    href="https://www.instagram.com/theonecrawlingsolution/"
+                    aria-label="Instagram"
+                    className="social-icon instagram"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fa-brands fa-instagram mr-2"></i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a
+                    href="https://x.com/onecrawling6263"
+                    aria-label="Twitter"
+                    className="social-icon twitter"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span style={{ fontSize: "20px", marginRight: "8px" }}>
+                      𝕏
+                    </span>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a
+                    href="https://www.linkedin.com/company/the-one-crawling-solution"
+                    aria-label="LinkedIn"
+                    className="social-icon linkedin"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fa-brands fa-linkedin mr-2"></i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a
+                    href="https://www.facebook.com/theonecrawlingsolution/"
+                    aria-label="Facebook"
+                    className="social-icon facebook"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fa-brands fa-facebook-f mr-2"></i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a
+                    href="https://in.pinterest.com/theonecrawlingsolution/"
+                    aria-label="Pinterest"
+                    className="social-icon pinterest"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fa-brands fa-pinterest mr-2"></i>
                   </a>
                 </li>
               </ul>

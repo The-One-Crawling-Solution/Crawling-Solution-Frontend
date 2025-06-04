@@ -3,7 +3,7 @@ export const slides = [
     image: "assets/images/slider/WebScraping.jpeg",
     title: "Web Scraping",
     name: "WEB DATA EXTRACTION",
-    path: "/webscraping",
+    path: "/website-data-scraping-service",
     description:
       "Transform unstructured web content into actionable insights. Our web scraping solutions capture data from websites, enabling informed decision-making.",
   },
@@ -11,7 +11,7 @@ export const slides = [
     image: "assets/images/slider/AppScraping.jpeg",
     title: "Mobile App Scraping",
     name: "MOBILE INSIGHTS",
-    path: "/appscraping",
+    path: "/mobile-app-data-scraping-services",
     description:
       "Unlock valuable data from mobile applications. Our advanced tools extract user reviews, app rankings, and usage statistics to drive your mobile strategy.",
   },
@@ -19,7 +19,7 @@ export const slides = [
     image: "assets/images/slider/ApiData.jpeg",
     title: "API Data Harvesting",
     name: "API INTEGRATION",
-    path: "/webscarpingapi",
+    path: "/web-scarping-api-services",
     description:
       "Seamlessly integrate data from various APIs into your systems. Our API harvesting tools ensure you have real-time access to critical information.",
   },

@@ -97,30 +97,84 @@ const Footer = () => {
           <div className="container">
             <div className="d-flex flex-column align-items-center text-center">
               <div className="mb-3">
-                <ul className="list-inline footer-socials">
-                  <li className="list-inline-item">
-                    <a href="mailto:theonecrawlingsolutions@gmail.com">
-                      <i className="fas fa-envelope mr-2"></i>
-                      theonecrawlingsolutions@gmail.com
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="tel:+919664508201">
-                      <i className="fas fa-phone mr-2"></i>
-                      +91 9664508201
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a
-                      href="https://www.linkedin.com/company/the-one-crawling-solutions/"
-                      aria-label="LinkedIn"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-linkedin mr-2"></i>LinkedIn
-                    </a>
-                  </li>
-                </ul>
+                <div className="footer-contact-socials">
+                  <div className="contact-row">
+                    <ul className="list-inline footer-contact">
+                      <li className="list-inline-item">
+                        <a href="mailto:theonecrawlingsolutions@gmail.com">
+                          <i className="fas fa-envelope mr-2"></i>
+                          theonecrawlingsolutions@gmail.com
+                        </a>
+                      </li>
+                      <li className="list-inline-item">
+                        <a href="tel:+919664508201">
+                          <i className="fas fa-phone mr-2"></i>
+                          +91 9664508201
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="social-row">
+                    <ul className="list-inline social-icons">
+                      <li className="list-inline-item">
+                        <a
+                          href="https://www.instagram.com/theonecrawlingsolution/"
+                          aria-label="Instagram"
+                          className="social-icon instagram"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i className="fa-brands fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li className="list-inline-item">
+                        <a
+                          href="https://x.com/onecrawling6263"
+                          aria-label="Twitter"
+                          className="social-icon twitter"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <span style={{ fontSize: "20px" }}>𝕏</span>
+                        </a>
+                      </li>
+                      <li className="list-inline-item">
+                        <a
+                          href="https://www.linkedin.com/company/the-one-crawling-solution"
+                          aria-label="LinkedIn"
+                          className="social-icon linkedin"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i className="fa-brands fa-linkedin"></i>
+                        </a>
+                      </li>
+                      <li className="list-inline-item">
+                        <a
+                          href="https://www.facebook.com/theonecrawlingsolution/"
+                          aria-label="Facebook"
+                          className="social-icon facebook"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i className="fa-brands fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li className="list-inline-item">
+                        <a
+                          href="https://in.pinterest.com/theonecrawlingsolution/"
+                          aria-label="Pinterest"
+                          className="social-icon pinterest"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i className="fa-brands fa-pinterest"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
               <div className="mt-1">

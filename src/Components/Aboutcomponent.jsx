@@ -55,12 +55,16 @@ const Aboutcomponent = () => {
           <div className="row flex">
             {/* CARD 1 */}
             <div className="col-lg-4 col-md-6 col-sm-6">
-              <Link to="/webscraping" className="scrape-card card-1">
+              <Link
+                to="/website-data-scraping-services"
+                className="scrape-card card-1"
+              >
                 <div className="card-icon">
                   <i className="fas fa-database"></i>
                 </div>
                 <h3 className="mb-3">
-                  <span className="card-number">01.</span> Web Scraping Services
+                  <span className="card-number">01.</span>Enterprise - Scale Web
+                  Crawling
                 </h3>
                 <p>
                   We know you have too many operations to handle. So we free you
@@ -73,12 +77,15 @@ const Aboutcomponent = () => {
 
             {/* CARD 2 */}
             <div className="col-lg-4 col-md-6 col-sm-6">
-              <Link to="/appscraping" className="scrape-card card-2">
+              <Link
+                to="/mobile-app-data-scraping-services"
+                className="scrape-card card-2"
+              >
                 <div className="card-icon">
                   <i className="fas fa-mobile-alt"></i>
                 </div>
                 <h3 className="mb-3">
-                  <span className="card-number">02.</span> App Scraping Services
+                  <span className="card-number">02.</span> Mobile App Scraping
                 </h3>
                 <p>
                   Mobile apps are like a benchmark nowadays. Every brand is
@@ -91,13 +98,15 @@ const Aboutcomponent = () => {
 
             {/* CARD 3 */}
             <div className="col-lg-4 col-md-6 col-sm-6">
-              <Link to="/webscarpingapi" className="scrape-card card-3">
+              <Link
+                to="/web-scarping-api-services"
+                className="scrape-card card-3"
+              >
                 <div className="card-icon">
                   <i className="fas fa-code"></i>
                 </div>
                 <h3 className="mb-3">
-                  <span className="card-number">03.</span> Creating Web Scraping
-                  APIs
+                  <span className="card-number">03.</span> Web Scraping APIs
                 </h3>
                 <p>
                   One size fits all may be for some other industry. Your brand
