@@ -25,7 +25,7 @@ const seoConfig = {
     description:
       "View our portfolio showcasing successful projects and client collaborations.",
   },
-  "/website-data-scraping-service": {
+  "/website-data-scraping-services": {
     title: "Web Scraping Services | Data Scraping Company",
     description:
       "Get fast, reliable data from thousands of sites with our Web Scraping Services. Partner with a trusted Data Scraping Company for accurate, timely results.",

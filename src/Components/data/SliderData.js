@@ -3,7 +3,7 @@ export const slides = [
     image: "assets/images/slider/WebScraping.jpeg",
     title: "Web Scraping",
     name: "WEB DATA EXTRACTION",
-    path: "/website-data-scraping-service",
+    path: "/website-data-scraping-services",
     description:
       "Transform unstructured web content into actionable insights. Our web scraping solutions capture data from websites, enabling informed decision-making.",
   },
@@ -27,7 +27,7 @@ export const slides = [
     image: "assets/images/slider/Ecommerce.jpg",
     title: "E-commerce Intelligence",
     name: "MARKET ANALYSIS",
-    path: "/ecommerce-data-scrapin",
+    path: "/ecommerce-data-scraping",
     description:
       "Stay ahead in the competitive e-commerce landscape. Our scraping tools collect pricing data, product information, and customer reviews for comprehensive market analysis.",
   },
