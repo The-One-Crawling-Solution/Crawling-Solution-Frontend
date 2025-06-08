@@ -1,11 +1,23 @@
 const navConfig = [
   { label: "Home", path: "/" },
-  { label: "About", path: "/about-us" },
   // { label: "Portfolio", path: "/portfolio" },
+  {
+    label: "Services",
+    dropdown: [
+      {
+        label: "Enterprise - Scale WebCrawling",
+        path: "/website-data-scraping-services",
+      },
+      {
+        label: "Mobile App Scraping",
+        path: "/mobile-app-data-scraping-services",
+      },
+      { label: "Web Scraping APIs", path: "/web-scarping-api-services" },
+    ],
+  },
   {
     label: "Industry",
     dropdown: [
-      { label: "Services", path: "/all-services" },
       { label: "Real Estate Scraping", path: "/real-estate-data-scraping" },
       { label: "E-Commerce  Scraping", path: "/ecommerce-data-scraping" },
       { label: "Healthcare Scraping", path: "/healthcare-data-scraping" },
@@ -25,8 +37,10 @@ const navConfig = [
       { label: "Jobs Site Scraping", path: "/recruitment-data-scraping" },
       // { label: "OTT Scraping", path: "/engineering" },
       { label: "Taxi Booking Scraping", path: "/taxi-booking-data-scraping" },
+      { label: "All Services", path: "/all-services" },
     ],
   },
+
   {
     label: "Blog",
     path: "/blog-grid",
@@ -36,6 +50,7 @@ const navConfig = [
     //   { label: "Blog Single", path: "/blog-single" },
     // ],
   },
+  { label: "About", path: "/about-us" },
   { label: "Contact", path: "/contact" },
 ];
 

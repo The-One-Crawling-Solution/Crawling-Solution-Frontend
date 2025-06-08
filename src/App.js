@@ -147,7 +147,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div style={{ paddingTop: "102px" }}>
+      <div style={{ paddingTop: "78px" }}>
         <Suspense fallback={<FullScreenLoader />}>
           <Routes>
             {/* Generate Routes from navConfig */}

@@ -51,7 +51,7 @@ const Header = () => {
         }}
       >
         <div className="row px-5 col-lg-12">
-          <nav className="navbar navbar-expand-lg px-0 py-3">
+          <nav className="navbar navbar-expand-lg px-0 py-1">
             <GA4Link
               to="/"
               eventLabel="Home"

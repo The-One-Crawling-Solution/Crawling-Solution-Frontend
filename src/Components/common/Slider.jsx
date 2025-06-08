@@ -48,6 +48,7 @@ const Slider = () => {
             width: 100%;
             overflow: hidden;
             position: relative; 
+            height: calc(100vh - 74px)
           }
           .list {
             display: flex;
@@ -55,7 +56,7 @@ const Slider = () => {
           }
           .item {
             min-width: 100%;
-            height: 90vh;
+            height: 100vh;
             background-size: cover;
             background-position: center;
             display: flex;
