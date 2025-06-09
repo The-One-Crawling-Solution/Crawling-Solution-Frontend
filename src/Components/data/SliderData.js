@@ -1,6 +1,8 @@
+import { Slide1, Slide2, Slide3 } from "../../assets/images/imageAssets";
+
 export const slides = [
   {
-    image: "assets/images/slider/WebScraping.jpeg",
+    image: Slide1,
     title: "🕸️ Web Scraping",
     name: "Why scroll when you can extract?",
     path: "/website-data-scraping-services",
@@ -8,7 +10,7 @@ export const slides = [
       "Our web scraping services bring out the data that actually matters that is clean, structured, and ready to fuel your next big move. Smart, simple, and built for action.",
   },
   {
-    image: "assets/images/slider/AppScraping.jpeg",
+    image: Slide2,
     title: "📱 Mobile App Scraping",
     name: "We get you the real story behind the apps.",
     path: "/mobile-app-data-scraping-services",
@@ -16,7 +18,7 @@ export const slides = [
       "With our mobile app scraping, you will get user reviews, rankings, and insights that actually help shape decisions. And Straightforward data scraping services– nothing extra.",
   },
   {
-    image: "assets/images/slider/ApiData.jpeg",
+    image: Slide3,
     title: "🔗 API Data Harvesting",
     name: "Real-time data without the wait.",
     path: "/web-scarping-api-services",

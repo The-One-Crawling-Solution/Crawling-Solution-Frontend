@@ -3,8 +3,7 @@ import React, { useState, useEffect } from "react";
 import GA4Link from "../seo/GA4Link";
 import Dropdown from "./Dropdown";
 import navConfig from "../data/NavBarData";
-// import PrimaryLogo from "../../../public/assets/images/logo/1.svg";
-// import PrimaryLogo from "../../assets/images/logo/1.svg";
+import { Logo } from "../../assets/images/imageAssets";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,7 +59,7 @@ const Header = () => {
               onClick={closeMenuAndDropdowns}
             >
               <img
-                src="/assets/images/logo/6.svg"
+                src={Logo}
                 alt="The One Crawling Solution Logo"
                 className="img-fluid"
                 loading="lazy"

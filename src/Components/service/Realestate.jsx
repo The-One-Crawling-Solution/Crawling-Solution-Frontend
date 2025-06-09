@@ -1,14 +1,16 @@
 import React from "react";
-import RealImage from "../../images/about/realestate.jpg";
-import RealImage1 from "../../images/about/realestate1.jpg";
-import RealImage2 from "../../images/about/realestate2.jpg";
 import CommonServicePage from "./CommonServicePage";
+import {
+  RealEstate1,
+  RealEstate2,
+  RealEstate3,
+} from "../../assets/images/imageAssets";
 
 const Realestate = () => {
   const pageContent = {
     title: "Real Estate Data Scraping",
     subtitle: "Unleash your wrath on the industry and take over.",
-    mainImage: RealImage,
+    mainImage: RealEstate1,
     content: {
       hero: [
         "Your real estate intel just got a quantum leap. Introducing The One Crawling Solution's Real Estate Data Scraping – your laser-guided roadmap to market domination.",
@@ -18,7 +20,7 @@ const Realestate = () => {
       sections: [
         {
           title: "You are Not Wrong. You are Just Late to the Trend.",
-          image: RealImage1,
+          image: RealEstate2,
           paragraphs: [
             "Tired of chasing shadows in the murky real estate market? Drowning in a sea of listings? We get it. Finding the right intel is brutal.",
             "That's where we come in, with laser-focused real estate data scraping. We'll mine the web and unearth hidden gems",
@@ -45,7 +47,7 @@ const Realestate = () => {
         },
         {
           title: "Turn Data into Your Secret Ingredient",
-          image: RealImage2,
+          image: RealEstate3,
           paragraphs: [
             "No more manual scouring. No more guesswork. We deliver clean, structured data, ready to fuel your:",
           ],
@@ -67,7 +69,7 @@ const Realestate = () => {
         },
         {
           title: "How We Scrape Real Estate Data and Deliver It to You",
-          image: RealImage2,
+          image: RealEstate1,
           paragraphs: [
             "At The One Crawling Solution, we’ve honed our process for scraping real estate data into a seamless and powerful experience:",
           ],

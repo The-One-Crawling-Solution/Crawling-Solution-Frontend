@@ -1,5 +1,12 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
+import {
+  Blog2,
+  Blog3,
+  Blog4,
+  BlogSinglePostImage,
+  Slide3,
+} from "../../assets/images/imageAssets";
 
 const WebscrapingAPI = () => {
   return (
@@ -28,7 +35,7 @@ const WebscrapingAPI = () => {
             </div>
             <div className="col-lg-6">
               <img
-                src="assets/images/slider/ApiData.jpeg"
+                src={Slide3}
                 alt="Web Scraping API"
                 className="img-fluid"
                 loading="lazy"
@@ -51,7 +58,7 @@ const WebscrapingAPI = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <img
-                src="assetseg"
+                src={Blog2}
                 alt="API Benefits"
                 className="img-fluid"
                 loading="lazy"
@@ -128,7 +135,7 @@ const WebscrapingAPI = () => {
             </div>
             <div className="col-lg-6">
               <img
-                src="assets/images/slider/WhatsApp Image 2024-09-24 at 10.32.09 AM.jpeg"
+                src={Blog4}
                 alt="API Solutions"
                 className="img-fluid"
                 loading="lazy"
@@ -151,7 +158,7 @@ const WebscrapingAPI = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <img
-                src="assets/images/blog/3.jpg"
+                src={Blog3}
                 alt="Expertise Image"
                 className="img-fluid"
                 loading="lazy"
@@ -224,7 +231,7 @@ const WebscrapingAPI = () => {
             </div>
             <div className="col-lg-6">
               <img
-                src="assets/images/about/business-data-information-device-screen.jpg"
+                src={BlogSinglePostImage}
                 style={{
                   width: "100%",
                   height: "auto",

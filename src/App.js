@@ -6,6 +6,7 @@ import Footer from "./Components/common/Footer";
 import FullScreenLoader from "./Components/common/FullScreenLoader";
 import navConfig from "./Components/data/NavBarData";
 import ReactGA from "react-ga4";
+import "./assets/css/style.css";
 
 // Lazy-loaded Pages
 const Home = lazy(() => import("./Pages/Home"));
@@ -28,7 +29,7 @@ const Sport = lazy(() => import("./Components/service/Sport"));
 // const Grocery = lazy(() => import("./Components/service/Grocery"));
 const SocialMedia = lazy(() => import("./Components/service/Socialmedia"));
 const Jobs = lazy(() => import("./Components/service/Jobs"));
-const Engineering = lazy(() => import("./Components/service/Engineering"));
+// const Engineering = lazy(() => import("./Components/service/Engineering"));
 const Taxibook = lazy(() => import("./Components/service/Taxibook"));
 const TermConditions = lazy(() => import("./Components/common/TermConditions"));
 const PrivacyPolicy = lazy(() => import("./Components/common/PrivacyPolicy"));

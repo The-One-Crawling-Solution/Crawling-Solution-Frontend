@@ -1,15 +1,17 @@
 import React from "react";
-import HealthImage from "../../images/about/healthcare2.jpg";
-import HealthImage1 from "../../images/about/healthcare1.jpg";
-import HealthImage2 from "../../images/about/healthcare.jpg";
 import CommonServicePage from "./CommonServicePage";
+import {
+  HealthCare1,
+  HealthCare2,
+  HealthCare3,
+} from "../../assets/images/imageAssets";
 
 const Healthcare = () => {
   const pageContent = {
     title: "Healthcare Data Scraping",
     subtitle:
       "Data-Driven Diagnosis: Conquer Healthcare Insights with Scraping",
-    mainImage: HealthImage,
+    mainImage: HealthCare1,
     content: {
       hero: [
         "Unmask trends, optimize operations, and thrive in the evolving healthcare landscape.",
@@ -17,7 +19,7 @@ const Healthcare = () => {
       sections: [
         {
           title: "What are you waiting for?",
-          image: HealthImage1,
+          image: HealthCare2,
           list: [
             {
               title: "Patient Demographics",
@@ -43,7 +45,7 @@ const Healthcare = () => {
         },
         {
           title: "Our Healthcare Data Collection Process",
-          image: HealthImage2,
+          image: HealthCare3,
           list: [
             {
               title: "Discovery & Customization",
@@ -64,7 +66,7 @@ const Healthcare = () => {
         },
         {
           title: "Data Quality and Rapid Delivery",
-          image: HealthImage2,
+          image: HealthCare1,
           list: [
             {
               title: "Data Refinement",
@@ -91,7 +93,7 @@ const Healthcare = () => {
         {
           title:
             "Why Choose The One Crawling Solution for Healthcare Data Scraping?",
-          image: HealthImage2,
+          image: HealthCare2,
           list: [
             {
               title: "Data That Drives Decisions",

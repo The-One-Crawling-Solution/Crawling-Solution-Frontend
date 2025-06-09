@@ -1,14 +1,12 @@
 import React from "react";
-import JobImage1 from "../../images/about/job1.jpg";
-import JobImage2 from "../../images/about/job2.jpg";
-import JobImage3 from "../../images/about/job3.jpg";
 import CommonServicePage from "./CommonServicePage";
+import { Jobs1, Jobs2, Jobs3 } from "../../assets/images/imageAssets";
 
 const Jobs = () => {
   const pageContent = {
     title: "Job Site Scraping",
     subtitle: "The Hidden Candidates are In Data: Job Site Scraping",
-    mainImage: JobImage1,
+    mainImage: Jobs1,
     content: {
       hero: [
         "Sharpen your recruitment strategy, discover hidden gems, and build a team of all-stars.",
@@ -16,7 +14,7 @@ const Jobs = () => {
       sections: [
         {
           title: "Our Data Collection Process",
-          image: JobImage2,
+          image: Jobs2,
 
           list: [
             {
@@ -38,7 +36,7 @@ const Jobs = () => {
         },
         {
           title: "Ensuring Quality and Timely Delivery",
-          image: JobImage1,
+          image: Jobs3,
           list: [
             {
               title: "Data Refinement",
@@ -65,7 +63,7 @@ const Jobs = () => {
         {
           title:
             "Why Choose The One Crawling Solution for Job Site Data Scraping?",
-          image: JobImage3,
+          image: Jobs2,
           list: [
             {
               title: "Data That Drives Recruitment",

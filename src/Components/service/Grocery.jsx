@@ -1,14 +1,12 @@
 import React from "react";
-import GroceryImage from "../../images/about/grocery.jpg";
-import GroceryImage1 from "../../images/about/grocery1.jpg";
-import GroceryImage2 from "../../images/about/grocery2.jpg";
 import CommonServicePage from "./CommonServicePage";
+import { Grocery1, Grocery2, Grocery3 } from "../../assets/images/imageAssets";
 
 const GroceryScraping = () => {
   const pageContent = {
     title: "Grocery Delivery Scraping",
     subtitle: "Get Grocery Insights with One Click With Our Solutions",
-    mainImage: GroceryImage,
+    mainImage: Grocery1,
     content: {
       hero: [
         "Struggling to navigate the cutthroat world of grocery delivery? Ditch the coupons and scan flyers – it's time to grab a data cart and shop for insights the smart way.",
@@ -17,7 +15,7 @@ const GroceryScraping = () => {
       sections: [
         {
           title: "Our Grocery Data Collection Process",
-          image: GroceryImage1,
+          image: Grocery2,
           list: [
             {
               title: "Discovery & Customization",
@@ -38,7 +36,7 @@ const GroceryScraping = () => {
         },
         {
           title: "Ensuring Data Quality and Timely Delivery",
-          image: GroceryImage1,
+          image: Grocery3,
           list: [
             {
               title: "Data Refinement",
@@ -65,7 +63,7 @@ const GroceryScraping = () => {
         {
           title:
             "Why Choose The One Crawling Solution for Grocery Data Scraping?",
-          image: GroceryImage2,
+          image: Grocery2,
           list: [
             {
               title: "Data That Drives Sales",

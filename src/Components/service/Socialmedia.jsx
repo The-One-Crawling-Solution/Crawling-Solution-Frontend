@@ -1,15 +1,17 @@
 import React from "react";
-import socialMediaImage1 from "../../images/about/entertainment1.jpg";
-import socialMediaImage2 from "../../images/about/entertainment2.jpg";
-import socialMediaImage3 from "../../images/about/entertainment3.jpg";
 import CommonServicePage from "./CommonServicePage";
+import {
+  SocialMedia1,
+  SocialMedia2,
+  SocialMedia3,
+} from "../../assets/images/imageAssets";
 
 const SocialMedia = () => {
   const pageContent = {
     title: "Social Media Scraping",
     subtitle:
       "Ignite Your Social Spark: Unleash Audience Insights with Social Media Scraping",
-    mainImage: socialMediaImage1,
+    mainImage: SocialMedia1,
     content: {
       hero: [
         "Feeling lost in the ever-churning social media game? We get it. Navigating the dynamic world of social media management (SMM) can be a mind-bender, leaving you unsure what resonates with your audience and how to craft a winning strategy.",
@@ -19,7 +21,7 @@ const SocialMedia = () => {
       sections: [
         {
           title: "How We Transform You into a Social Media Champion",
-          image: socialMediaImage2,
+          image: SocialMedia2,
           list: [
             {
               title: "Audience Enigma Cracked",
@@ -45,7 +47,7 @@ const SocialMedia = () => {
         },
         {
           title: "Fuel Your Social Media Strategy with Data-Driven Decisions",
-          image: socialMediaImage3,
+          image: SocialMedia3,
           list: [
             {
               title: "Craft Compelling Content",

@@ -1,5 +1,10 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
+import {
+  Blog3,
+  BlogSinglePostImage,
+  Slide2,
+} from "../../assets/images/imageAssets";
 
 const Appscraping = () => {
   return (
@@ -27,7 +32,7 @@ const Appscraping = () => {
             </div>
             <div className="col-lg-6">
               <img
-                src="assets/images/slider/AppScraping.jpeg"
+                src={Slide2}
                 alt="App Scraping"
                 className="img-fluid"
                 loading="lazy"
@@ -148,7 +153,7 @@ const Appscraping = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <img
-                src="assets/images/blog/3.jpg"
+                src={Blog3}
                 alt="Expertise Image"
                 className="img-fluid"
                 loading="lazy"
@@ -220,7 +225,7 @@ const Appscraping = () => {
             </div>
             <div className="col-lg-6">
               <img
-                src="assets/images/about/business-data-information-device-screen.jpg"
+                src={BlogSinglePostImage}
                 style={{
                   width: "100%",
                   height: "auto",

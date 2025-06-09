@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Link } from "react-router-dom";
-import mylogo from "../../images/about/mylogo.jpeg";
+import { Logo } from "../../assets/images/imageAssets";
 
 const Footer = () => {
   return (
@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className="d-flex justify-content-start align-items-center gap-2">
                   <Link className="navbar-brand" to="/" aria-label="Home">
                     <img
-                      src={mylogo}
+                      src={Logo}
                       alt="The One Crawling Solution Logo"
                       loading="eager" // Changed to eager to prioritize critical logo load
                       decoding="async"

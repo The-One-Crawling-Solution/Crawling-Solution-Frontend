@@ -1,14 +1,12 @@
 import React from "react";
 import CommonServicePage from "./CommonServicePage";
-import foodImage from "../../images/about/food.jpg";
-import foodImage1 from "../../images/about/food1.jpg";
-import foodImage2 from "../../images/about/pexels-ella-olsson-1640777.jpg";
+import { Food1, Food2, Food3 } from "../../assets/images/imageAssets";
 
 const Food = () => {
   const pageContent = {
     title: "Food & Grocery Delivery Scraping",
     subtitle: "Starving for insights into the food delivery war zone?",
-    mainImage: foodImage,
+    mainImage: Food1,
     content: {
       hero: [
         "Forget stale scraps; get ready to devour a five-course data buffet with The One Crawling Solution. We're the secret spice in your app, unearthing hidden gems and trends hotter than a habanero.",
@@ -16,7 +14,7 @@ const Food = () => {
       sections: [
         {
           title: "What Can You Do With the Data?",
-          image: foodImage1,
+          image: Food2,
           list: [
             {
               title: "Every menu is a map",
@@ -42,7 +40,7 @@ const Food = () => {
         },
         {
           title: "Our Food Data Collection Process",
-          image: foodImage2,
+          image: Food3,
           list: [
             {
               title: "Discovery & Customization",
@@ -63,7 +61,7 @@ const Food = () => {
         },
         {
           title: "Ensuring Data Quality and Speed of Delivery",
-          image: foodImage2,
+          image: Food2,
           list: [
             {
               title: "Data Refinement",
@@ -89,7 +87,7 @@ const Food = () => {
         },
         {
           title: "Why Choose The One Crawling Solution for Food Data Scraping?",
-          image: foodImage2,
+          image: Food3,
           list: [
             {
               title: "Data That Drives Decisions",

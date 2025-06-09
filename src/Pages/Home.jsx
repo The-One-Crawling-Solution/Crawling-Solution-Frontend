@@ -1,10 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import Aboutcomponent from "../Components/Aboutcomponent";
 import Services from "./Services";
 import Slider from "../Components/common/Slider";
 import { Link } from "react-router-dom";
 import CustomerReview from "../Components/common/CustomerReview";
+import { Blog1, Blog2, Blog3 } from "../assets/images/imageAssets";
+import AboutComponent from "./About";
 
 const Home = () => {
   return (
@@ -50,7 +51,7 @@ const Home = () => {
         <br></br>
         {/* <!-- Section Intro Start --> */}
 
-        <section className="section intro">
+        {/* <section className="section intro">
           <div className="container">
             <div className="row ">
               <div className="col-lg-8">
@@ -106,9 +107,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* <hr /> */}
-        <Aboutcomponent />
+        <AboutComponent />
         <Services />
         <CustomerReview />
 
@@ -130,7 +131,7 @@ const Home = () => {
               <div className="col-lg-4 col-md-6 mb-5">
                 <div className="card bg-transparent border-0">
                   <img
-                    src="assets/images/blog/1.jpg"
+                    src={Blog1}
                     alt="blog 1"
                     className="img-fluid rounded"
                     loading="lazy"
@@ -175,7 +176,7 @@ const Home = () => {
               <div className="col-lg-4 col-md-6 mb-5">
                 <div className="card border-0 bg-transparent">
                   <img
-                    src="assets/images/blog/2.jpg"
+                    src={Blog2}
                     alt="blog 2"
                     className="img-fluid rounded"
                     loading="lazy"
@@ -220,7 +221,7 @@ const Home = () => {
               <div className="col-lg-4 col-md-6 mb-5">
                 <div className="card border-0 bg-transparent">
                   <img
-                    src="assets/images/blog/3.jpg"
+                    src={Blog3}
                     alt="blog 3"
                     className="img-fluid rounded"
                     loading="lazy"

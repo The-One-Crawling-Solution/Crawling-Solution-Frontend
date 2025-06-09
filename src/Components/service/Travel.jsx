@@ -3,6 +3,9 @@ import Travelmage1 from "../../images/about/travel1.jpg";
 import Travelmage2 from "../../images/about/travel2.jpg";
 import Travelmage3 from "../../images/about/travel3.jpg";
 import CommonServicePage from "./CommonServicePage";
+// import Travelmage1 from "../../assets/images/about/travel1.jpg";
+// import Travelmage2 from "../../assets/images/about/travel2.jpg";
+// import Travelmage3 from "../../assets/images/about/travel3.jpg";
 
 const TravelScraping = () => {
   const pageContent = {

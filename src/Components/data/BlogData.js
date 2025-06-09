@@ -1,9 +1,11 @@
+import { Blog2, Blog4 } from "../../assets/images/imageAssets";
+
 // BlogData.js
 const BlogData = [
   {
     id: 1,
     title: "Unlocking the Power of Web Scraping APIs",
-    image: "assets/images/blog/4.jpg",
+    image: Blog4,
     date: "September 10, 2024",
     excerpt:
       "Discover how web scraping APIs can streamline your data extraction process and empower your business decisions.",
@@ -17,7 +19,7 @@ const BlogData = [
   {
     id: 2,
     title: "Data-Driven Decisions: How Web Scraping Fuels Your Business",
-    image: "assets/images/blog/2.jpg",
+    image: Blog2,
     date: "August 20, 2024",
     excerpt:
       "Learn how web scraping can provide your business with the critical data needed to outpace your competitors.",
