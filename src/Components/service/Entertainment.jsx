@@ -1,14 +1,16 @@
 import React from "react";
 import CommonServicePage from "./CommonServicePage";
-import EntertainmentImage1 from "../../images/about/entertainment1.jpg";
-import EntertainmentImage2 from "../../images/about/entertainment2.jpg";
-import EntertainmentImage3 from "../../images/about/entertainment3.jpg";
+import {
+  Entertainment1,
+  Entertainment2,
+  Entertainment3,
+} from "../../assets/images/imageAssets";
 
 const Entertainment = () => {
   const pageContent = {
     title: "Entertainment & OTT Platform Scraping",
     subtitle: "The Data Buster: Storm Entertainment Industry with App Scraping",
-    mainImage: EntertainmentImage1,
+    mainImage: Entertainment1,
     content: {
       hero: [
         "Dominate the scene, optimize your strategy, and become the next box office smash.",
@@ -19,7 +21,7 @@ const Entertainment = () => {
       sections: [
         {
           title: "Don’t Wait, Act Today With Us?",
-          image: EntertainmentImage2,
+          image: Entertainment2,
           list: [
             {
               title: "Audience Insights",
@@ -45,7 +47,7 @@ const Entertainment = () => {
         },
         {
           title: "Fuel Your Creativity with Data-Driven Decisions:",
-          image: EntertainmentImage3,
+          image: Entertainment3,
           list: [
             {
               title: "Optimize Your Content",

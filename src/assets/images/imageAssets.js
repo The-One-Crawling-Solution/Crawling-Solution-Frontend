@@ -48,6 +48,8 @@ import Education3 from "./about/education3.jpg";
 //Entertainment
 import Entertainment1 from "./about/pexels-pietro-jeng-65128.jpg";
 import Entertainment2 from "./about/entertainment1.jpg";
+import Entertainment3 from "./about/entertainment2.jpg";
+import Entertainment4 from "./about/entertainment3.jpg";
 
 //Cab
 import Cab1 from "./about/cabbook.jpg";
@@ -90,6 +92,11 @@ import Food1 from "./about/food.jpg";
 import Food2 from "./about/food1.jpg";
 import Food3 from "./about/pexels-ella-olsson-1640777.jpg";
 
+// Travel
+import Travel1 from "./about/travel1.jpg";
+import Travel2 from "./about/travel2.jpg";
+import Travel3 from "./about/travel3.jpg";
+
 // Export all images
 export {
   Blog1,
@@ -121,6 +128,8 @@ export {
   Education3,
   Entertainment1,
   Entertainment2,
+  Entertainment3,
+  Entertainment4,
   Cab1,
   Cab2,
   Cab3,
@@ -146,4 +155,7 @@ export {
   Food1,
   Food2,
   Food3,
+  Travel1,
+  Travel2,
+  Travel3,
 };

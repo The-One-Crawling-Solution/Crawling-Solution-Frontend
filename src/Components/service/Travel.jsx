@@ -1,8 +1,6 @@
 import React from "react";
-import Travelmage1 from "../../images/about/travel1.jpg";
-import Travelmage2 from "../../images/about/travel2.jpg";
-import Travelmage3 from "../../images/about/travel3.jpg";
 import CommonServicePage from "./CommonServicePage";
+import { Travel1, Travel2, Travel3 } from "../../assets/images/imageAssets";
 // import Travelmage1 from "../../assets/images/about/travel1.jpg";
 // import Travelmage2 from "../../assets/images/about/travel2.jpg";
 // import Travelmage3 from "../../assets/images/about/travel3.jpg";
@@ -12,7 +10,7 @@ const TravelScraping = () => {
     title: "Travel Scraping",
     subtitle:
       "Travel Hacking: Unleash the Power of Website Scraping and Dominate the Tourism Game",
-    mainImage: Travelmage1,
+    mainImage: Travel1,
     content: {
       hero: [
         "Tired of chasing blind leads? Trenched in a sea of outdated travel blogs? It's time to level up, globetrotters.",
@@ -23,7 +21,7 @@ const TravelScraping = () => {
       sections: [
         {
           title: "Here's how we turn you into a travel ninja:",
-          image: Travelmage2,
+          image: Travel2,
           list: [
             {
               title: "Destination Decoder",
@@ -49,7 +47,7 @@ const TravelScraping = () => {
         },
         {
           title: "Fuel Your Wanderlust with Data-Driven Decisions",
-          image: Travelmage3,
+          image: Travel3,
           list: [
             {
               title: "Optimize Your Tours",
