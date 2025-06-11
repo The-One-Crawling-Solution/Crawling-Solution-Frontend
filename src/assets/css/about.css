@@ -198,7 +198,7 @@
   color: #6b7280;
 }
 
-.features-grid {
+.about-features-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
@@ -251,7 +251,7 @@
     padding: 0 2rem;
   }
 
-  .features-grid {
+  .about-features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -265,7 +265,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .features-grid {
+  .about-features-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 

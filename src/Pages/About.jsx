@@ -159,7 +159,7 @@ const AboutComponent = () => {
             </p>
           </div>
 
-          <div className="features-grid">
+          <div className="about-features-grid">
             {features.map((feature, index) => (
               <div key={index} className="feature-card">
                 <div className="feature-icon">

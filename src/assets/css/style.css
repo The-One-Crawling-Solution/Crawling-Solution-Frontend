@@ -1025,7 +1025,7 @@ ul.dropdown-menu li {
 
 .social-icons i {
   /* margin-right: 15px; */
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .google-map {
@@ -1438,9 +1438,9 @@ h3.quote::before {
   letter-spacing: 1px;
 }
 
-.logo span {
+/* .logo span {
   color: #f75757;
-}
+} */
 
 .sub-form {
   position: relative;
@@ -1461,7 +1461,7 @@ h3.quote::before {
 
 .footer-contact-socials {
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .contact-row {
@@ -1489,9 +1489,9 @@ h3.quote::before {
 
 .social-row .social-icons {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 15px;
-  padding: 0;
+  padding-top: 10px;
   list-style: none;
 }
 
