@@ -6,15 +6,11 @@ on:
       - main
       - develop
 
-permissions:
-  contents: write
-
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -22,33 +18,29 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
-      - name: Set Environment Variables
+      - name: Set Homepage based on branch
         run: |
-          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
-            echo "REACT_APP_ENV=production" >> $GITHUB_ENV
-            echo "REACT_APP_CNAME=theonecrawlingsolution.com" >> $GITHUB_ENV
-            echo "PUBLISH_BRANCH=gh-pages" >> $GITHUB_ENV
-            echo "BUILD_SCRIPT=build:prod" >> $GITHUB_ENV
+          BRANCH=$(echo ${{ github.ref }} | sed 's/refs\/heads\///')
+          if [[ "$BRANCH" == "main" ]]; then
+            echo "Setting homepage for main"
+            jq '.homepage="https://theonecrawlingsolution.com"' package.json > temp.json && mv temp.json package.json
+            echo "theonecrawlingsolution.com" > public/CNAME
           else
-            echo "REACT_APP_ENV=development" >> $GITHUB_ENV
-            echo "REACT_APP_CNAME=develop.theonecrawlingsolution.com" >> $GITHUB_ENV
-            echo "PUBLISH_BRANCH=gh-pages-develop" >> $GITHUB_ENV
-            echo "BUILD_SCRIPT=build:dev" >> $GITHUB_ENV
+            echo "Setting homepage for develop"
+            jq '.homepage="https://develop.theonecrawlingsolution.com"' package.json > temp.json && mv temp.json package.json
+            echo "develop.theonecrawlingsolution.com" > public/CNAME
           fi
 
-      - name: Build Project
-        run: npm run $BUILD_SCRIPT
-
-      - name: Create 404 Fallback
-        run: cp build/index.html build/404.html
+      - name: Build project
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-          cname: ${{ env.REACT_APP_CNAME }}
-          publish_branch: ${{ env.PUBLISH_BRANCH }}
+          publish_branch: gh-pages
+          cname: ${{ github.ref == 'refs/heads/main' && 'theonecrawlingsolution.com' || 'develop.theonecrawlingsolution.com' }}
