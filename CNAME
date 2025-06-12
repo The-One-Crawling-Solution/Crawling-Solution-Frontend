@@ -1,0 +1,1 @@
+cname: ${{ env.REACT_APP_CNAME }}
