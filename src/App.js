@@ -28,7 +28,7 @@ const Sport = lazy(() => import("./Components/service/Sport"));
 // const Grocery = lazy(() => import("./Components/service/Grocery"));
 const SocialMedia = lazy(() => import("./Components/service/Socialmedia"));
 const Jobs = lazy(() => import("./Components/service/Jobs"));
-const Engineering = lazy(() => import("./Components/service/Engineering"));
+// const Engineering = lazy(() => import("./Components/service/Engineering"));
 const Taxibook = lazy(() => import("./Components/service/Taxibook"));
 const TermConditions = lazy(() => import("./Components/common/TermConditions"));
 const PrivacyPolicy = lazy(() => import("./Components/common/PrivacyPolicy"));
