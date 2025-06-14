@@ -25,7 +25,6 @@ jobs:
       - name: Set homepage and CNAME
         run: |
           BRANCH=$(echo "${{ github.ref }}" | sed 's/refs\/heads\///')
-
           if [[ "$BRANCH" == "main" ]]; then
             echo "Setting homepage for MAIN"
             jq '.homepage="https://theonecrawlingsolution.com"' package.json > temp.json && mv temp.json package.json
@@ -33,7 +32,7 @@ jobs:
             echo "theonecrawlingsolution.com" > public/CNAME
           else
             echo "Setting homepage for DEVELOP"
-            jq '.homepage="https://develop.theonecrawlingsolution.com"' package.json > temp.json && mv temp.json package.json
+            jq '.homepage="https://develop.theonecrawlingsolution.com/develop"' package.json > temp.json && mv temp.json package.json
             mkdir -p public
             echo "develop.theonecrawlingsolution.com" > public/CNAME
           fi
@@ -42,13 +41,13 @@ jobs:
         run: npm run build
 
       - name: Copy CNAME to build folder
-        run: |
-          cp public/CNAME build/CNAME
+        run: cp public/CNAME build/CNAME
 
-      - name: Deploy to gh-pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.DEPLOY_PAT }}
           publish_branch: gh-pages
           publish_dir: ./build
+          keep_files: true
           destination_dir: ${{ github.ref == 'refs/heads/main' && '.' || 'develop' }}
