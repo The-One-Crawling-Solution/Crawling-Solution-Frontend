@@ -11,104 +11,224 @@ const Home = () => {
   return (
     <>
       <div className="main-wrapper">
-        {/* Link to a CSS file in public folder */}
-        {/* <link rel="stylesheet" type="text/css" to="/assets/css/style.css" /> */}
-
-        {/* Import Bootstrap CSS from public folder */}
-        {/* <link rel="stylesheet" to="/assets/bootstrap/css/bootstrap.min.css" /> */}
-
-        {/* Import external JavaScript file */}
-
-        {/* <!-- Slider Start --> */}
-        {/* <section className="slider">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-9 col-md-10">
-                <div className="block">
-                  <span className="d-block mb-3 text-white text-capitalize">
-                    Prepare for new future
-                  </span>
-                  <h1 className="animated fadeInUp mb-5">
-                    Our work is <br />
-                    presentation of our <br />
-                    capabilities.
-                  </h1>
-                  <a
-                    href="#"
-                    target="_blank"
-                    className="btn btn-main animated fadeInUp btn-round-full"
-                  >
-                    Get started
-                    <i className="btn-icon fa fa-angle-right ml-2"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-
         <Slider />
         <br></br>
-        {/* <!-- Section Intro Start --> */}
 
-        {/* <section className="section intro">
-          <div className="container">
-            <div className="row ">
-              <div className="col-lg-8">
-                <div className="section-title">
-                  <span className="h6 text-color ">
-                    We are creative & expert people
+        <div className="homepage">
+          {/* Hero Section */}
+          <section className="home-hero-section">
+            <div className="container">
+              <div className="home-hero-content">
+                <h1 className="home-hero-title">
+                  Get the Data You Need with Web Scraping and Extraction
+                  <span className="highlight">
+                    {" "}
+                    Without Hours of Manual Searching
                   </span>
-                  <h2 className="mt-3 content-title">
-                    We work with business & provide solution to client with
-                    their business problem{" "}
-                  </h2>
+                </h1>
+                <p className="home-hero-description">
+                  We will not make you wait or guess. You tell us what you need
+                  and we provide you with reliable real-time data that simply
+                  functions and we deliver it without unnecessary information.
+                  We keep it simple, focused and fast because your time and
+                  clarity matter more than anything else. We do not dump
+                  everything we find, we extract only what is useful, meaningful
+                  and built for your next move.
+                </p>
+                <div className="home-hero-buttons">
+                  <button className="btn-primary">
+                    <i className="fas fa-rocket"></i>
+                    Get Started
+                  </button>
+                  <button className="btn-secondary">
+                    <i className="fas fa-phone"></i>
+                    Call +91 9664508201
+                  </button>
                 </div>
               </div>
             </div>
+          </section>
 
-            <div className="row justify-content-center">
-              <div className="col-lg-4 col-md-6 col-12">
-                <div className="intro-item mb-5 mb-lg-0">
-                  <i className="fas fa-piggy-bank color-one"></i>
-                  <h4 className="mt-4 mb-3">
-                    Increased efficiency and cost savings
-                  </h4>
-                  <p>
-                    Boost productivity while reducing operational expenses
-                    through automation.
+          {/* Services Section */}
+          <section className="home-services-section">
+            <div className="container">
+              <h2 className="home-section-title">Our Service Tabs</h2>
+              <div className="home-services-grid">
+                <div className="home-service-card">
+                  <div className="home-service-icon">
+                    <i className="fas fa-globe"></i>
+                  </div>
+                  <h3 className="home-service-title">
+                    Enterprise– Scale Web Crawling
+                  </h3>
+                  <p className="home-service-description">
+                    Need any specific data from the websites? We build custom
+                    scrapers to deliver info like prices, reviews, or listings–
+                    exactly what you need, with sharp price intelligence that
+                    keeps you ahead...
                   </p>
+                  <button className="home-service-btn">
+                    <i className="fas fa-arrow-right"></i>
+                    Learn More
+                  </button>
+                </div>
+
+                <div className="home-service-card">
+                  <div className="home-service-icon">
+                    <i className="fas fa-mobile-alt"></i>
+                  </div>
+                  <h3 className="home-service-title">Mobile App Scraping</h3>
+                  <p className="home-service-description">
+                    Mobile-first? No problem. We offer you the smart, secure app
+                    scraping services that give you seamless access to the exact
+                    data you need from mobile apps and hybrid platforms...
+                  </p>
+                  <button className="home-service-btn">
+                    <i className="fas fa-arrow-right"></i>
+                    Learn More
+                  </button>
+                </div>
+
+                <div className="home-service-card">
+                  <div className="home-service-icon">
+                    <i className="fas fa-code"></i>
+                  </div>
+                  <h3 className="home-service-title">Web Scraping APIs</h3>
+                  <p className="home-service-description">
+                    Do you need your data in real-time? Our custom data
+                    extraction web scraping APIs that plug right into your
+                    system, so that you get reliable access to fresh data–
+                    without the manual work...
+                  </p>
+                  <button className="home-service-btn">
+                    <i className="fas fa-arrow-right"></i>
+                    Learn More
+                  </button>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="intro-item mb-5 mb-lg-0">
-                  <i className="fas fa-lightbulb color-one"></i>
-                  <h4 className="mt-4 mb-3">
-                    Market research and competitive intelligence
+            </div>
+          </section>
+
+          {/* Features Section */}
+          <section className="home-features-section">
+            <div className="container">
+              <h2 className="home-section-title">What Sets Us Apart</h2>
+              <p className="home-section-subtitle">
+                No Fancy Words, Just Facts
+              </p>
+
+              <div className="home-features-grid">
+                <div className="home-feature-item">
+                  <div className="home-feature-icon">
+                    <i className="fas fa-times-circle"></i>
+                  </div>
+                  <h4 className="home-feature-title">
+                    No Fluff. No Noise. Just Results.
                   </h4>
-                  <p>
-                    Gain valuable insights into market trends and outperform
-                    competitors.
+                  <p className="home-feature-description">
+                    You tell us what you need and we scrape it clean. We don't
+                    over complicate things and no "consultant speaks." Just
+                    straight-up delivery to you.
                   </p>
                 </div>
-              </div>
-              <div className="col-lg-4 col-md-12">
-                <div className="intro-item">
-                  <i className="fas fa-database color-one"></i>
-                  <h4 className="mt-4 mb-3">
-                    Data-driven decision-making and unignorable data
-                    opportunities
+
+                <div className="home-feature-item">
+                  <div className="home-feature-icon">
+                    <i className="fas fa-bullseye"></i>
+                  </div>
+                  <h4 className="home-feature-title">
+                    Custom Like It Should Be.
                   </h4>
-                  <p>
-                    Leverage data insights to uncover new opportunities and
-                    drive decisions.
+                  <p className="home-feature-description">
+                    We don't tweak templates or follow shortcuts, so we build
+                    everything from scratch to fit your exact mess, no matter
+                    how weird the platform or complex API.
+                  </p>
+                </div>
+
+                <div className="home-feature-item">
+                  <div className="home-feature-icon">
+                    <i className="fas fa-bolt"></i>
+                  </div>
+                  <h4 className="home-feature-title">Fast. Sharp. On Point.</h4>
+                  <p className="home-feature-description">
+                    We don't just deliver fast. We deliver you the clean,
+                    organized data that actually makes sense and works straight
+                    out of the box for you.
+                  </p>
+                </div>
+
+                <div className="home-feature-item">
+                  <div className="home-feature-icon">
+                    <i className="fas fa-shield-alt"></i>
+                  </div>
+                  <h4 className="home-feature-title">Ethical. Always.</h4>
+                  <p className="home-feature-description">
+                    We always keep things clean, legal, and secure so your data
+                    stays yours, and we don't mess with shady shortcuts.
+                  </p>
+                </div>
+
+                <div className="home-feature-item">
+                  <div className="home-feature-icon">
+                    <i className="fas fa-headset"></i>
+                  </div>
+                  <h4 className="home-feature-title">Support That Stays.</h4>
+                  <p className="home-feature-description">
+                    We don't vanish after delivery– if something breaks or
+                    shifts, we're here to fix it with you, no ticket queues and
+                    no run arounds.
                   </p>
                 </div>
               </div>
             </div>
-          </div>
-        </section> */}
-        {/* <hr /> */}
+          </section>
+
+          {/* CTA Section */}
+          <section className="home-cta-section">
+            <div className="container">
+              <div className="home-cta-content">
+                <h2 className="home-cta-title">
+                  Let's Build Something That Works
+                </h2>
+                <p className="home-cta-description">
+                  Your project deserves a team that understands your goals and
+                  delivers results. Have an idea in mind? We are ready when you
+                  are.
+                </p>
+                <div className="home-cta-buttons">
+                  <button className="btn-primary">
+                    <i className="fas fa-phone"></i>
+                    Connect with us: +91 9664508201
+                  </button>
+                  <button className="btn-outline">
+                    <i className="fas fa-eye"></i>
+                    See What We've Built
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Download Section */}
+          <section className="download-section">
+            <div className="container">
+              <div className="download-content">
+                <h3 className="download-title">Ready to Get Started?</h3>
+                <p className="download-description">
+                  Take a quick look at how our work has helped businesses like
+                  yours grow smarter. So let's build something that works
+                  together.
+                </p>
+                <button className="btn-download">
+                  <i className="fas fa-download"></i>
+                  Download & Decide
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+
         <AboutComponent />
         <Services />
         <CustomerReview />

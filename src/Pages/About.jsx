@@ -55,33 +55,41 @@ const AboutComponent = () => {
 
             {/* Content */}
             <div className="hero-content">
-              <span className="badge">Who We Are</span>
               <h2 className="hero-title">
                 Data extraction that starts with{" "}
                 <span className="highlight">why</span>, not just how
               </h2>
               <p className="hero-subtitle">
-                We Don't Just Collect Data. We Help You Use It.
+                We Don’t Just Collect Data. We Are Here to Help You Use It.
               </p>
 
               <div className="content-sections">
                 <div className="content-item">
-                  <h4 className="content-title">
-                    We're Not Just Another Data Extraction Company
-                  </h4>
+                  {/* <span className="badge">Who We Are</span> */}
+
+                  <h4 className="content-title badge">Who We Are</h4>
                   <p className="content-text">
-                    We're the people who help you find exact data and make it
-                    work for your business. Known as{" "}
-                    <strong>"The One Crawling Solution"</strong>.
+                    We’re a passionate team of data specialists,
+                    problem-solvers, and tech builders. We’re known as the Best
+                    Web Scraping Company in Ahmedabad{" "}
+                    <span className="highlight">
+                      "The One Crawling Solution"
+                    </span>
+                    . We believe that good data should never be out of reach or
+                    buried in the clutter. That’s why we offer reliable,
+                    custom-built web scraping services and data extraction
+                    services that are easy to use, efficient and built to match
+                    your unique needs.
                   </p>
                 </div>
                 <div className="content-item">
-                  <h4 className="content-title">
+                  {/* <h4 className="content-title">
                     Custom-Built Solutions Just For You
-                  </h4>
+                  </h4> */}
                   <p className="content-text">
-                    We don't do "one-size-fits-all". We create scrapers made
-                    just for you because your business goals are specific.
+                    We don’t say “one-size-fits-all”. We create the scrapers
+                    that are made just for you because your business goals are
+                    specific and your data tools should be too.
                   </p>
                 </div>
               </div>
@@ -114,9 +122,13 @@ const AboutComponent = () => {
                 <h3 className="card-title">Our Mission</h3>
               </div>
               <p className="card-text">
-                Help businesses access clean, structured, reliable data without
-                stress. We simplify automation so you spend less time on manual
-                work and more on smart decisions.
+                We help your businesses access clean, structured, and reliable
+                data and that too without the stress. So, as a trusted Data
+                Extraction Company, we simplify the automation so that you can
+                spend less time on manual work and more on making smart
+                decisions. And with our data extraction services and web data
+                crawling, we deliver the right data at the right time— helping
+                you boost efficiency and cut costs.
               </p>
             </div>
 
@@ -140,9 +152,12 @@ const AboutComponent = () => {
                 <h3 className="card-title">Our Vision</h3>
               </div>
               <p className="card-text">
-                To be the go-to name for smart, ethical web scraping services.
-                Help businesses unlock data extraction power without technical
-                headaches.
+                To be the go-to name for anyone looking for smart, ethical and
+                effective web scraping services. We want to help businesses
+                across the globe open the full power of data extraction and
+                actually understand it. Our vision is a world where companies of
+                all sizes can use data-driven insights without the typical
+                technical headaches or complexity.
               </p>
             </div>
           </div>
@@ -155,14 +170,16 @@ const AboutComponent = () => {
           <div className="section-header">
             <h2 className="section-title">Why Businesses Trust Us</h2>
             <p className="section-subtitle">
-              Delivering exceptional results that exceed expectations
+              Tell us what you need, and we’ll build the best scraper for it.
+              Our web scraping services are made to simplify your workflow— no
+              confusion, it’s just clean data.
             </p>
           </div>
 
           <div className="about-features-grid">
             {features.map((feature, index) => (
-              <div key={index} className="feature-card">
-                <div className="feature-icon">
+              <div key={index} className="about-feature-card">
+                <div className="about-feature-icon">
                   <svg
                     className="icon"
                     fill="none"
@@ -185,186 +202,6 @@ const AboutComponent = () => {
         </div>
       </section>
 
-      <section className="section pt-0">
-        <div className="container">
-          <div className="row flex">
-            {/* CARD 1 */}
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <Link
-                to="/website-data-scraping-services"
-                className="scrape-card card-1"
-              >
-                <div className="card-icon">
-                  <i className="fas fa-database"></i>
-                </div>
-                <h3 className="mb-3">
-                  <span className="card-number">01.</span>Enterprise - Scale Web
-                  Crawling
-                </h3>
-                <p>
-                  We know you have too many operations to handle. So we free you
-                  from all the need to install hardware or software to get the
-                  data. Just get the data delivered and assess it as much as you
-                  want.
-                </p>
-              </Link>
-            </div>
-
-            {/* CARD 2 */}
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <Link
-                to="/mobile-app-data-scraping-services"
-                className="scrape-card card-2"
-              >
-                <div className="card-icon">
-                  <i className="fas fa-mobile-alt"></i>
-                </div>
-                <h3 className="mb-3">
-                  <span className="card-number">02.</span> Mobile App Scraping
-                </h3>
-                <p>
-                  Mobile apps are like a benchmark nowadays. Every brand is
-                  looking to have an application of its own. But how do you make
-                  sure that happens so? Get the right kind of data with rightful
-                  experts at The One Crawling Solutions.
-                </p>
-              </Link>
-            </div>
-
-            {/* CARD 3 */}
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <Link
-                to="/web-scarping-api-services"
-                className="scrape-card card-3"
-              >
-                <div className="card-icon">
-                  <i className="fas fa-code"></i>
-                </div>
-                <h3 className="mb-3">
-                  <span className="card-number">03.</span> Web Scraping APIs
-                </h3>
-                <p>
-                  One size fits all may be for some other industry. Your brand
-                  needs a fresh and customized approach when it comes to getting
-                  the data you need. We will provide you customized web scraping
-                  APIs so you can breathe in peace.
-                </p>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div className="portfolio-download-container py-5">
-        <div className="container text-center">
-          {/* Hero Section */}
-          <h1 className="portfolio-heading">
-            Empower Your Business with Our Expertise
-          </h1>
-          <p className="portfolio-description mt-4">
-            Explore our comprehensive portfolio showcasing a track record of
-            innovation, excellence, and commitment to delivering cutting-edge
-            solutions across various industries.
-          </p>
-
-          {/* Key Highlights Section */}
-          <div className="portfolio-highlights mt-5">
-            <h3 className="highlights-heading">Why Partner with Us?</h3>
-            <div className="row mt-4">
-              <div className="col-md-4">
-                <i
-                  className="fas fa-cogs fa-3x mb-3"
-                  style={{ color: "rgb(247, 87, 87)" }}
-                ></i>
-                <h4 className="highlight-title">Innovative Solutions</h4>
-                <p className="highlight-description">
-                  Leverage the latest technologies and industry best practices
-                  to stay ahead of the curve.
-                </p>
-              </div>
-              <div className="col-md-4">
-                <i
-                  className="fas fa-users fa-3x mb-3"
-                  style={{ color: "rgb(247, 87, 87)" }}
-                ></i>
-                <h4 className="highlight-title">Client-Centric Approach</h4>
-                <p className="highlight-description">
-                  We prioritize your goals, ensuring that our solutions align
-                  perfectly with your business needs.
-                </p>
-              </div>
-              <div className="col-md-4">
-                <i
-                  className="fas fa-chart-line fa-3x mb-3"
-                  style={{ color: "rgb(247, 87, 87)" }}
-                ></i>
-                <h4 className="highlight-title">Proven Success</h4>
-                <p className="highlight-description">
-                  A strong portfolio of successfully delivered projects across
-                  multiple industries speaks for itself.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Services Section */}
-          {/* <div className="portfolio-services mt-3">
-           <h3 className="services-heading">Our Core Services</h3>
-           <div className="row mt-4">
-             <div className="col-md-6">
-               <h4 className="service-title">Consulting & Strategy</h4>
-               <p className="service-description">
-                 From market analysis to tailored strategies, we guide your
-                 business to success with expert insights.
-               </p>
-             </div>
-             <div className="col-md-6">
-               <h4 className="service-title">Technology Solutions</h4>
-               <p className="service-description">
-                 Our team specializes in delivering scalable, efficient
-                 technology solutions to meet your business needs.
-               </p>
-             </div>
-           </div>
-           <div className="row mt-4">
-             <div className="col-md-6">
-               <h4 className="service-title">Digital Transformation</h4>
-               <p className="service-description">
-                 We help businesses adapt to the digital age with innovative
-                 transformation strategies and execution.
-               </p>
-             </div>
-             <div className="col-md-6">
-               <h4 className="service-title">Custom Software Development</h4>
-               <p className="service-description">
-                 From concept to deployment, we build custom software that helps
-                 your business grow and thrive.
-               </p>
-             </div>
-           </div>
-         </div> */}
-
-          {/* Call-to-Action Section */}
-          <div className="cta-section bg-light py-5 mt-5">
-            <div className="container text-center">
-              <h3 className="cta-title">
-                Download Our Company Portfolio Today
-              </h3>
-              <p className="cta-paragraph mt-4">
-                Discover how our solutions have transformed businesses like
-                yours. Let’s partner together and achieve greatness.
-              </p>
-              <button
-                onClick={downloadPortfolio}
-                className="btn btn-main portfolio-btn mt-4"
-              >
-                Download Company Portfolio{" "}
-                <i className="fas fa-file-download ml-2"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
       {/* Section Counter Start */}
       <section className="section counter bg-counter">
         <div className="container">

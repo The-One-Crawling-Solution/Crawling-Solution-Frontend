@@ -7,10 +7,10 @@
 }
 
 .hero-grid {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
-  align-items: center;
+  align-items: center; */
 }
 
 .hero-visual {
@@ -18,7 +18,8 @@
   height: 20rem;
   background: linear-gradient(135deg, #f75757 0%, #dc2626 100%);
   border-radius: 1rem;
-  display: flex;
+  display: none;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   color: white;
@@ -63,7 +64,7 @@
   display: inline-block;
   padding: 0.25rem 0.75rem;
   background-color: #fef2f2;
-  color: #dc2626;
+  color: #dc2626 !important;
   border-radius: 9999px;
   font-size: 0.875rem;
   font-weight: 500;
@@ -76,6 +77,7 @@
   color: #111827;
   margin-bottom: 1.5rem;
   line-height: 1.2;
+  text-align: center;
 }
 
 .highlight {
@@ -86,12 +88,13 @@
   font-size: 1.25rem;
   color: #6b7280;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .content-sections {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .content-item {
@@ -169,6 +172,7 @@
   font-size: 1.25rem;
   font-weight: bold;
   color: #111827;
+  margin: 0 !important;
 }
 
 .card-text {
@@ -204,7 +208,7 @@
   gap: 1.5rem;
 }
 
-.feature-card {
+.about-feature-card {
   background-color: white;
   padding: 1.5rem;
   border-radius: 0.5rem;
@@ -212,11 +216,11 @@
   transition: box-shadow 0.2s ease;
 }
 
-.feature-card:hover {
+.about-feature-card:hover {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-.feature-icon {
+.about-feature-icon {
   width: 3rem;
   height: 3rem;
   background-color: #fef2f2;
@@ -227,7 +231,7 @@
   margin-bottom: 1rem;
 }
 
-.feature-icon .icon {
+.about-feature-icon .icon {
   width: 1.5rem;
   height: 1.5rem;
   color: #f75757;

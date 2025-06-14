@@ -1,0 +1,725 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 120px 0 80px;
+  background: linear-gradient(135deg, #242424 0%, #1a1a1a 50%, #242424 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23f75757" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.hero-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1.1rem, 1vw, 1.4rem);
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #e0e0e0;
+  /* max-width: 600px; */
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  background: linear-gradient(135deg, rgb(247, 87, 87), #c54041);
+  color: #fff;
+  padding: 18px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(247, 87, 87, 0.3);
+}
+
+.hero-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(247, 87, 87, 0.4);
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-cta i {
+  font-size: 18px;
+  animation: bounce 2s infinite;
+}
+
+/* Section Styles */
+.content-section {
+  padding: 30px 0;
+}
+
+.content-section:nth-child(even) {
+  background: #f5f8f9;
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700;
+  color: #242424;
+  margin-bottom: 30px;
+  line-height: 1.3;
+  animation: slideInLeft 0.8s ease-out;
+  position: relative;
+  text-align: center;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #f75757);
+  border-radius: 2px;
+}
+
+.section-content {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #5a5a5a;
+  margin-bottom: 40px;
+  animation: slideInRight 0.8s ease-out;
+}
+
+.section-content p {
+  margin-bottom: 20px;
+}
+
+.section-content strong {
+  color: #242424;
+  font-weight: 600;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 5px solid rgb(247, 87, 87);
+  animation: fadeInUp 0.8s ease-out;
+  animation-fill-mode: both;
+}
+
+.feature-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.feature-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.feature-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.feature-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  border-left-color: #c54041;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: rgb(247, 87, 87);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.feature-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #242424;
+  margin-bottom: 15px;
+}
+
+.feature-description {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #646464;
+}
+
+/* Process Steps */
+.process-section {
+  background: linear-gradient(135deg, #242424 0%, #1a1a1a 100%);
+  color: #fff;
+  padding: 100px 0;
+}
+
+.process-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #fff;
+  position: relative;
+}
+
+.process-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #f75757);
+  border-radius: 2px;
+}
+
+.process-content {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #5a5a5a;
+  margin-bottom: 40px;
+  animation: slideInRight 0.8s ease-out;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 20px;
+  /* max-width: 1000px; */
+  margin: 0 auto;
+}
+
+.process-step {
+  text-align: center;
+  padding: 30px 20px;
+  position: relative;
+  animation: fadeInUp 0.8s ease-out;
+  animation-fill-mode: both;
+}
+
+.process-step:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.process-step:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.process-step:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.process-step:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, rgb(247, 87, 87), #c54041);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 30px rgba(247, 87, 87, 0.3);
+}
+
+.step-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.step-description {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #d0d0d0;
+  text-align: justify;
+  margin: 0 !important;
+}
+
+/* Case Studies */
+.case-studies {
+  padding: 100px 0;
+  background: #f5f8f9;
+}
+
+.case-study {
+  background: #fff;
+  padding: 50px 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.case-study:nth-child(even) {
+  animation: slideInRight 0.8s ease-out;
+}
+
+.case-study::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, rgb(247, 87, 87), #c54041, #b99769);
+}
+
+.case-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #242424;
+  margin-bottom: 20px;
+}
+
+.case-description {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #5a5a5a;
+}
+
+.case-result {
+  display: inline-block;
+  background: linear-gradient(135deg, rgb(247, 87, 87), #c54041);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* Benefits Section */
+.benefits-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #fff 0%, #f5f8f9 100%);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.benefit-item {
+  background: #fff;
+  padding: 35px 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.8s ease-out;
+  animation-fill-mode: both;
+}
+
+.benefit-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.benefit-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.benefit-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.benefit-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.benefit-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  color: rgb(247, 87, 87);
+  margin-bottom: 20px;
+}
+
+.benefit-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #242424;
+  margin-bottom: 15px;
+}
+
+.benefit-description {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #646464;
+  margin: 0 !important;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #242424 0%, #333 100%);
+  color: #fff;
+}
+
+/* .faq-section {
+  color: white;
+  padding: 100px 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+} */
+
+.faq-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.faq-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #f75757, #b99769);
+  border-radius: 2px;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  background: rgba(247, 87, 87, 0.2);
+  transform: translateY(-3px);
+}
+
+.faq-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.faq-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.faq-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.faq-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.faq-question {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.faq-icon {
+  color: rgb(247, 87, 87);
+  font-size: 1.3rem;
+}
+
+.faq-answer {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 0 30px 25px;
+  color: #d0d0d0;
+  margin: 0 !important;
+}
+
+/* CTA Section */
+.final-cta {
+  padding: 100px 0;
+  background: linear-gradient(135deg, rgb(247, 87, 87) 0%, #c54041 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.final-cta-title {
+  font-family: "Playfair Display", serif;
+  position: relative;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.final-cta-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #f75757);
+  border-radius: 2px;
+}
+
+.final-cta-description {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-primary,
+.cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 35px;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-primary {
+  background: #fff;
+  color: rgb(247, 87, 87);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cta-primary:hover {
+  background: #f5f5f5;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  color: rgb(247, 87, 87);
+  text-decoration: none;
+}
+
+.cta-secondary {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.cta-secondary:hover {
+  background: #fff;
+  color: rgb(247, 87, 87);
+  transform: translateY(-3px);
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 80px 0 60px;
+  }
+
+  .content-section {
+    padding: 20px 0;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .feature-card {
+    padding: 30px 20px;
+  }
+
+  .process-section {
+    padding: 80px 0;
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .case-study {
+    padding: 30px 25px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .faq-section,
+  .final-cta {
+    padding: 80px 0;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 60px 0 40px;
+  }
+
+  .hero-cta {
+    padding: 15px 25px;
+    font-size: 14px;
+  }
+
+  .feature-card,
+  .case-study {
+    padding: 25px 20px;
+  }
+
+  .faq-question {
+    padding: 20px 20px;
+    font-size: 1rem;
+  }
+
+  .faq-answer {
+    padding: 0 20px 20px;
+  }
+}

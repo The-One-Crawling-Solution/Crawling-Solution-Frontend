@@ -7,6 +7,7 @@
 
 * html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -15,6 +16,24 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 17px;
   color: rgba(0, 0, 0, 0.65);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #f75757, #b99769);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #e54545, #a88658);
 }
 
 h1,
@@ -367,6 +386,610 @@ a:focus {
 
 .page-wrapper {
   padding: 70px 0;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.homepage {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Hero Section */
+.home-hero-section {
+  background: linear-gradient(135deg, #f5f8f9 0%, #fff 100%);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-hero-section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(247, 87, 87, 0.05));
+  transform: rotate(45deg);
+  animation: slideInRight 1.2s ease-out;
+}
+
+.home-hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.home-hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #242424;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.home-hero-title .highlight {
+  color: rgb(247, 87, 87);
+  position: relative;
+}
+
+.home-hero-title .highlight::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, rgb(247, 87, 87), rgba(247, 87, 87, 0.5));
+  animation: slideInRight 1s ease-out 1s both;
+}
+
+.home-hero-description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.home-hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease-out 0.9s both;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary,
+.btn-outline,
+.btn-download {
+  font-family: "Poppins", sans-serif;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, rgb(247, 87, 87), #c54041);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(247, 87, 87, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(247, 87, 87, 0.4);
+  animation: pulse 0.6s ease-in-out;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: rgb(247, 87, 87);
+  border: 2px solid rgb(247, 87, 87);
+}
+
+.btn-secondary:hover {
+  background: rgb(247, 87, 87);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: rgb(247, 87, 87);
+  border: 2px solid rgb(247, 87, 87);
+}
+
+.btn-outline:hover {
+  background: rgb(247, 87, 87);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-download {
+  background: linear-gradient(135deg, #b99769, #8a7356);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(185, 151, 105, 0.3);
+}
+
+.btn-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(185, 151, 105, 0.4);
+}
+
+/* Services Section */
+.home-services-section {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.home-section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #242424;
+  margin-bottom: 60px;
+  position: relative;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.home-section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, rgb(247, 87, 87), #c54041);
+  border-radius: 2px;
+}
+
+.home-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.home-service-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dedede;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.home-service-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.home-service-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.home-service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, rgb(247, 87, 87), #c54041);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.home-service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.home-service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.home-service-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, rgb(247, 87, 87), #c54041);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+
+.home-service-card:hover .service-icon {
+  transform: scale(1.1);
+  animation: bounce 0.6s ease-in-out;
+}
+
+.home-service-icon i {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.home-service-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #242424;
+  margin-bottom: 15px;
+}
+
+.home-service-description {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.home-service-btn {
+  font-family: "Poppins", sans-serif;
+  background: transparent;
+  color: rgb(247, 87, 87);
+  border: 2px solid rgb(247, 87, 87);
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.home-service-btn:hover {
+  background: rgb(247, 87, 87);
+  color: #fff;
+  transform: translateX(5px);
+}
+
+/* Features Section */
+.home-features-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f5f8f9 0%, #fff 100%);
+  opacity: 1;
+}
+
+.home-section-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  /* margin-top: -40px; */
+  margin-bottom: 60px;
+  font-style: italic;
+}
+
+.home-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.home-feature-item {
+  text-align: center;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.home-feature-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.home-feature-item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.home-feature-item:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.home-feature-item:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.home-feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.home-feature-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, rgb(247, 87, 87), #c54041);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  transition: transform 0.3s ease;
+}
+
+.home-feature-item:hover .home-feature-icon {
+  transform: scale(1.1);
+  animation: pulse 0.6s ease-in-out;
+}
+
+.home-feature-icon i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.home-feature-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #242424;
+  margin-bottom: 15px;
+  -webkit-line-clamp: 2;
+}
+
+.home-feature-description {
+  color: #666;
+  line-height: 1.6;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 4; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+}
+
+/* CTA Section */
+.home-cta-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, rgb(247, 87, 87), #c54041);
+  color: #fff;
+  text-align: center;
+}
+
+.home-cta-content {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.home-cta-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.home-cta-description {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+
+.home-cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home-cta-section .btn-primary {
+  background: #fff;
+  color: rgb(247, 87, 87);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.home-cta-section .btn-primary:hover {
+  background: #f5f8f9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.home-cta-section .btn-outline {
+  border-color: #fff;
+  color: #fff;
+}
+
+.home-cta-section .btn-outline:hover {
+  background: #fff;
+  color: rgb(247, 87, 87);
+}
+
+/* Download Section */
+.download-section {
+  padding: 80px 0;
+  /* background: #242424; */
+  color: #fff;
+  text-align: center;
+}
+
+.download-content {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.download-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.download-description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #242424 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .home-hero-description {
+    font-size: 1.1rem;
+  }
+
+  .home-hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-services-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .home-features-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .home-section-title {
+    font-size: 2.2rem;
+  }
+
+  .home-cta-title {
+    font-size: 2rem;
+  }
+
+  .home-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .home-hero-section {
+    padding: 60px 0;
+  }
+
+  .home-services-section,
+  .home-features-section,
+  .home-cta-section {
+    padding: 60px 0;
+  }
+
+  .download-section {
+    padding: 50px 0;
+  }
+
+  .home-service-card,
+  .home-feature-item {
+    padding: 25px 20px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline,
+  .btn-download {
+    padding: 14px 24px;
+    font-size: 0.9rem;
+  }
 }
 
 #wrapper-work {
