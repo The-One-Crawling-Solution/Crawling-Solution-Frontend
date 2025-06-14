@@ -9,6 +9,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -21,25 +22,25 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Set Homepage based on branch
+      - name: Set Homepage and CNAME based on branch
         run: |
-          BRANCH=$(echo ${{ github.ref }} | sed 's/refs\/heads\///')
+          BRANCH=$(echo "${{ github.ref }}" | sed 's/refs\/heads\///')
           if [[ "$BRANCH" == "main" ]]; then
-            echo "Setting homepage for main"
+            echo "Setting homepage for main branch"
             jq '.homepage="https://theonecrawlingsolution.com"' package.json > temp.json && mv temp.json package.json
             echo "theonecrawlingsolution.com" > public/CNAME
           else
-            echo "Setting homepage for develop"
+            echo "Setting homepage for develop branch"
             jq '.homepage="https://develop.theonecrawlingsolution.com"' package.json > temp.json && mv temp.json package.json
             echo "develop.theonecrawlingsolution.com" > public/CNAME
           fi
 
-      - name: Build project
+      - name: Build the project
         run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.DEPLOY_PAT }}
+          personal_token: ${{ secrets.DEPLOY_PAT }}
           publish_dir: ./build
-          cname: ${{ github.ref == 'refs/heads/main' && 'theonecrawlingsolution.com' || 'develop.theonecrawlingsolution.com' }}
+          publish_branch: ${{ github.ref == 'refs/heads/main' && 'gh-pages' || 'gh-pages-develop' }}
