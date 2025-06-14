@@ -73,7 +73,7 @@ const Header = () => {
                 }}
               />
               <span className="d-none d-md-inline text-white">
-                The One Crawling Solution
+                The One Crawling Solutions
               </span>{" "}
               <span className="d-md-none text-white">TOCS</span>
             </GA4Link>
