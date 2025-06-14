@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-
+import { BlogSinglePostImage } from "../../assets/images/imageAssets";
 const BlogSinglePost = () => {
   return (
     <section className="container my-5">
@@ -16,7 +16,7 @@ const BlogSinglePost = () => {
             </p>
 
             <img
-              src="assets/images/about/pexels-cottonbro-studio-4709391.jpg"
+              src={BlogSinglePostImage}
               className="img-fluid mb-4"
               alt="Data Scraping"
               loading="lazy"

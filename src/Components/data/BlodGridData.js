@@ -1,9 +1,16 @@
+import {
+  BlogGrid1,
+  BlogGrid2,
+  BlogGrid3,
+  BlogGrid4,
+} from "../../assets/images/imageAssets";
+
 // Sample blog data
 const BlogGridData = [
   {
     id: 1,
     title: "How Data Scraping is Revolutionizing Businesses",
-    image: "assets/images/blog/1.jpg",
+    image: BlogGrid1,
     description:
       "Data scraping has become an essential tool for businesses in the digital age...",
     link: "/blog-single",
@@ -11,7 +18,7 @@ const BlogGridData = [
   {
     id: 2,
     title: "5 Benefits of Using Data Scraping",
-    image: "assets/images/blog/2.jpg",
+    image: BlogGrid2,
     description:
       "Learn how data scraping can benefit your business by providing market research, lead generation...",
     link: "/blog-single",
@@ -19,7 +26,7 @@ const BlogGridData = [
   {
     id: 3,
     title: "The Future of Web Data Extraction",
-    image: "assets/images/blog/3.jpg",
+    image: BlogGrid3,
     description:
       "Web data extraction is evolving. Discover the latest trends and tools shaping the industry...",
     link: "/blog-single",
@@ -27,7 +34,7 @@ const BlogGridData = [
   {
     id: 4,
     title: "AI and Machine Learning in Data Scraping",
-    image: "assets/images/blog/4.jpg",
+    image: BlogGrid4,
     description:
       "Artificial Intelligence and Machine Learning are transforming data scraping processes...",
     link: "/blog-single",

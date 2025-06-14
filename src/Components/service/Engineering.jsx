@@ -1,12 +1,16 @@
 import React from "react";
 import CommonServicePage from "./CommonServicePage";
+import {
+  Entertainment1,
+  Entertainment2,
+} from "../../assets/images/imageAssets";
 // Import images if needed
 
 const Engineering = () => {
   const pageContent = {
     title: "OTT Services",
     subtitle: "Elevate Your OTT Strategy with Cutting-Edge Data Insights",
-    mainImage: "assets/images/about/pexels-pietro-jeng-65128.jpg",
+    mainImage: Entertainment1,
     content: {
       hero: [
         "In the dynamic realm of Over-the-Top (OTT) platforms, staying ahead requires more than just access to data—it demands actionable insights that drive innovation and strategy. Our OTT platform data scraping service delivers unparalleled intelligence, empowering you to redefine your approach to streaming and content management.",
@@ -14,7 +18,7 @@ const Engineering = () => {
       sections: [
         {
           title: "Why Choose The One Crawling Solution for OTT Data Scraping?",
-          image: "assets/images/about/entertainment1.jpg",
+          image: Entertainment2,
           list: [
             {
               title: "Innovative Insights:",
@@ -40,7 +44,7 @@ const Engineering = () => {
         },
         {
           title: "Our OTT Solutions Include:",
-          image: "assets/images/about/pexels-cottonbro-studio-4709391.jpg",
+          image: Entertainment1,
           list: [
             {
               title: "Product Design",
@@ -67,7 +71,7 @@ const Engineering = () => {
 
         {
           title: "Why Choose Us?",
-          image: "assets/images/about/pexels-vlada-karpovich-4050312.jpg",
+          image: Entertainment1,
           list: [
             {
               title: "Inovative Insights:",

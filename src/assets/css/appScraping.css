@@ -1,0 +1,418 @@
+/* AppScraping.css */
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #f5f8f9 0%, #fff 100%);
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #242424;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero-subheading {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: #242424;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styling */
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #242424;
+  margin-bottom: 1.5rem;
+}
+
+.section-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.section-description {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #242424;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.section-note {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  color: #666;
+  font-style: italic;
+}
+
+.section-conclusion {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: rgb(247, 87, 87);
+  font-weight: 500;
+  padding: 20px;
+  background: rgba(247, 87, 87, 0.1);
+  border-left: 4px solid rgb(247, 87, 87);
+  border-radius: 5px;
+}
+
+.section-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Background Sections */
+.bg-light {
+  background-color: #f5f8f9;
+}
+
+/* What is App Scraping Section */
+.what-is-section {
+  padding: 80px 0;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #242424;
+}
+
+.feature-icon {
+  color: rgb(247, 87, 87);
+  margin-right: 12px;
+  font-size: 1.1rem;
+}
+
+/* Why Matters Section */
+.why-matters-section {
+  padding: 80px 0;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #242424;
+  line-height: 1.5;
+}
+
+.benefit-icon {
+  color: #b99769;
+  margin-right: 12px;
+  font-size: 1.1rem;
+  margin-top: 3px;
+}
+
+/* Process Section */
+.process-section {
+  padding: 80px 0;
+}
+
+.process-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  position: relative;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.process-card:hover {
+  border-color: rgb(247, 87, 87);
+  transform: translateY(-5px);
+}
+
+.process-number {
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  background: rgb(247, 87, 87);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.process-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #242424;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.process-description {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Activities Section */
+.activities-section {
+  padding: 80px 0;
+}
+
+.activity-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.activity-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.activity-text {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #242424;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Data Types Section */
+.data-types-section {
+  padding: 80px 0;
+}
+
+.data-type-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.data-type-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.data-type-icon {
+  color: rgb(247, 87, 87);
+  font-size: 1.3rem;
+  margin-right: 15px;
+}
+
+.data-type-text {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #242424;
+  font-weight: 500;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 80px 0;
+}
+
+.faq-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  border-left: 4px solid rgb(247, 87, 87);
+}
+
+.faq-question {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #242424;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.faq-icon {
+  color: rgb(247, 87, 87);
+  margin-right: 10px;
+  font-size: 1.2rem;
+  margin-top: 2px;
+}
+
+.faq-answer {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, rgb(247, 87, 87) 0%, #c54041 100%);
+  color: #fff;
+  padding: 80px 0;
+}
+
+.cta-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.cta-description {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.cta-conclusion {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: #fff;
+  color: rgb(247, 87, 87);
+  border: none;
+  padding: 15px 35px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background: #f5f8f9;
+  color: rgb(247, 87, 87);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-image,
+  .section-image {
+    height: 250px;
+    margin-top: 30px;
+  }
+
+  .process-card {
+    margin-bottom: 30px;
+  }
+
+  .activity-card {
+    margin-bottom: 20px;
+  }
+
+  .cta-title {
+    font-size: 1.8rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-heading {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .hero-section,
+  .what-is-section,
+  .why-matters-section,
+  .process-section,
+  .activities-section,
+  .data-types-section,
+  .faq-section,
+  .cta-section {
+    padding: 50px 0;
+  }
+}

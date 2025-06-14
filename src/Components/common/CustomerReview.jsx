@@ -2,13 +2,19 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import {
+  CustomerReview1,
+  CustomerReview2,
+  CustomerReview3,
+  CustomerReview4,
+} from "../../assets/images/imageAssets";
 
 const reviewsData = [
   {
     id: 1,
     name: "Viral Sadhu",
     position: "Project Manager",
-    image: "assets/images/blog/1734455961173_viralsadhu.jpeg",
+    image: CustomerReview1,
     testimonial:
       "The One Crawling Solution helped us streamline our data collection process with their excellent web scraping services. Their team was professional and delivered accurate and reliable data.",
     // company: "Tech Innovations Ltd",
@@ -17,7 +23,7 @@ const reviewsData = [
     id: 2,
     name: "Mehul",
     position: "Technical Lead",
-    image: "assets/images/blog/1734455979755_M.jpeg",
+    image: CustomerReview2,
     testimonial:
       "We needed a customized solution for API data scraping, and The One Crawling Solution exceeded our expectations. Their expertise in handling complex APIs was impressive.",
     // company: "Data Systems Inc",
@@ -26,7 +32,7 @@ const reviewsData = [
     id: 3,
     name: "Smit Patel",
     position: "Operations Director",
-    image: "assets/images/blog/1734455995158_Smitpatel.jpeg",
+    image: CustomerReview3,
     testimonial:
       "Working with The One Crawling Solution was a great experience. They developed a web scraping application tailored to our business requirements.",
     // company: "Digital Solutions Co",
@@ -35,7 +41,7 @@ const reviewsData = [
     id: 4,
     name: "Aalap Jadeja",
     position: "Technical Director",
-    image: "assets/images/blog/1734456011114_Aalapjadeja.jpeg",
+    image: CustomerReview4,
     testimonial:
       "The One Crawling Solution provided us with top-notch data scraping services. Their ability to handle large-scale data extraction tasks efficiently has been crucial for our projects.",
     // company: "Web Solutions Ltd",

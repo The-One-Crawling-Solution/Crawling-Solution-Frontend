@@ -1,14 +1,16 @@
 import React from "react";
-import EducationImage1 from "../../images/about/education1.jpg";
-import EducationImage2 from "../../images/about/education2.jpg";
-import EducationImage3 from "../../images/about/education3.jpg";
 import CommonServicePage from "./CommonServicePage";
+import {
+  Education1,
+  Education2,
+  Education3,
+} from "../../assets/images/imageAssets";
 
 const Education = () => {
   const pageContent = {
     title: "Education Data Scraping",
     subtitle: "How We Deliver Education Data at Lightning Speed",
-    mainImage: EducationImage1,
+    mainImage: Education1,
     content: {
       hero: [
         "In the rapidly evolving education sector, having access to up-to-date, relevant data is essential. Our streamlined data scraping process ensures you receive accurate, structured educational data faster than your competition.",
@@ -16,7 +18,7 @@ const Education = () => {
       sections: [
         {
           title: "Discovery & Customization in Education Data Collection",
-          image: EducationImage2,
+          image: Education2,
           list: [
             {
               title: "Tailored Data Collection",
@@ -37,7 +39,7 @@ const Education = () => {
         },
         {
           title: "Data Quality and Support",
-          image: EducationImage2,
+          image: Education2,
           list: [
             {
               title: "Data Refinement",
@@ -64,7 +66,7 @@ const Education = () => {
         {
           title:
             "Why Choose The One Crawling Solution for Education Data Scraping?",
-          image: EducationImage3,
+          image: Education3,
           list: [
             {
               title: "Data That Drives Decisions",

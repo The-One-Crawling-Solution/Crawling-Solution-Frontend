@@ -4,7 +4,8 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:300,400,500,600,700);
 /* === Optimized Google Fonts Import === */
 /* @import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap); */
-*/ html {
+
+* html {
   overflow-x: hidden;
 }
 
@@ -1024,7 +1025,7 @@ ul.dropdown-menu li {
 
 .social-icons i {
   /* margin-right: 15px; */
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .google-map {
@@ -1437,9 +1438,9 @@ h3.quote::before {
   letter-spacing: 1px;
 }
 
-.logo span {
+/* .logo span {
   color: #f75757;
-}
+} */
 
 .sub-form {
   position: relative;
@@ -1460,7 +1461,7 @@ h3.quote::before {
 
 .footer-contact-socials {
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .contact-row {
@@ -1488,9 +1489,9 @@ h3.quote::before {
 
 .social-row .social-icons {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 15px;
-  padding: 0;
+  padding-top: 10px;
   list-style: none;
 }
 

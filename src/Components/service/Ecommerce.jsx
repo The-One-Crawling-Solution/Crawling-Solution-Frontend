@@ -1,14 +1,13 @@
 import React from "react";
-import EcomImage from "../../images/about/ecommers.jpg";
-import EcomImage1 from "../../images/about/e-commers1.jpg";
-import EcomImage2 from "../../images/about/e-commers2.jpg";
+
 import CommonServicePage from "./CommonServicePage";
+import { Ecom1, Ecom2, Ecom3 } from "../../assets/images/imageAssets";
 
 const Ecommerce = () => {
   const pageContent = {
     title: "E-commerce & Retail Data Scraping",
     subtitle: "Don't Just Acquire, Conquer the Customers",
-    mainImage: EcomImage,
+    mainImage: Ecom1,
     content: {
       hero: [
         "Digital shelves overflowing with confusion? Lost in the complexities of competitor listings?",
@@ -17,7 +16,7 @@ const Ecommerce = () => {
       sections: [
         {
           title: "Dig Deeper With Our Crawling Services:",
-          image: EcomImage1,
+          image: Ecom2,
           list: [
             {
               title: "Product intel",
@@ -43,7 +42,7 @@ const Ecommerce = () => {
         },
         {
           title: "No more endless scrolling, no more guesswork.",
-          image: EcomImage2,
+          image: Ecom3,
           paragraphs: [
             "We deliver clean, structured data, your ready-made compass to:",
           ],
@@ -67,7 +66,7 @@ const Ecommerce = () => {
         },
         {
           title: "How We Deliver Data Faster Than Your Competition",
-          image: EcomImage2,
+          image: Ecom3,
           paragraphs: [
             "In the fast-paced e-commerce world, timing is everything. Here’s a breakdown of our streamlined data scraping process that ensures you receive accurate, structured data faster than ever:",
           ],
@@ -91,7 +90,7 @@ const Ecommerce = () => {
         },
         {
           title: "Data Quality and Speed of Delivery",
-          image: EcomImage2,
+          image: Ecom3,
           list: [
             {
               title: "Data Refinement",
@@ -117,7 +116,7 @@ const Ecommerce = () => {
         },
         {
           title: "Why Choose The One Crawling Solution?",
-          image: EcomImage2,
+          image: Ecom3,
 
           list: [
             {
