@@ -5,9 +5,13 @@ import { BrowserRouter } from "react-router-dom";
 import HelmetWrapper from "./Components/seo/HelmetWrapper";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+const branch = window.location.hostname.includes("develop") ? "/develop" : "/";
+
 root.render(
   <BrowserRouter
     future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+    basename={branch}
   >
     <HelmetWrapper />
     <App />
