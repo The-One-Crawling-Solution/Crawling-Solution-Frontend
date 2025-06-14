@@ -8,6 +8,15 @@ import { Blog1, Blog2, Blog3 } from "../assets/images/imageAssets";
 import AboutComponent from "./About";
 
 const Home = () => {
+  const downloadPortfolio = () => {
+    const pdfUrl =
+      "https://drive.google.com/file/d/1Cc2T0U9MRBA3JU-zjXB2aTx2DxbHVwzb/view?";
+    const anchor = document.createElement("a");
+    anchor.href = pdfUrl;
+    anchor.target = "_blank";
+    anchor.download = "company-portfolio.pdf";
+    anchor.click();
+  };
   return (
     <>
       <div className="main-wrapper">
@@ -220,7 +229,10 @@ const Home = () => {
                   yours grow smarter. So let's build something that works
                   together.
                 </p>
-                <button className="btn-download">
+                <button
+                  className="btn-download"
+                  onClick={() => downloadPortfolio()}
+                >
                   <i className="fas fa-download"></i>
                   Download & Decide
                 </button>

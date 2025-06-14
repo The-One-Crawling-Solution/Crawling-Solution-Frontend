@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useRef, useEffect } from "react";
 import "../../assets/css/healthCare.css";
 // import "./healthCare.css";

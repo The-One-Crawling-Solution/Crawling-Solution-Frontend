@@ -1,17 +1,7 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "../assets/css/about.css";
 
 const AboutComponent = () => {
-  const downloadPortfolio = () => {
-    const pdfUrl =
-      "https://drive.google.com/file/d/1Cc2T0U9MRBA3JU-zjXB2aTx2DxbHVwzb/view?";
-    const anchor = document.createElement("a");
-    anchor.href = pdfUrl;
-    anchor.target = "_blank";
-    anchor.download = "company-portfolio.pdf";
-    anchor.click();
-  };
-
   const features = [
     {
       icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
