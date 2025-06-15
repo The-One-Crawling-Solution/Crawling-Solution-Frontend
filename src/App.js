@@ -6,6 +6,7 @@ import Footer from "./Components/common/Footer";
 import FullScreenLoader from "./Components/common/FullScreenLoader";
 import navConfig from "./Components/data/NavBarData";
 import ReactGA from "react-ga4";
+import StickyContact from "./Components/common/StickyContact";
 // import "./assets/css/style.css";
 
 // Lazy-loaded Pages
@@ -148,6 +149,8 @@ function App() {
   return (
     <div className="App">
       <Header />
+
+      <StickyContact />
       <div style={{ paddingTop: "78px" }}>
         <Suspense fallback={<FullScreenLoader />}>
           <Routes>

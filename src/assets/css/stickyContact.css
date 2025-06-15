@@ -1,0 +1,460 @@
+/* ==== DESKTOP STYLES ==== */
+.stickcontact-desktop {
+  position: fixed;
+  z-index: 1000;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.stickcontact-desktop.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Left Edge - Social Links */
+.stickcontact-social {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(-100%);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stickcontact-social.visible {
+  transform: translateY(-50%) translateX(0);
+}
+
+.stickcontact-social.top {
+  top: 25%;
+  transform: translateY(0) translateX(-100%);
+}
+
+.stickcontact-social.top.visible {
+  transform: translateY(0) translateX(0);
+}
+
+.stickcontact-social.bottom {
+  top: auto;
+  bottom: 25%;
+  transform: translateY(0) translateX(-100%);
+}
+
+.stickcontact-social.bottom.visible {
+  transform: translateY(0) translateX(0);
+}
+
+/* Right Edge - Contact Details */
+.stickcontact-details {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(100%);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stickcontact-details.visible {
+  transform: translateY(-50%) translateX(0);
+}
+
+.stickcontact-details.top {
+  top: 25%;
+  transform: translateY(0) translateX(100%);
+}
+
+.stickcontact-details.top.visible {
+  transform: translateY(0) translateX(0);
+}
+
+.stickcontact-details.bottom {
+  top: auto;
+  bottom: 25%;
+  transform: translateY(0) translateX(100%);
+}
+
+.stickcontact-details.bottom.visible {
+  transform: translateY(0) translateX(0);
+}
+
+/* Edge Items - Minimalistic Design */
+.stickcontact-edge-item {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  animation: slideInEdge 0.5s ease-out forwards;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+/* Left edge items - rounded right side only */
+.stickcontact-social .stickcontact-edge-item {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.stickcontact-social .stickcontact-edge-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Right edge items - rounded left side only */
+.stickcontact-details .stickcontact-edge-item {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: -2px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.stickcontact-details .stickcontact-edge-item::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.stickcontact-edge-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.stickcontact-edge-item i {
+  font-size: 18px;
+  transition: all 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.stickcontact-edge-item:hover i {
+  transform: scale(1.1);
+}
+
+/* ==== MOBILE STYLES ==== */
+.stickcontact-mobile {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  opacity: 0;
+  transform: scale(0.8) translateY(100px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.stickcontact-mobile.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  pointer-events: auto;
+}
+
+.stickcontact-fab-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+/* Main WhatsApp FAB */
+.stickcontact-fab {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.stickcontact-fab:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+.stickcontact-fab i {
+  font-size: 24px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Secondary Actions Row */
+.stickcontact-secondary-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 8px 12px;
+  border-radius: 25px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stickcontact-mini-item {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stickcontact-mini-item:hover {
+  transform: scale(1.1);
+}
+
+.stickcontact-mini-item i {
+  font-size: 14px;
+  z-index: 2;
+  position: relative;
+}
+
+/* ==== COLOR SCHEMES ==== */
+
+/* WhatsApp */
+.sticky-whatsapp {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: white;
+}
+
+/* Phone */
+.sticky-phone {
+  background: linear-gradient(135deg, #4285f4, #1976d2);
+  color: white;
+}
+
+/* Email */
+.sticky-email {
+  background: linear-gradient(135deg, #ea4335, #d33b2c);
+  color: white;
+}
+
+/* Facebook */
+.sticky-facebook {
+  background: linear-gradient(135deg, #1877f2, #0d47a1);
+  color: white;
+}
+
+/* Instagram */
+.sticky-instagram {
+  background: linear-gradient(135deg, #e4405f, #833ab4, #f77737);
+  color: white;
+}
+
+/* Twitter */
+.sticky-twitter {
+  background: linear-gradient(135deg, #1da1f2, #0d8bd9);
+  color: white;
+}
+
+/* LinkedIn */
+.sticky-linkedin {
+  background: linear-gradient(135deg, #0a66c2, #004182);
+  color: white;
+}
+
+/* Pinterest */
+.sticky-pinterest {
+  background: linear-gradient(135deg, #e60023, #bd081c);
+  color: white;
+}
+
+/* ==== ANIMATIONS ==== */
+@keyframes slideInEdge {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulseWhatsApp {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+  }
+}
+
+.pulse-animation {
+  animation: pulseWhatsApp 1s ease-in-out;
+}
+
+/* ==== SCROLL HIDE/SHOW EFFECT ==== */
+.stickcontact-desktop:not(.visible) {
+  transform: translateY(-50%) translateX(-100%);
+}
+
+.stickcontact-details:not(.visible) {
+  transform: translateY(-50%) translateX(100%);
+}
+
+.stickcontact-mobile:not(.visible) {
+  transform: scale(0.8) translateY(100px);
+}
+
+/* ==== RESPONSIVE BREAKPOINTS ==== */
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .stickcontact-mobile {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .stickcontact-fab {
+    width: 50px;
+    height: 50px;
+  }
+
+  .stickcontact-fab i {
+    font-size: 20px;
+  }
+
+  .stickcontact-secondary-actions {
+    gap: 6px;
+    padding: 6px 10px;
+  }
+
+  .stickcontact-mini-item {
+    width: 32px;
+    height: 32px;
+  }
+
+  .stickcontact-mini-item i {
+    font-size: 12px;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+  .stickcontact-mobile {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .stickcontact-secondary-actions {
+    gap: 4px;
+    padding: 4px 8px;
+  }
+
+  .stickcontact-mini-item {
+    width: 28px;
+    height: 28px;
+  }
+
+  .stickcontact-mini-item i {
+    font-size: 11px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .stickcontact-edge-item {
+    width: 42px;
+    height: 42px;
+  }
+
+  .stickcontact-edge-item i {
+    font-size: 16px;
+  }
+}
+
+/* Desktop edge positioning adjustments */
+@media (min-width: 1200px) {
+  .stickcontact-edge-item {
+    width: 48px;
+    height: 48px;
+  }
+
+  .stickcontact-edge-item i {
+    font-size: 19px;
+  }
+}
+
+/* ==== ACCESSIBILITY ==== */
+@media (prefers-reduced-motion: reduce) {
+  .stickcontact-desktop,
+  .stickcontact-mobile,
+  .stickcontact-edge-item,
+  .stickcontact-fab,
+  .stickcontact-mini-item {
+    transition: none;
+    animation: none;
+  }
+
+  .pulse-animation {
+    animation: none;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .stickcontact-edge-item,
+  .stickcontact-fab,
+  .stickcontact-mini-item {
+    border: 2px solid;
+  }
+
+  .stickcontact-secondary-actions {
+    background: white;
+    border: 2px solid black;
+  }
+}
+
+/* Print styles */
+@media print {
+  .stickcontact-desktop,
+  .stickcontact-mobile {
+    display: none;
+  }
+}
+
+/* Focus states for keyboard navigation */
+.stickcontact-edge-item:focus,
+.stickcontact-fab:focus,
+.stickcontact-mini-item:focus {
+  outline: 2px solid #4285f4;
+  outline-offset: 2px;
+}
+
+/* ==== PERFORMANCE OPTIMIZATIONS ==== */
+.stickcontact-desktop,
+.stickcontact-mobile {
+  will-change: transform, opacity;
+}
+
+.stickcontact-edge-item,
+.stickcontact-fab,
+.stickcontact-mini-item {
+  will-change: transform;
+}
