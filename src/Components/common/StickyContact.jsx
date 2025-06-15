@@ -155,7 +155,7 @@ const StickyContact = ({
         <div className="stickcontact-fab-container">
           {/* Main WhatsApp FAB */}
           <div
-            className="stickcontact-fab main-fab whatsapp"
+            className="stickcontact-fab main-fab sticky-whatsapp"
             onClick={handleWhatsAppClick}
           >
             <i className="fab fa-whatsapp"></i>
@@ -164,13 +164,13 @@ const StickyContact = ({
           {/* Secondary actions - compact row */}
           <div className="stickcontact-secondary-actions">
             <div
-              className="stickcontact-mini-item phone"
+              className="stickcontact-mini-item sticky-phone"
               onClick={handlePhoneClick}
             >
               <i className="fas fa-phone"></i>
             </div>
             <div
-              className="stickcontact-mini-item email"
+              className="stickcontact-mini-item sticky-email"
               onClick={handleEmailClick}
             >
               <i className="fas fa-envelope"></i>
