@@ -246,7 +246,7 @@
 .process-section {
   background: linear-gradient(135deg, #242424 0%, #1a1a1a 100%);
   color: #fff;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .process-title {
@@ -344,7 +344,7 @@
 
 /* Case Studies */
 .case-studies {
-  padding: 100px 0;
+  padding: 60px 0;
   background: #f5f8f9;
 }
 
@@ -402,7 +402,7 @@
 
 /* Benefits Section */
 .benefits-section {
-  padding: 100px 0;
+  padding: 60px 0;
   background: linear-gradient(135deg, #fff 0%, #f5f8f9 100%);
 }
 
@@ -469,14 +469,14 @@
 
 /* FAQ Section */
 .faq-section {
-  padding: 100px 0;
+  padding: 60px 0;
   background: linear-gradient(135deg, #242424 0%, #333 100%);
   color: #fff;
 }
 
 /* .faq-section {
   color: white;
-  padding: 100px 0;
+  padding: 60px 0;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease;
@@ -557,7 +557,7 @@
 
 /* CTA Section */
 .final-cta {
-  padding: 100px 0;
+  padding: 60px 0;
   background: linear-gradient(135deg, rgb(247, 87, 87) 0%, #c54041 100%);
   color: #fff;
   text-align: center;

@@ -84,19 +84,16 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="cta-section">
+      {/* <section className="cta-section">
         <div className="container">
           <div className="row justify-content-center">
-            {/* <div className="col-lg-8 col-md-10"> */}
             <div className="cta-card">
               <span className="cta-subtitle">Built for You, Backed by Us</span>
-              <h2 className="cta-title">
-                Entrust Your Project to Our Best Team of Professionals
-              </h2>
+              <h2 className="cta-title">Let’s Build Something That Works</h2>
               <p className="cta-description">
-                Got something in mind? Let our experts handle it. We provide
-                quick support and reliable solutions for all your data
-                extraction needs.
+                Your project deserves a team that understands your goals and
+                delivers results. Have an idea in mind? We are ready when you
+                are.
               </p>
               <a
                 href="tel:+919664508201"
@@ -104,13 +101,13 @@ const Services = () => {
                 aria-label="Call us for immediate support"
               >
                 <i className="fas fa-phone phone-icon"></i>
+                Connect with us directly at
                 <span>+91 9664508201</span>
               </a>
             </div>
-            {/* </div> */}
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

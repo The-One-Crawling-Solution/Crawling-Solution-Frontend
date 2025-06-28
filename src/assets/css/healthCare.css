@@ -130,7 +130,7 @@
 
 /* Content Sections */
 .content-section {
-  padding: 100px 0;
+  padding: 60px 0;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease;
@@ -187,7 +187,7 @@
 /* Features Section */
 .features-section {
   background: linear-gradient(135deg, #f5f8f9 0%, #ffffff 100%);
-  padding: 100px 0;
+  padding: 60px 0;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease;
@@ -257,7 +257,7 @@
 .process-section {
   background: linear-gradient(135deg, #242424 0%, #333 100%);
   color: white;
-  padding: 100px 0;
+  padding: 60px 0;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease;
@@ -325,7 +325,7 @@
 
 /* Use Cases Section */
 .use-cases-section {
-  padding: 100px 0;
+  padding: 60px 0;
   background: linear-gradient(135deg, #f5f8f9 0%, #ffffff 100%);
   opacity: 0;
   transform: translateY(50px);
@@ -364,7 +364,7 @@
 
 /* Benefits Section */
 .benefits-section {
-  padding: 100px 0;
+  padding: 60px 0;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease;
@@ -529,7 +529,7 @@
 .faq-section {
   background: linear-gradient(135deg, #242424 0%, #333 100%);
   color: white;
-  padding: 100px 0;
+  padding: 60px 0;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease;
@@ -610,7 +610,7 @@
 
 /* Final CTA Section */
 .final-cta {
-  padding: 100px 0;
+  padding: 60px 0;
   background: linear-gradient(135deg, rgb(247, 87, 87) 0%, #c54041 100%);
   color: #fff;
   text-align: center;

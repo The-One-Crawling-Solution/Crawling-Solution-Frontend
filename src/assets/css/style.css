@@ -373,7 +373,7 @@ a:focus {
 }
 
 .page-title {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .page-title .block h1 {
@@ -457,7 +457,7 @@ a:focus {
 /* Hero Section */
 .home-hero-section {
   background: linear-gradient(135deg, #f5f8f9 0%, #fff 100%);
-  padding: 100px 0;
+  padding: 60px 0;
   position: relative;
   overflow: hidden;
 }
@@ -594,7 +594,7 @@ a:focus {
 
 /* Services Section */
 .home-services-section {
-  padding: 100px 0;
+  padding: 60px 0;
   background: #fff;
 }
 
@@ -623,8 +623,8 @@ a:focus {
 
 .home-services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
   margin-top: 60px;
 }
 
@@ -739,7 +739,7 @@ a:focus {
 
 /* Features Section */
 .home-features-section {
-  padding: 100px 0;
+  padding: 60px 0;
   background: linear-gradient(135deg, #f5f8f9 0%, #fff 100%);
   opacity: 1;
 }
@@ -749,15 +749,26 @@ a:focus {
   font-size: 1.2rem;
   color: #666;
   /* margin-top: -40px; */
-  margin-bottom: 60px;
+  margin-bottom: 25px;
   font-style: italic;
 }
 
+.home-features-carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.home-features-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
 .home-features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  margin-top: 60px;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 20px;
 }
 
 .home-feature-item {
@@ -767,11 +778,26 @@ a:focus {
   border-radius: 15px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  min-height: 280px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   animation: fadeInUp 0.8s ease-out;
+  flex: 0 0 450px;
+  margin-right: 40px;
+}
+
+.home-features-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .home-feature-item:nth-child(2) {
@@ -788,7 +814,7 @@ a:focus {
 }
 
 .home-feature-item:hover {
-  transform: translateY(-5px);
+  /* transform: translateY(-5px); */
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
@@ -836,7 +862,7 @@ a:focus {
 
 /* CTA Section */
 .home-cta-section {
-  padding: 100px 0;
+  padding: 60px 0;
   background: linear-gradient(135deg, rgb(247, 87, 87), #c54041);
   color: #fff;
   text-align: center;

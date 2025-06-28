@@ -61,7 +61,7 @@ const Home = () => {
           {/* Services Section */}
           <section className="home-services-section">
             <div className="container">
-              <h2 className="home-section-title">Our Service Tabs</h2>
+              <h2 className="home-section-title">Our Service</h2>
               <div className="home-services-grid">
                 <div className="home-service-card">
                   <div className="home-service-icon">
@@ -121,80 +121,160 @@ const Home = () => {
           {/* Features Section */}
           <section className="home-features-section">
             <div className="container">
-              <h2 className="home-section-title">What Sets Us Apart</h2>
-              <p className="home-section-subtitle">
-                No Fancy Words, Just Facts
-              </p>
+              <div class="home-features-carousel">
+                <h2 className="home-section-title">What Sets Us Apart</h2>
+                <p className="home-section-subtitle">
+                  No Fancy Words, Just Facts
+                </p>
+                <div class="home-features-track">
+                  <div className="home-features-grid">
+                    <div className="home-feature-item">
+                      <div className="home-feature-icon">
+                        <i className="fas fa-times-circle"></i>
+                      </div>
+                      <h4 className="home-feature-title">
+                        No Fluff. No Noise. Just Results.
+                      </h4>
+                      <p className="home-feature-description">
+                        You tell us what you need and we scrape it clean. We
+                        don't over complicate things and no "consultant speaks."
+                        Just straight-up delivery to you.
+                      </p>
+                    </div>
 
-              <div className="home-features-grid">
-                <div className="home-feature-item">
-                  <div className="home-feature-icon">
-                    <i className="fas fa-times-circle"></i>
-                  </div>
-                  <h4 className="home-feature-title">
-                    No Fluff. No Noise. Just Results.
-                  </h4>
-                  <p className="home-feature-description">
-                    You tell us what you need and we scrape it clean. We don't
-                    over complicate things and no "consultant speaks." Just
-                    straight-up delivery to you.
-                  </p>
-                </div>
+                    <div className="home-feature-item">
+                      <div className="home-feature-icon">
+                        <i className="fas fa-bullseye"></i>
+                      </div>
+                      <h4 className="home-feature-title">
+                        Custom Like It Should Be.
+                      </h4>
+                      <p className="home-feature-description">
+                        We don't tweak templates or follow shortcuts, so we
+                        build everything from scratch to fit your exact mess, no
+                        matter how weird the platform or complex API.
+                      </p>
+                    </div>
 
-                <div className="home-feature-item">
-                  <div className="home-feature-icon">
-                    <i className="fas fa-bullseye"></i>
-                  </div>
-                  <h4 className="home-feature-title">
-                    Custom Like It Should Be.
-                  </h4>
-                  <p className="home-feature-description">
-                    We don't tweak templates or follow shortcuts, so we build
-                    everything from scratch to fit your exact mess, no matter
-                    how weird the platform or complex API.
-                  </p>
-                </div>
+                    <div className="home-feature-item">
+                      <div className="home-feature-icon">
+                        <i className="fas fa-bolt"></i>
+                      </div>
+                      <h4 className="home-feature-title">
+                        Fast. Sharp. On Point.
+                      </h4>
+                      <p className="home-feature-description">
+                        We don't just deliver fast. We deliver you the clean,
+                        organized data that actually makes sense and works
+                        straight out of the box for you.
+                      </p>
+                    </div>
 
-                <div className="home-feature-item">
-                  <div className="home-feature-icon">
-                    <i className="fas fa-bolt"></i>
-                  </div>
-                  <h4 className="home-feature-title">Fast. Sharp. On Point.</h4>
-                  <p className="home-feature-description">
-                    We don't just deliver fast. We deliver you the clean,
-                    organized data that actually makes sense and works straight
-                    out of the box for you.
-                  </p>
-                </div>
+                    <div className="home-feature-item">
+                      <div className="home-feature-icon">
+                        <i className="fas fa-shield-alt"></i>
+                      </div>
+                      <h4 className="home-feature-title">Ethical. Always.</h4>
+                      <p className="home-feature-description">
+                        We always keep things clean, legal, and secure so your
+                        data stays yours, and we don't mess with shady
+                        shortcuts.
+                      </p>
+                    </div>
 
-                <div className="home-feature-item">
-                  <div className="home-feature-icon">
-                    <i className="fas fa-shield-alt"></i>
-                  </div>
-                  <h4 className="home-feature-title">Ethical. Always.</h4>
-                  <p className="home-feature-description">
-                    We always keep things clean, legal, and secure so your data
-                    stays yours, and we don't mess with shady shortcuts.
-                  </p>
-                </div>
+                    <div className="home-feature-item">
+                      <div className="home-feature-icon">
+                        <i className="fas fa-headset"></i>
+                      </div>
+                      <h4 className="home-feature-title">
+                        Support That Stays.
+                      </h4>
+                      <p className="home-feature-description">
+                        We don't vanish after delivery– if something breaks or
+                        shifts, we're here to fix it with you, no ticket queues
+                        and no run arounds.
+                      </p>
+                    </div>
 
-                <div className="home-feature-item">
-                  <div className="home-feature-icon">
-                    <i className="fas fa-headset"></i>
+                    {/* Duplicate  */}
+                    <div className="home-feature-item">
+                      <div className="home-feature-icon">
+                        <i className="fas fa-times-circle"></i>
+                      </div>
+                      <h4 className="home-feature-title">
+                        No Fluff. No Noise. Just Results.
+                      </h4>
+                      <p className="home-feature-description">
+                        You tell us what you need and we scrape it clean. We
+                        don't over complicate things and no "consultant speaks."
+                        Just straight-up delivery to you.
+                      </p>
+                    </div>
+
+                    <div className="home-feature-item">
+                      <div className="home-feature-icon">
+                        <i className="fas fa-bullseye"></i>
+                      </div>
+                      <h4 className="home-feature-title">
+                        Custom Like It Should Be.
+                      </h4>
+                      <p className="home-feature-description">
+                        We don't tweak templates or follow shortcuts, so we
+                        build everything from scratch to fit your exact mess, no
+                        matter how weird the platform or complex API.
+                      </p>
+                    </div>
+
+                    <div className="home-feature-item">
+                      <div className="home-feature-icon">
+                        <i className="fas fa-bolt"></i>
+                      </div>
+                      <h4 className="home-feature-title">
+                        Fast. Sharp. On Point.
+                      </h4>
+                      <p className="home-feature-description">
+                        We don't just deliver fast. We deliver you the clean,
+                        organized data that actually makes sense and works
+                        straight out of the box for you.
+                      </p>
+                    </div>
+
+                    <div className="home-feature-item">
+                      <div className="home-feature-icon">
+                        <i className="fas fa-shield-alt"></i>
+                      </div>
+                      <h4 className="home-feature-title">Ethical. Always.</h4>
+                      <p className="home-feature-description">
+                        We always keep things clean, legal, and secure so your
+                        data stays yours, and we don't mess with shady
+                        shortcuts.
+                      </p>
+                    </div>
+
+                    <div className="home-feature-item">
+                      <div className="home-feature-icon">
+                        <i className="fas fa-headset"></i>
+                      </div>
+                      <h4 className="home-feature-title">
+                        Support That Stays.
+                      </h4>
+                      <p className="home-feature-description">
+                        We don't vanish after delivery– if something breaks or
+                        shifts, we're here to fix it with you, no ticket queues
+                        and no run arounds.
+                      </p>
+                    </div>
                   </div>
-                  <h4 className="home-feature-title">Support That Stays.</h4>
-                  <p className="home-feature-description">
-                    We don't vanish after delivery– if something breaks or
-                    shifts, we're here to fix it with you, no ticket queues and
-                    no run arounds.
-                  </p>
                 </div>
               </div>
             </div>
           </section>
 
+          <Services />
+          <AboutComponent />
+
           {/* CTA Section */}
-          <section className="home-cta-section">
+          {/* <section className="home-cta-section">
             <div className="container">
               <div className="home-cta-content">
                 <h2 className="home-cta-title">
@@ -217,7 +297,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
           {/* Download Section */}
           <section className="download-section">
@@ -241,8 +321,33 @@ const Home = () => {
           </section>
         </div>
 
-        <AboutComponent />
-        <Services />
+        <section className="cta-section">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="cta-card">
+                <span className="cta-subtitle">
+                  Built for You, Backed by Us
+                </span>
+                <h2 className="cta-title">Let’s Build Something That Works</h2>
+                <p className="cta-description">
+                  Your project deserves a team that understands your goals and
+                  delivers results. Have an idea in mind? We are ready when you
+                  are.
+                </p>
+                <a
+                  href="tel:+919664508201"
+                  className="cta-phone"
+                  aria-label="Call us for immediate support"
+                >
+                  <i className="fas fa-phone phone-icon"></i>
+
+                  <span>Connect with us directly at +91 9664508201</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <CustomerReview />
 
         {/* <!-- Section Testimonial End --> */}
