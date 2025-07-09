@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - develop
 
 jobs:
   deploy:
@@ -24,18 +23,10 @@ jobs:
 
       - name: Set homepage and CNAME
         run: |
-          BRANCH=$(echo "${{ github.ref }}" | sed 's/refs\/heads\///')
-          if [[ "$BRANCH" == "main" ]]; then
-            echo "Setting homepage for MAIN"
-            jq '.homepage="https://theonecrawlingsolution.com"' package.json > temp.json && mv temp.json package.json
-            mkdir -p public
-            echo "theonecrawlingsolution.com" > public/CNAME
-          else
-            echo "Setting homepage for DEVELOP"
-            jq '.homepage="https://develop.theonecrawlingsolution.com/develop"' package.json > temp.json && mv temp.json package.json
-            mkdir -p public
-            echo "develop.theonecrawlingsolution.com" > public/CNAME
-          fi
+          echo "Setting homepage for MAIN"
+          jq '.homepage="https://theonecrawlingsolution.com"' package.json > temp.json && mv temp.json package.json
+          mkdir -p public
+          echo "theonecrawlingsolution.com" > public/CNAME
 
       - name: Build project
         run: npm run build
@@ -50,4 +41,3 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ./build
           keep_files: true
-          destination_dir: ${{ github.ref == 'refs/heads/main' && '.' || 'develop' }}
