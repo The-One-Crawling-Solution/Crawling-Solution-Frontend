@@ -18,27 +18,21 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
+      - name: 📦 Install dependencies
         run: npm install
 
-      - name: Set homepage and CNAME
+      - name: 🛠️ Set homepage and add CNAME
         run: |
-          BRANCH=$(echo "${{ github.ref }}" | sed 's/refs\/heads\///')
-          if [[ "$BRANCH" == "main" ]]; then
-            echo "Setting homepage for MAIN"
-            jq '.homepage="https://theonecrawlingsolution.com"' package.json > temp.json && mv temp.json package.json
-            mkdir -p public
+          jq '.homepage="https://theonecrawlingsolution.com"' package.json > temp.json && mv temp.json package.json
+          mkdir -p public
+          echo "theonecrawlingsolution.com" > public/CNAME
 
-      - name: 📦 Install dependencies
-        run: |
-          echo "Installing dependencies..."
-          npm install
+      - name: 🔧 Build project
+        run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.DEPLOY_PAT }}
           publish_branch: gh-pages
           publish_dir: ./build
-          keep_files: true
-          destination_dir: ${{ github.ref == 'refs/heads/main' && '.'  }}
