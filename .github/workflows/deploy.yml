@@ -33,9 +33,6 @@ jobs:
           echo "Installing dependencies..."
           npm install
 
-      - name: Copy CNAME to build folder
-        run: cp public/CNAME build/CNAME
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
