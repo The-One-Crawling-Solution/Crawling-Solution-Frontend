@@ -23,10 +23,11 @@ jobs:
 
       - name: Set homepage and CNAME
         run: |
-          echo "Setting homepage for MAIN"
-          jq '.homepage="https://theonecrawlingsolution.com"' package.json > temp.json && mv temp.json package.json
-          mkdir -p public
-          echo "theonecrawlingsolution.com" > public/CNAME
+          BRANCH=$(echo "${{ github.ref }}" | sed 's/refs\/heads\///')
+          if [[ "$BRANCH" == "main" ]]; then
+            echo "Setting homepage for MAIN"
+            jq '.homepage="https://theonecrawlingsolution.com"' package.json > temp.json && mv temp.json package.json
+            mkdir -p public
 
       - name: 📦 Install dependencies
         run: |
@@ -40,3 +41,4 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ./build
           keep_files: true
+          destination_dir: ${{ github.ref == 'refs/heads/main' && '.'  }}
