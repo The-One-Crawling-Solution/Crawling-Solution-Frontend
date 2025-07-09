@@ -1,60 +1,113 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { ServicesData } from "../Components/data/Service";
+import "../assets/css/allServices.css";
 
 const Services = () => {
+  const sectionRef = useRef(null);
+  const cardsRef = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      }
+    );
+
+    cardsRef.current.forEach((card) => {
+      if (card) observer.observe(card);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const addToRefs = (el) => {
+    if (el && !cardsRef.current.includes(el)) {
+      cardsRef.current.push(el);
+    }
+  };
+
   return (
     <>
-      <section className="section service border-top">
+      {/* Services Section */}
+      <section className="services-section" ref={sectionRef}>
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-7 text-center">
-              <div className="section-title">
-                <span className="h6 text-color">Our Industries</span>
-                <h2 className="mt-3 content-title ">
-                  We provide a wide range of creative solutions for various
-                  industries{" "}
-                </h2>
-              </div>
-            </div>
+          {/* Section Header */}
+          <div className="section-header">
+            <span className="section-subtitle">Our Industries</span>
+            <h2 className="section-title">
+              Need Clean, Reliable Data Without the Hassle? You’re in the Right
+              Place.
+            </h2>
+            <p className="section-description">
+              At The One Crawling Solution, we focus on delivering clean, smart
+              data through our expert web scraping services and custom data
+              extraction. Whether it's price intelligence or specialized
+              industry scraping, we make sure that you get accurate insights
+              that are quick and hassle-free.
+            </p>
           </div>
 
-          <div className="row">
+          {/* Services Grid */}
+          <div className="services-grid">
             {ServicesData.map((service, index) => (
-              <div className="col-lg-4 col-md-6 col-sm-6" key={index}>
-                <div className="service-item mb-5">
+              <div
+                className="service-card"
+                key={service.id}
+                ref={addToRefs}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="service-icon">
                   <i className={`fas ${service.icon}`}></i>
-                  <h4 className="mb-3">
-                    <Link to={service.link}>{service.title}</Link>
-                  </h4>
-                  {/* <p>A digital agency isn't here to replace your internal team, we're here to partner</p> */}
                 </div>
+                <h4 className="service-title">
+                  <Link
+                    to={service.link}
+                    aria-label={`Learn more about ${service.title}`}
+                  >
+                    {service.title}
+                  </Link>
+                </h4>
+                <p className="service-description">{service.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section cta">
+      {/* CTA Section */}
+      {/* <section className="cta-section">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-5">
-              <div className="cta-item bg-white p-5 rounded">
-                <span className="h6 text-color">We create for you</span>
-                <h2 className="mt-2 mb-4">
-                  Entrust Your Project to Our Best Team of Professionals
-                </h2>
-                <p className="lead mb-4">
-                  Have any project on mind? For immediate support:
-                </p>
-                <h3>
-                  <i className="ti-mobile mr-3 text-color"></i>+91 9664508201
-                </h3>
-              </div>
+          <div className="row justify-content-center">
+            <div className="cta-card">
+              <span className="cta-subtitle">Built for You, Backed by Us</span>
+              <h2 className="cta-title">Let’s Build Something That Works</h2>
+              <p className="cta-description">
+                Your project deserves a team that understands your goals and
+                delivers results. Have an idea in mind? We are ready when you
+                are.
+              </p>
+              <a
+                href="tel:+919664508201"
+                className="cta-phone"
+                aria-label="Call us for immediate support"
+              >
+                <i className="fas fa-phone phone-icon"></i>
+                Connect with us directly at
+                <span>+91 9664508201</span>
+              </a>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

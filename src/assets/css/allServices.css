@@ -1,0 +1,400 @@
+/* Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Main Styles */
+.services-section {
+  padding: 70px 0;
+  background: linear-gradient(135deg, #f5f8f9 0%, #fff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.services-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23000" opacity="0.02"/><circle cx="75" cy="75" r="1" fill="%23000" opacity="0.02"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  pointer-events: none;
+}
+
+.services-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 80px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.section-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: rgb(247, 87, 87);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-subtitle::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, rgb(247, 87, 87), #c54041);
+  border-radius: 2px;
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  color: #242424;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-description {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #5a5a5a;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  /* margin-bottom: 80px; */
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  animation: fadeInUp 0.8s ease-out;
+  animation-fill-mode: both;
+}
+
+.service-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.service-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.service-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.service-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.service-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.service-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.service-card:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.service-card:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.service-card:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.service-card:nth-child(10) {
+  animation-delay: 1s;
+}
+.service-card:nth-child(11) {
+  animation-delay: 1.1s;
+}
+.service-card:nth-child(12) {
+  animation-delay: 1.2s;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, rgb(247, 87, 87), #c54041);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.service-card:hover .service-icon {
+  color: rgb(247, 87, 87);
+  transform: scale(1.1);
+  animation: pulse 1.5s infinite;
+}
+
+.service-card:hover .service-title {
+  color: rgb(247, 87, 87);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: #c54041;
+  margin-bottom: 8px;
+  transition: all 0.3s ease-in-out;
+  align-self: flex-start;
+}
+
+.service-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #242424;
+  margin-bottom: 15px;
+  line-height: 1.3;
+  transition: all 0.3s ease-in-out;
+  flex-shrink: 0;
+}
+
+.service-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-title a:hover {
+  color: rgb(247, 87, 87);
+}
+
+.service-description {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #646464;
+  line-height: 1.6;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cta-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #242424 0%, #1a1a1a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 100%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(247, 87, 87, 0.1) 0%,
+    transparent 70%
+  );
+  transform: rotate(15deg);
+}
+
+.cta-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-card {
+  background: #fff;
+  border-radius: 25px;
+  padding: 60px 50px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  animation: bounceIn 1s ease-out;
+  /* max-width: 600px; */
+}
+
+.cta-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, rgb(247, 87, 87), #c54041, #b99769);
+}
+
+.cta-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: rgb(247, 87, 87);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.cta-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: #242424;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+
+.cta-description {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #5a5a5a;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-phone {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #242424;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-phone:hover {
+  color: rgb(247, 87, 87);
+  transform: translateX(5px);
+}
+
+.cta-phone:hover .phone-icon {
+  animation: pulse 1s infinite;
+}
+
+.phone-icon {
+  font-size: 2rem;
+  color: rgb(247, 87, 87);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 0;
+  }
+
+  .section-header {
+    margin-bottom: 50px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-card {
+    height: auto;
+    min-height: 250px;
+    padding: 30px 25px;
+  }
+
+  .cta-section {
+    padding: 60px 0;
+  }
+
+  .cta-card {
+    padding: 40px 30px;
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid {
+    gap: 15px;
+  }
+
+  .service-card {
+    padding: 25px 20px;
+    height: auto;
+    min-height: 220px;
+  }
+}

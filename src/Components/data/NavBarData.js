@@ -37,7 +37,7 @@ const navConfig = [
       { label: "Jobs Site Scraping", path: "/recruitment-data-scraping" },
       // { label: "OTT Scraping", path: "/engineering" },
       { label: "Taxi Booking Scraping", path: "/taxi-booking-data-scraping" },
-      { label: "All Services", path: "/all-services" },
+      { label: "All Industries", path: "/all-services" },
     ],
   },
 

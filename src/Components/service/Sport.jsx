@@ -1,14 +1,13 @@
 import React from "react";
-import SportImage from "../../images/about/sports.jpg.jpg";
-import SportImage1 from "../../images/about/sports1.jpg";
-import SportImage2 from "../../images/about/pexels-jsalamanca-61135.jpg";
+
 import CommonServicePage from "./CommonServicePage";
+import { Sport1, Sport2, Sport3 } from "../../assets/images/imageAssets";
 
 const Sport = () => {
   const pageContent = {
     title: "Sports Scraping",
     subtitle: "The Sports Apps: Unlock Fan Insights with Mobile App Scraping",
-    mainImage: SportImage,
+    mainImage: Sport1,
     content: {
       hero: [
         "Dominate the digital game, optimize your fan engagement, and become the ultimate champion.",
@@ -19,7 +18,7 @@ const Sport = () => {
       sections: [
         {
           title: "Here's how we empower you to conquer the digital arena:",
-          image: SportImage1,
+          image: Sport2,
           list: [
             {
               title: "Fan Focus Group",
@@ -45,7 +44,7 @@ const Sport = () => {
         },
         {
           title: "Fuel Your Fan Engagement with Data-Driven Decisions:",
-          image: SportImage2,
+          image: Sport3,
           list: [
             {
               title: "Optimize Your App",

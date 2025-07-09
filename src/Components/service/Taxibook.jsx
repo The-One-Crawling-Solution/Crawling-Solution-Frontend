@@ -1,16 +1,13 @@
 import React from "react";
-import cabImage from "../../images/about/cabbook.jpg";
-import cabImage1 from "../../images/about/cabbook1.jpg";
-import cabImage2 from "../../images/about/cabbook2.jpg";
-import cabImage3 from "../../images/about/travel1.jpg";
 import CommonServicePage from "./CommonServicePage";
+import { Cab1, Cab2, Cab3, Cab4 } from "../../assets/images/imageAssets";
 
 const Taxibook = () => {
   const pageContent = {
     title: "Taxi Cab Booking Data Scraping",
     subtitle:
       "Navigate the Taxi Chaos with One Click Solution by The One Crawling Solution",
-    mainImage: cabImage,
+    mainImage: Cab1,
     content: {
       hero: [
         "Lost in the gridlock of the taxi app war? Ditch the honking frustrations and backseat driving – it's time to hail the One Crawling Solution, your secret weapon for unearthing hidden insights and navigating the urban jungle with ease.",
@@ -19,7 +16,7 @@ const Taxibook = () => {
       sections: [
         {
           title: "What If You Knew?",
-          image: cabImage1,
+          image: Cab2,
           list: [
             {
               title: "Your Rivals' Secrets",
@@ -45,7 +42,7 @@ const Taxibook = () => {
         },
         {
           title: "Our Car Booking Data Collection Process",
-          image: cabImage2,
+          image: Cab3,
           list: [
             {
               title: "Discovery & Customization",
@@ -66,7 +63,7 @@ const Taxibook = () => {
         },
         {
           title: "Ensuring Data Quality and Rapid Delivery",
-          image: cabImage3,
+          image: Cab3,
           list: [
             {
               title: "Data Refinement",
@@ -93,7 +90,7 @@ const Taxibook = () => {
         {
           title:
             "Why Choose The One Crawling Solution for Car Booking Data Scraping?",
-          image: cabImage2,
+          image: Cab4,
           list: [
             {
               title: "Data That Drives Bookings",

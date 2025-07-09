@@ -6,6 +6,9 @@ import Footer from "./Components/common/Footer";
 import FullScreenLoader from "./Components/common/FullScreenLoader";
 import navConfig from "./Components/data/NavBarData";
 import ReactGA from "react-ga4";
+import StickyContact from "./Components/common/StickyContact";
+import ScrollToTop from "./ScrollToTop";
+// import "./assets/css/style.css";
 
 // Lazy-loaded Pages
 const Home = lazy(() => import("./Pages/Home"));
@@ -147,6 +150,8 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <ScrollToTop />
+      <StickyContact />
       <div style={{ paddingTop: "78px" }}>
         <Suspense fallback={<FullScreenLoader />}>
           <Routes>

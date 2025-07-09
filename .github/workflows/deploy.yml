@@ -18,49 +18,28 @@ jobs:
         with:
           node-version: 18
 
-      - name: 📋 Print environment info
+      - name: Install dependencies
+        run: npm install
+
+      - name: Set homepage and CNAME
         run: |
-          echo "🔍 Node version: $(node -v)"
-          echo "📦 NPM version: $(npm -v)"
-          echo "🗂 Branch: ${{ github.ref }}"
+          echo "Setting homepage for MAIN"
+          jq '.homepage="https://theonecrawlingsolution.com"' package.json > temp.json && mv temp.json package.json
+          mkdir -p public
+          echo "theonecrawlingsolution.com" > public/CNAME
 
       - name: 📦 Install dependencies
         run: |
           echo "Installing dependencies..."
           npm install
 
-      - name: 🧼 Clean old build (if exists)
-        run: |
-          echo "Cleaning old build folder if it exists..."
-          rm -rf build
+      - name: Copy CNAME to build folder
+        run: cp public/CNAME build/CNAME
 
-      - name: ⚙️ Set homepage and CNAME for main
-        run: |
-          echo "📍 Setting homepage in package.json to production domain..."
-          jq '.homepage="https://theonecrawlingsolution.com"' package.json > temp.json && mv temp.json package.json
-
-          echo "🌐 Setting CNAME for GitHub Pages..."
-          mkdir -p public
-          echo "theonecrawlingsolution.com" > public/CNAME
-
-      - name: 🛠 Build project
-        run: |
-          echo "🚀 Building project..."
-          npm run build
-
-      - name: 📄 Copy CNAME to build folder
-        run: |
-          echo "📤 Moving CNAME to build folder..."
-          cp public/CNAME build/CNAME
-
-      - name: 🚀 Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.DEPLOY_PAT }}
           publish_branch: gh-pages
           publish_dir: ./build
           keep_files: true
-          destination_dir: .
-
-      - name: ✅ Deployment complete
-        run: echo "✅ Successfully deployed to https://theonecrawlingsolution.com"

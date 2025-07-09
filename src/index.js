@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import HelmetWrapper from "./Components/seo/HelmetWrapper";
+import "./assets/css/style.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

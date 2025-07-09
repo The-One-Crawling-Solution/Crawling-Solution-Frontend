@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Link } from "react-router-dom";
-import mylogo from "../../images/about/mylogo.jpeg";
+import { Logo } from "../../assets/images/imageAssets";
 
 const Footer = () => {
   return (
@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className="d-flex justify-content-start align-items-center gap-2">
                   <Link className="navbar-brand" to="/" aria-label="Home">
                     <img
-                      src={mylogo}
+                      src={Logo}
                       alt="The One Crawling Solution Logo"
                       loading="eager" // Changed to eager to prioritize critical logo load
                       decoding="async"
@@ -29,6 +29,67 @@ const Footer = () => {
                     />
                   </Link>
                   <h4 className="text-color mb-0">The One Crawling Solution</h4>
+                </div>
+                <div>
+                  <div className="social-row">
+                    <ul className="list-inline social-icons">
+                      <li className="list-inline-item">
+                        <a
+                          href="https://www.instagram.com/theonecrawlingsolution/"
+                          aria-label="Instagram"
+                          className="social-icon instagram"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i className="fa-brands fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li className="list-inline-item">
+                        <a
+                          href="https://x.com/onecrawling6263"
+                          aria-label="Twitter"
+                          className="social-icon twitter"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <span style={{ fontSize: "25px" }}>𝕏</span>
+                        </a>
+                      </li>
+                      <li className="list-inline-item">
+                        <a
+                          href="https://www.linkedin.com/company/the-one-crawling-solution"
+                          aria-label="LinkedIn"
+                          className="social-icon linkedin"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i className="fa-brands fa-linkedin"></i>
+                        </a>
+                      </li>
+                      <li className="list-inline-item">
+                        <a
+                          href="https://www.facebook.com/theonecrawlingsolution/"
+                          aria-label="Facebook"
+                          className="social-icon facebook"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i className="fa-brands fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li className="list-inline-item">
+                        <a
+                          href="https://in.pinterest.com/theonecrawlingsolution/"
+                          aria-label="Pinterest"
+                          className="social-icon pinterest"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <i className="fa-brands fa-pinterest"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -110,66 +171,6 @@ const Footer = () => {
                         <a href="tel:+919664508201">
                           <i className="fas fa-phone mr-2"></i>
                           +91 9664508201
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="social-row">
-                    <ul className="list-inline social-icons">
-                      <li className="list-inline-item">
-                        <a
-                          href="https://www.instagram.com/theonecrawlingsolution/"
-                          aria-label="Instagram"
-                          className="social-icon instagram"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <i className="fa-brands fa-instagram"></i>
-                        </a>
-                      </li>
-                      <li className="list-inline-item">
-                        <a
-                          href="https://x.com/onecrawling6263"
-                          aria-label="Twitter"
-                          className="social-icon twitter"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <span style={{ fontSize: "20px" }}>𝕏</span>
-                        </a>
-                      </li>
-                      <li className="list-inline-item">
-                        <a
-                          href="https://www.linkedin.com/company/the-one-crawling-solution"
-                          aria-label="LinkedIn"
-                          className="social-icon linkedin"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <i className="fa-brands fa-linkedin"></i>
-                        </a>
-                      </li>
-                      <li className="list-inline-item">
-                        <a
-                          href="https://www.facebook.com/theonecrawlingsolution/"
-                          aria-label="Facebook"
-                          className="social-icon facebook"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <i className="fa-brands fa-facebook-f"></i>
-                        </a>
-                      </li>
-                      <li className="list-inline-item">
-                        <a
-                          href="https://in.pinterest.com/theonecrawlingsolution/"
-                          aria-label="Pinterest"
-                          className="social-icon pinterest"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <i className="fa-brands fa-pinterest"></i>
                         </a>
                       </li>
                     </ul>
