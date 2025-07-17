@@ -66,7 +66,7 @@ const Footer = () => {
                           <i className="fa-brands fa-linkedin"></i>
                         </a>
                       </li>
-                      <li className="list-inline-item">
+                      {/* <li className="list-inline-item">
                         <a
                           href="https://www.facebook.com/theonecrawlingsolution/"
                           aria-label="Facebook"
@@ -76,7 +76,7 @@ const Footer = () => {
                         >
                           <i className="fa-brands fa-facebook-f"></i>
                         </a>
-                      </li>
+                      </li> */}
                       <li className="list-inline-item">
                         <a
                           href="https://in.pinterest.com/theonecrawlingsolution/"

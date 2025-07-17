@@ -8,7 +8,7 @@ const StickyContact = ({
   whatsappMessage = "Hello! I'm interested in your services.",
 
   socialLinks = {
-    facebook: "https://www.facebook.com/theonecrawlingsolution/",
+    // facebook: "https://www.facebook.com/theonecrawlingsolution/",
     instagram: "https://www.instagram.com/theonecrawlingsolution/",
     twitter: "https://x.com/onecrawling6263",
     linkedin: "https://www.linkedin.com/company/the-one-crawling-solution",
@@ -108,13 +108,13 @@ const StickyContact = ({
   ];
 
   const socialItems = [
-    {
-      id: "facebook",
-      icon: "fab fa-facebook-f",
-      label: "Facebook",
-      url: socialLinks.facebook,
-      className: "sticky-facebook",
-    },
+    // {
+    //   id: "facebook",
+    //   icon: "fab fa-facebook-f",
+    //   label: "Facebook",
+    //   url: socialLinks.facebook,
+    //   className: "sticky-facebook",
+    // },
     {
       id: "instagram",
       icon: "fab fa-instagram",
